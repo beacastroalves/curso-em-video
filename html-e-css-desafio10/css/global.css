@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+* {
+  line-height: 1.5rem;
+}
+
+body {
+  background-color: var(--app-color-primary-tint);
+}

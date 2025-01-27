@@ -1,0 +1,36 @@
+:root {
+  --app-color-primary: #83e1ad;
+  --app-color-primary-tint: #c5ebd6;
+  --app-color-primary-shade: #2da866;
+  --app-color-primary-dark: #063d1e;
+  --app-color-primary-contrast: #000000;
+
+  --app-font-android: 'Android', sans-setif;
+  --app-font-bebas: 'Bebas Neue', cursive;
+
+
+
+  --app-color-light: #ebebeb;
+  --app-color-light-tint: #eeeeee;
+  --app-color-light-shade: #d0d0d0;
+  --app-color-light-constrast: #000000;
+
+  --app-color-medium: #bbbbbb;
+  --app-color-medium-tint: #cccccc;
+  --app-color-medium-shade: #a0a0a0;
+  --app-color-medium-constrast: #000000;
+
+  --app-color-dark: #414141;
+  --app-color-dark-tint: #5e5e5e;
+  --app-color-dark-shade: #1d1d1d;
+  --app-color-medium-constrast: #ffffff;
+
+
+  --app-color-sucess: #2b990a;
+  --app-color-sucess-contrast: #000000;
+  --app-color-warning: #928d02;
+  --app-color-warning-contrast: #000000;
+  --app-color-danger: #a82200;
+  --app-color-danger-shade: #7e1900;
+  --app-color-danger-contrast: #ffffff;
+}
