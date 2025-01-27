@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+* {
+  line-height: 1.5rem;
+}
+
+body {
+  background-color: var(--app-color-android-0);
+  font-family: var(--app-font-padrao);
+}
+
+p {
+  text-align: justify;
+}
+
+header {
+  color: var(--app-color-light-tint);
+  background-color: var(--app-color-android-4);
+}
+
+header > h1{
+  font-family: var(--app-font-bebas);
+}
+
+nav {
+  background-color: var(--app-color-android-5);
+}
+
+main {
+  background-color: var(--app-color-light-tint);
+  min-width: 280px;
+  max-width: 1000px;
+  padding: 1rem;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+
+main h1 {
+  color: var(--app-color-android-5);
+  font-family: var(--app-font-android);
+}
+
+main h2 {
+  font-family: var(--app-font-android);
+}
+
+main img {
+  width: 100%;
+}
+
+main img.pequena {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+footer {
+  background-color: var(--app-color-android-5);
+  color: var(--app-color-light-tint);
+}

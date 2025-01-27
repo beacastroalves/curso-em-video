@@ -1,11 +1,24 @@
-:root {
-  --app-color-primary: #83e1ad;
-  --app-color-primary-tint: #c5ebd6;
-  --app-color-primary-shade: #2da866;
-  --app-color-primary-dark: #063d1e;
-  --app-color-primary-contrast: #000000;
+@charset "UTF-8";
 
-  --app-font-android: 'Android', sans-setif;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'Android';
+  src: url(../html-e-css-desafio10/fontes/idroid.otf) format('opentype');
+  font-weight: normal;
+}
+
+:root {
+  --app-color-android-0: #c5ebd6;
+  --app-color-android-1: #83e1ad;
+  --app-color-android-2: #3ddc84;
+  --app-color-android-3: #2da866;
+  --app-color-android-4: #1a5c37;
+  --app-color-android-5: #063d1e;
+
+
+  --app-font-padrao: Arial, Verdana, Helvetica, sans-serif;
+  --app-font-android: 'Android', cursive;
   --app-font-bebas: 'Bebas Neue', cursive;
 
 
