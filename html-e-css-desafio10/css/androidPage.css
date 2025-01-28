@@ -117,6 +117,23 @@ main img.pequena {
   max-width: 350px;
 }
 
+main .video {
+  background-color: var(--app-color-android-5);
+  padding: 1.5rem;
+  padding-bottom: 55.7%;
+  margin: 0 -1rem 2rem -1rem;
+  position: relative;
+}
+
+main .video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
 aside {
   background-color: var(--app-color-android-0);
   padding: 0.675rem;
