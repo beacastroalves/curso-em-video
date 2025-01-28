@@ -10,7 +10,10 @@ body {
   min-width: 280px;
 }
 
-
+a.externo::after {
+  content: '\1F517';
+  font-size: 0.750rem;
+}
 
 header {
   color: var(--app-color-light-tint);
@@ -114,7 +117,41 @@ main img.pequena {
   max-width: 350px;
 }
 
+aside {
+  background-color: var(--app-color-android-0);
+  padding: 0.675rem;
+  border-radius: 0.675rem;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.280);
+}
+
+aside h3 {
+  background-color: var(--app-color-android-4);
+  color: var(--app-color-light);
+  padding: 0.675rem;
+  margin: -0.675rem -0.675rem 0 -0.675rem;
+  border-radius: 0.675rem 0.675rem 0 0;
+}
+
+aside > ul {
+  list-style-position: inside;
+  columns: 1;
+}
+
 footer {
   background-color: var(--app-color-android-5);
-  color: var(--app-color-light-tint);
+  color: var(--app-color-light);
+  text-align: center;
+  font-size: 0.675rem;
+  padding: 0.312rem;
+}
+
+footer a {
+  color: var(--app-color-light);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--app-color-android-1);
 }
