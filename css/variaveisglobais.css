@@ -9,6 +9,14 @@
 }
 
 :root {
+  --app-color-index-0: #d7d7d7;
+  --app-color-index-1: #a7a7a7;
+  --app-color-index-2: #979797;
+  --app-color-index-3: #7e7e7e;
+  --app-color-index-3-rgba-50: #67676750;
+  --app-color-index-4: #272727;
+  --app-color-index-5: #070707;
+
   --app-color-android-0: #c5ebd6;
   --app-color-android-1: #83e1ad;
   --app-color-android-1-rgba-50: #2da86650;
@@ -16,6 +24,8 @@
   --app-color-android-3: #2da866;
   --app-color-android-4: #1a5c37;
   --app-color-android-5: #063d1e;
+
+
 
 
   --app-font-padrao: Arial, Verdana, Helvetica, sans-serif;

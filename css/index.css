@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+* {
+  line-height: 1.5rem;
+}
+
+body {
+  background-color: var(--app-color-index-0);
+  font-family: var(--app-font-padrao);
+  min-width: 330px;
+  position: relative;
+  text-align: center;
+}
+
+header {
+  color: var(--app-color-light-tint);
+  background-image: linear-gradient(to bottom, var(--app-color-index-5) 1%, var(--app-color-index-3) 99%);
+  min-height: 200px;
+  padding-top: 2.8rem;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+header > h1 {
+  font-family: var(--app-font-bebas);
+  font-size: 2rem;
+  margin: 0 0.5rem 1.5rem 0.5rem;
+}
+
+header > p {
+  max-width: 400px;
+  margin: auto;
+  padding: 0 0.5rem 1.2rem 0.5rem;
+}
+
+nav {
+  background-color: var(--app-color-index-3);
+  padding: 0.625rem;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+nav a {
+  color: var(--app-color-light-shade);
+  padding: 0.625rem;
+  margin-bottom: -0.625rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition-duration: 0.3s;
+  border-radius: 0.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: var(--app-color-index-4);
+}
+
+main {
+  background-color: var(--app-color-light);
+  min-width: 300px;
+  max-width: 1000px;
+  padding: 1rem;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  color: var(--app-color-index-4);
+}
+
+section {
+padding: 1rem 0;
+}
+
+section h2 {
+  margin: 0.5rem 0;
+  color: var(--app-color-index-4);
+}
+
+section p {
+  margin: 0.5rem 0;
+}
+
+section a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--app-color-index-4);
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  transition-duration: 0.3s;
+}
+
+section a:hover {
+  color: var(--app-color-index-3);
+  text-decoration: underline;
+}
+
+section .video {
+  background-color: var(--app-color-index-5);
+  padding: 1.5rem;
+  padding-bottom: 55.7%;
+  margin: 1rem -1rem 2rem -1rem;
+  position: relative;
+}
+
+.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+footer {
+  width: 100vw;
+  background-color: var(--app-color-index-5);
+  color: var(--app-color-light);
+  text-align: center;
+  font-size: 0.675rem;
+  padding: 0.312rem;
+}
+
+footer a {
+  color: var(--app-color-light);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--app-color-index-1);
+}
