@@ -10,7 +10,7 @@ body {
   background-color: var(--app-color-android-0);
   background-image: url(../imagens/bg_android-pq-70.png);
   font-family: var(--app-font-padrao);
-  min-width: 280px;
+  min-width: 330px;
   position: relative;
 }
 
@@ -42,24 +42,23 @@ header > p {
 
 nav {
   background-color: var(--app-color-android-5);
-  padding: 0.625rem;
+  padding: 1rem;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
 nav a {
   color: var(--app-color-light);
-  padding: 0.625rem;
-  text-decoration: none;
   font-weight: bold;
-  transition-duration: 0.3s;
+  text-decoration: none;
+  text-wrap: nowrap;
   border-radius: 0.5rem;
+  padding: 0.625rem;
+  transition-duration: 0.3s;
 }
 
 nav a:hover {
   text-decoration: underline;
-  background-color: var(--app-color-android-4);
-  color: var(--app-color-android-0);
 }
 
 main {
@@ -175,4 +174,13 @@ footer a {
 footer a:hover {
   text-decoration: underline;
   color: var(--app-color-android-1);
+}
+
+
+@media only screen and (min-width: 610px) {
+  nav a:hover {
+    text-decoration: underline;
+    background-color: var(--app-color-android-4);
+    color: var(--app-color-android-0);
+  }
 }

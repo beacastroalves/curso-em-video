@@ -32,7 +32,7 @@ main {
 }
 
 main section {
-padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 main section h2 {
@@ -41,28 +41,43 @@ main section h2 {
 }
 
 main section p {
-  margin: 0.5rem 0;
+  margin: 0.5rem auto;
+  text-align: justify;
+  max-width: 700px;
+}
+
+main section h3 {
+  text-align: left;
+  margin-left: 0.75rem;
+}
+
+main section ul {
+  padding-top: 1rem;
+}
+
+main section ul li {
+  list-style: none;
+  text-align: left;
 }
 
 main section a {
-  font-weight: bold;
   text-decoration: none;
   color: var(--app-color-index-4);
-  padding: 0.625rem;
+  padding: 0.750rem;
   border-radius: 0.5rem;
   transition-duration: 0.3s;
 }
 
 main section a:hover {
-  color: var(--app-color-index-3);
+  color: var(--app-color-index-5);
   text-decoration: underline;
 }
 
 main section .video {
-  background-color: var(--app-color-index-5);
+  background-color: var(--app-color-index-4);
   padding: 1.5rem;
   padding-bottom: 55.7%;
-  margin: 1rem -1rem 2rem -1rem;
+  margin: 1rem -1rem 0 -1rem;
   position: relative;
 }
 
@@ -101,9 +116,19 @@ footer a:hover {
   }
 }
 
+@media only screen and (min-width: 620px) {
+  main section ul {
+    columns: 2;
+  }
+}
 
-@media only screen and (min-width: 1000px) {
+
+@media only screen and (min-width: 900px) {
   header {
       height: 250px;
+  }
+
+  main section ul {
+    columns: 3;
   }
 }
