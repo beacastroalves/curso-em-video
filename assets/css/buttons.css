@@ -29,3 +29,14 @@ a:active.btn-2 {
   color: var(--app-color-index-1);
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
 }
+
+button.btn-1[disabled] a.btn-2 {
+  background-color: var(--app-color-index-0);
+  color: var(--app-color-index-1);
+  box-shadow: unset;
+  cursor: not-allowed;
+}
+
+button.btn-1[disabled] a.btn-2:hover {
+  box-shadow: unset;
+}
