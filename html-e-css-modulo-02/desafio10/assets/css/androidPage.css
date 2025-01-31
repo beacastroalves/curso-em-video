@@ -48,7 +48,7 @@ nav {
 }
 
 nav a {
-  color: var(--app-color-light-shade);
+  color: var(--app-color-light);
   padding: 0.625rem;
   text-decoration: none;
   font-weight: bold;
@@ -59,6 +59,7 @@ nav a {
 nav a:hover {
   text-decoration: underline;
   background-color: var(--app-color-android-4);
+  color: var(--app-color-android-0);
 }
 
 main {

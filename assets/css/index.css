@@ -24,12 +24,11 @@ header {
 
 main {
   background-color: var(--app-color-light);
-  min-width: 300px;
+  color: var(--app-color-index-4);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   max-width: 1000px;
   padding: 1rem;
   margin: auto;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-  color: var(--app-color-index-4);
 }
 
 main section {
@@ -99,5 +98,12 @@ footer a:hover {
 @media only screen and (min-width: 510px) {
   header {
     background-image: url('../images/code.png');
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  header {
+      height: 250px;
   }
 }
