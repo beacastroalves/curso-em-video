@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+html, body {
+  min-height: 100vh;
+  background-color: var(--app-color-index-3);
+  color: var(--app-color-index-5);
+}
+
+header, footer {
+  background-color: var(--app-color-index-5);
+  color: var(--app-color-index-0);
+  text-align: center;
+}
+
+header > h1 {
+  padding-top: 3rem;
+  font-variant: small-caps;
+}
+
+header > p {
+  padding-bottom: 3rem;
+}
+
+header a, footer a {
+  color: var(--app-color-index-0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+  color: var(--app-color-index-1);
+  text-decoration: underline;
+}
+
+section {
+  padding: 10vh 0;
+  padding-left: 2rem;
+  line-height: 2rem;
+}
+
+.normal {
+  background-color: var(--app-color-index-0);
+}
+
+.imagem {
+  background-color: var(--app-color-index-5);
+  color: var(--app-color-index-0);
+}
+
+.imagem > p {
+  width: 40vw;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+
+footer {
+  font-size: 0.750rem;
+  padding: 0.625rem;
+}
