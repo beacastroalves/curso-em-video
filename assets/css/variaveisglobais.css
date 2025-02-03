@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 @font-face {
   font-family: 'Android';
@@ -30,7 +32,10 @@
 
   --app-font-padrao: Arial, Verdana, Helvetica, sans-serif;
   --app-font-android: 'Android', cursive;
-  --app-font-bebas: 'Bebas Neue', cursive;
+  --app-font-android-bebas: 'Bebas Neue', cursive;
+  --app-font-cordel: Verdana, Geneva, Tahoma, sans-serif;
+  --app-font-cordel-passion: 'Passion One', cursive;
+  --app-font-cordel-sriracha: 'Sriracha', serif;
 
 
 

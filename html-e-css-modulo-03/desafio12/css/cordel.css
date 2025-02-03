@@ -4,6 +4,7 @@ html, body {
   min-height: 100vh;
   background-color: var(--app-color-index-3);
   color: var(--app-color-index-5);
+  font-family: var(--app-font-cordel);
 }
 
 header, footer {
@@ -15,6 +16,7 @@ header, footer {
 header > h1 {
   padding-top: 3rem;
   font-variant: small-caps;
+  font-family: var(--app-font-cordel-passion);
 }
 
 header > p {
@@ -36,6 +38,8 @@ section {
   padding: 10vh 0;
   padding-left: 2rem;
   line-height: 2rem;
+  font-family: var(--app-font-cordel-sriracha);
+  font-size: 1.25rem;
 }
 
 .normal {
