@@ -1,9 +1,19 @@
 @import url(variaveisglobais.css);
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 8px;
+}
+
 button.btn-1 {
   border: 1px solid transparent;
   background-color: transparent;
-  margin-bottom: 1.25rem;
+  margin: 2rem 0;
 }
 
 a.btn-2 {
