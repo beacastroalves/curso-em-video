@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de Teste</title>
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: lightgray;
+      margin: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      position: relative;
+    }
+
+    caption {
+      font-size: 1.25rem;
+      font-weight: bold;
+      padding: 20px;
+      background-color: dimgray;
+      color: white;
+      border: 1px solid black;
+      border-bottom: 1px solid transparent;
+    }
+
+    thead > tr > th {
+      background-color: lightgray;
+      color: black;
+      position: sticky;
+      top: -1px;
+      border-top: 1px solid black;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid black;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background-color: lightgray;
+    }
+
+    tr:nth-child(odd) {
+      background-color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Tabelas Responsivas</caption>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Jan</th>
+        <th>Fev</th>
+        <th>Mar</th>
+        <th>Abr</th>
+        <th>Mai</th>
+        <th>Jun</th>
+        <th>Jul</th>
+        <th>Ago</th>
+        <th>Set</th>
+        <th>Out</th>
+        <th>Nov</th>
+        <th>Dez</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Camiseta Algodão</td>
+        <td>120</td>
+        <td>150</td>
+        <td>180</td>
+        <td>160</td>
+        <td>200</td>
+        <td>220</td>
+        <td>250</td>
+        <td>230</td>
+        <td>210</td>
+        <td>190</td>
+        <td>170</td>
+        <td>140</td>
+      </tr>
+      <tr>
+        <td>Calça Jeans</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>130</td>
+        <td>140</td>
+        <td>130</td>
+        <td>120</td>
+        <td>110</td>
+        <td>100</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Tênis Esportivo</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>Jaqueta de Couro</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+        <td>50</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <td>Mochila Escolar</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>130</td>
+        <td>140</td>
+        <td>150</td>
+        <td>140</td>
+        <td>130</td>
+        <td>120</td>
+        <td>110</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Livro de Ficção</td>
+        <td>150</td>
+        <td>180</td>
+        <td>200</td>
+        <td>190</td>
+        <td>220</td>
+        <td>250</td>
+        <td>280</td>
+        <td>260</td>
+        <td>240</td>
+        <td>210</td>
+        <td>190</td>
+        <td>160</td>
+      </tr>
+      <tr>
+        <td>Fone de Ouvido</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>130</td>
+        <td>140</td>
+        <td>150</td>
+        <td>160</td>
+        <td>150</td>
+        <td>140</td>
+        <td>130</td>
+        <td>120</td>
+        <td>110</td>
+      </tr>
+      <tr>
+        <td>Smartphone</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>110</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>Tablet</td>
+        <td>40</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Notebook</td>
+        <td>20</td>
+        <td>25</td>
+        <td>30</td>
+        <td>35</td>
+        <td>40</td>
+        <td>45</td>
+        <td>50</td>
+        <td>45</td>
+        <td>40</td>
+        <td>35</td>
+        <td>30</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Camiseta Algodão</td>
+        <td>120</td>
+        <td>150</td>
+        <td>180</td>
+        <td>160</td>
+        <td>200</td>
+        <td>220</td>
+        <td>250</td>
+        <td>230</td>
+        <td>210</td>
+        <td>190</td>
+        <td>170</td>
+        <td>140</td>
+      </tr>
+      <tr>
+        <td>Calça Jeans</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>130</td>
+        <td>140</td>
+        <td>130</td>
+        <td>120</td>
+        <td>110</td>
+        <td>100</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Tênis Esportivo</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>Jaqueta de Couro</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+        <td>50</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <td>Mochila Escolar</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>130</td>
+        <td>140</td>
+        <td>150</td>
+        <td>140</td>
+        <td>130</td>
+        <td>120</td>
+        <td>110</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Livro de Ficção</td>
+        <td>150</td>
+        <td>180</td>
+        <td>200</td>
+        <td>190</td>
+        <td>220</td>
+        <td>250</td>
+        <td>280</td>
+        <td>260</td>
+        <td>240</td>
+        <td>210</td>
+        <td>190</td>
+        <td>160</td>
+      </tr>
+      <tr>
+        <td>Fone de Ouvido</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>130</td>
+        <td>140</td>
+        <td>150</td>
+        <td>160</td>
+        <td>150</td>
+        <td>140</td>
+        <td>130</td>
+        <td>120</td>
+        <td>110</td>
+      </tr>
+      <tr>
+        <td>Smartphone</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>110</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>Tablet</td>
+        <td>40</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Notebook</td>
+        <td>20</td>
+        <td>25</td>
+        <td>30</td>
+        <td>35</td>
+        <td>40</td>
+        <td>45</td>
+        <td>50</td>
+        <td>45</td>
+        <td>40</td>
+        <td>35</td>
+        <td>30</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Camiseta Algodão</td>
+        <td>120</td>
+        <td>150</td>
+        <td>180</td>
+        <td>160</td>
+        <td>200</td>
+        <td>220</td>
+        <td>250</td>
+        <td>230</td>
+        <td>210</td>
+        <td>190</td>
+        <td>170</td>
+        <td>140</td>
+      </tr>
+      <tr>
+        <td>Calça Jeans</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>130</td>
+        <td>140</td>
+        <td>130</td>
+        <td>120</td>
+        <td>110</td>
+        <td>100</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Tênis Esportivo</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>Jaqueta de Couro</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+        <td>50</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <td>Mochila Escolar</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>130</td>
+        <td>140</td>
+        <td>150</td>
+        <td>140</td>
+        <td>130</td>
+        <td>120</td>
+        <td>110</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Livro de Ficção</td>
+        <td>150</td>
+        <td>180</td>
+        <td>200</td>
+        <td>190</td>
+        <td>220</td>
+        <td>250</td>
+        <td>280</td>
+        <td>260</td>
+        <td>240</td>
+        <td>210</td>
+        <td>190</td>
+        <td>160</td>
+      </tr>
+      <tr>
+        <td>Fone de Ouvido</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>130</td>
+        <td>140</td>
+        <td>150</td>
+        <td>160</td>
+        <td>150</td>
+        <td>140</td>
+        <td>130</td>
+        <td>120</td>
+        <td>110</td>
+      </tr>
+      <tr>
+        <td>Smartphone</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>110</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>Tablet</td>
+        <td>40</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Notebook</td>
+        <td>20</td>
+        <td>25</td>
+        <td>30</td>
+        <td>35</td>
+        <td>40</td>
+        <td>45</td>
+        <td>50</td>
+        <td>45</td>
+        <td>40</td>
+        <td>35</td>
+        <td>30</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Camiseta Algodão</td>
+        <td>120</td>
+        <td>150</td>
+        <td>180</td>
+        <td>160</td>
+        <td>200</td>
+        <td>220</td>
+        <td>250</td>
+        <td>230</td>
+        <td>210</td>
+        <td>190</td>
+        <td>170</td>
+        <td>140</td>
+      </tr>
+      <tr>
+        <td>Calça Jeans</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>130</td>
+        <td>140</td>
+        <td>130</td>
+        <td>120</td>
+        <td>110</td>
+        <td>100</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Tênis Esportivo</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>Jaqueta de Couro</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+        <td>50</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <td>Mochila Escolar</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>130</td>
+        <td>140</td>
+        <td>150</td>
+        <td>140</td>
+        <td>130</td>
+        <td>120</td>
+        <td>110</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>Livro de Ficção</td>
+        <td>150</td>
+        <td>180</td>
+        <td>200</td>
+        <td>190</td>
+        <td>220</td>
+        <td>250</td>
+        <td>280</td>
+        <td>260</td>
+        <td>240</td>
+        <td>210</td>
+        <td>190</td>
+        <td>160</td>
+      </tr>
+      <tr>
+        <td>Fone de Ouvido</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>130</td>
+        <td>140</td>
+        <td>150</td>
+        <td>160</td>
+        <td>150</td>
+        <td>140</td>
+        <td>130</td>
+        <td>120</td>
+        <td>110</td>
+      </tr>
+      <tr>
+        <td>Smartphone</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>110</td>
+        <td>120</td>
+        <td>110</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+      </tr>
+      <tr>
+        <td>Tablet</td>
+        <td>40</td>
+        <td>50</td>
+        <td>60</td>
+        <td>70</td>
+        <td>80</td>
+        <td>90</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+        <td>70</td>
+        <td>60</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Notebook</td>
+        <td>20</td>
+        <td>25</td>
+        <td>30</td>
+        <td>35</td>
+        <td>40</td>
+        <td>45</td>
+        <td>50</td>
+        <td>45</td>
+        <td>40</td>
+        <td>35</td>
+        <td>30</td>
+        <td>25</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
