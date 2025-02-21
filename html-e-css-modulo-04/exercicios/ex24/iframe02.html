@@ -17,6 +17,11 @@
       max-width: 740px;
       margin: 1rem auto;
     }
+    .error {
+      font-size: 0.825rem;
+      color: brown;
+    }
+
   </style>
 </head>
 <body>
@@ -33,7 +38,9 @@
   <h1>Teste com iframe</h1>
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio molestiae dicta nostrum excepturi delectus dolorum mollitia sapiente consequatur ipsam at sunt eveniet, quis optio sequi, id error dignissimos. Officia, sapiente?</p>
 
-  <iframe src="./page01.html" frameborder="0" height="500" width="500"></iframe>
+  <iframe src="./paginas-extras/page01.html" frameborder="0" height="500" width="500">
+    <p class="error">Não foi possível carregar o objeto. Infelizmente seu navegador não é compatível com <strong>iframe</strong>.</p>
+  </iframe>
 
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio molestiae dicta nostrum excepturi delectus dolorum mollitia sapiente consequatur ipsam at sunt eveniet, quis optio sequi, id error dignissimos. Officia, sapiente?</p>
 
