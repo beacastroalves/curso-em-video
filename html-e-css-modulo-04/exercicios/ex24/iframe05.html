@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outras seguranças no iframe</title>
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+</head>
+<body>
+  <button class="btn-1">
+    <a href="./iframe04.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Introdução sobre segurança no iframe">Exercício Anterior</a>
+  </button>
+  <button disabled class="btn-1">
+    <a href="#" class="btn-2" target="_parent" rel="noopener noreferrer" title="#">Próximo Exercício</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+
+  <!--
+  ---- Opções de segurança da sandbox ----
+  sandbox => Máxima segurança. Sem permissões.
+  allow-same-origin => Permite se for da mesma origem que o site principal, pacote de pastas.
+  allow-forms => Permite formulários
+  allow-scripts=> Permite scripts
+
+  referrerpolicy="no-referrer" => Não permite capturar dados
+  -->
+
+  <h1>Exemplo de iframe com sandbox allow script</h1>
+  <br>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere at porro quis ea? Laborum iure, quis, temporibus cumque cupiditate assumenda et consectetur aperiam excepturi hic corporis reiciendis tenetur nobis corrupti.</p>
+  <br>
+  <h2>Esse iframe tem configuração <code>sandbox="sandbox" referrerpolicy="no-referrer"</code></h2>
+  <p>Não permite clicar!</p>
+  <iframe src="./paginas-extras/page05.html" referrerpolicy="no-referrer" sandbox="sandbox">
+    Seu navegador não é compatível com <strong>iframe</strong>
+  </iframe>
+  <br><br>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit error quasi nobis reiciendis dolores doloribus fuga eveniet, velit unde qui, ex laudantium quis nemo, a tenetur perferendis beatae illo molestias.</p>
+  <br>
+  <h2>Esse iframe tem configuração <code>sandbox="allow-scripts" referrerpolicy="no-referrer"</code></h2>
+  <p>Permitindo script de clicar!</p>
+  <iframe src="./paginas-extras/page05.html" referrerpolicy="no-referrer" sandbox="allow-scripts">
+    Seu navegador não é compatível com <strong>iframe</strong>
+  </iframe>
+</body>
+</html>

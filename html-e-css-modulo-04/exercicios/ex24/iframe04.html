@@ -3,13 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iframes</title>
+  <title>Introdução sobre segurança no iframe</title>
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+
 </head>
 <body>
+  <button class="btn-1">
+    <a href="./iframe03.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Navegação e uso de iframe">Exercício Anterior</a>
+  </button>
+  <button class="btn-1">
+    <a href="./iframe05.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Segurança no iframe">Próximo Exercício</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+
   <h1>Site Principal com uso de Iframe</h1>
   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, dignissimos culpa quo unde enim repudiandae ratione ipsum iusto neque soluta. Sapiente ut consequatur similique non delectus quasi nisi qui dolore?</p>
 
-  <iframe src="./paginas-extras/page04.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+  <!--
+  ---- Opções de segurança da sandbox ----
+  sandbox => Máxima segurança. Sem permissões.
+  allow-same-origin => Permite se for da mesma origem que o site principal, pacote de pastas.
+  allow-forms => Permite formulários
+  allow-scripts=> Permite scripts
+
+  referrerpolicy="no-referrer" => Não permite capturar dados
+  -->
+  <iframe src="./paginas-extras/page04.html" sandbox="sandbox" referrerpolicy="no-referrer">
     Seu navegador não é compatível com <strong>iframe</strong>.
   </iframe>
 
