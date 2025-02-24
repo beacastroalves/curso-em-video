@@ -33,3 +33,13 @@ main {
   background-color: lightcoral;
   background: url('../images/frame-iphone.png') no-repeat;
 }
+
+#tela {
+  position: relative;
+  top: 80px;
+  left: 22px;
+  width: 268px;
+  height: 472px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 4px rgba(255, 0, 0, 0.3);
+}
