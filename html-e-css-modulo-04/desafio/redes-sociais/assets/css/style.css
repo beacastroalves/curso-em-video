@@ -43,3 +43,31 @@ main {
   border-radius: 2px;
   box-shadow: 0px 0px 4px rgba(255, 0, 0, 0.3);
 }
+
+#redes-sociais {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#redes-sociais img {
+  width: 60px;
+  margin: 6px;
+  margin-top: 16px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+#redes-sociais img:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+@media only screen and (min-width: 600px) {
+  #redes-sociais img {
+    margin: 10px;
+    margin-top: 20px;
+  }
+}
+
