@@ -12,6 +12,11 @@ html, body {
   background-color: gray;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 body {
   background: url('../images/fundo-social-medias-peb.jpg') no-repeat;
   background-size: cover;
@@ -46,14 +51,16 @@ main {
 
 #redes-sociais {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+}
+
+#redes-sociais a:nth-child(1) {
+  margin-top: 24px;
 }
 
 #redes-sociais img {
   width: 60px;
-  margin: 6px;
-  margin-top: 16px;
+  margin: 20px 0 0 14px;
   border-radius: 50%;
   border: 2px solid transparent;
 }
@@ -64,10 +71,5 @@ main {
   transition: 0.3s;
 }
 
-@media only screen and (min-width: 600px) {
-  #redes-sociais img {
-    margin: 10px;
-    margin-top: 20px;
-  }
-}
+
 
