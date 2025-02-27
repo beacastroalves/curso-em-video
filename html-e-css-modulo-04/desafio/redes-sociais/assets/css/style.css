@@ -103,7 +103,7 @@ main {
 }
 
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-height: 800px){
   #telefone {
     left: 50%;
   }
