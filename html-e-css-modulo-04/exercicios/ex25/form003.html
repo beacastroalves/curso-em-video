@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    ul li {
+      margin-left: 1rem;
+    }
+
+
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="./form002.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="08 - Usar Label vai melhorar seus formulários">Exercício Anterior</a>
+  </button>
+  <button class="btn-1">
+    <a href="./form004.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="">Próximo Exercício</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+
+  <h1>Meu primeiro formulário - Métodos GET e POST para formulários</h1>
+  <form autocomplete="off">
+    <p>
+      <label for="inome">Nome:</label>
+      <input type="text" name="nome" id="inome">
+    </p>
+    <p>
+      <label for="isobrenome">Sobrenome:</label>
+      <input type="text" name="sobrenome" id="isobrenome">
+    </p>
+    <p><input type="submit" value="Enviar"></p>
+    <br>
+    <br>
+    <ul>
+      <li><strong>Metodo GET</strong> é uma maneira de solicitar informações de um servidor web. Cuidado com conteudos sensíveis. As principais características do método GET.
+        <ul>
+          <li><strong>Solicita dados:</strong> Seu objetivo principal é recuperar dados do servidor.</li>
+          <li><strong>Dados na URL:</strong> Os parâmetros da sua requisição (as informações adicionais que você está enviando) são geralmente anexados à URL. Por exemplo: www.exemplo.com/produtos?categoria=livros&preco_max=50.</li>
+          <li><strong>Não altera dados:</strong> Uma requisição GET não deve ter o efeito de modificar os dados no servidor. É uma operação segura e idempotente (repetir a mesma requisição várias vezes deve ter o mesmo resultado).</li>
+          <li><strong>Limite de dados:</strong> Devido à forma como os dados são enviados na URL, geralmente há um limite para a quantidade de informações que podem ser enviadas em uma requisição GET.</li>
+          <li><strong>Pode ser cacheado (e não estamos falando de cabelos hihi):</strong> As respostas das requisições GET podem ser armazenadas em cache pelos navegadores e servidores, o que pode melhorar o desempenho.</li>
+        </ul>
+      </li>
+      <br>
+      <li><strong>Metodo POST</strong> é usado para enviar dados para um servidor web para serem processados. As principais características do método POST.
+        <ul>
+          <li><strong>Envia dados:</strong> Seu objetivo principal é enviar dados para o servidor, frequentemente para criar ou atualizar algum recurso.</li>
+          <li><strong>Dados no corpo da requisição:</strong> Os parâmetros da sua requisição são enviados no corpo da mensagem HTTP, não na URL. Isso torna os dados menos visíveis e permite enviar informações mais sensíveis de forma mais segura (embora ainda precise de HTTPS para criptografia).</li>
+          <li><strong>Pode alterar dados:</strong> As requisições POST podem ter o efeito de modificar os dados no servidor (por exemplo, criar um novo usuário, adicionar um comentário, fazer um pedido). Não é uma operação necessariamente segura ou idempotente.</li>
+          <li><strong>Sem limite de dados (prático):</strong> Teoricamente, não há um limite estrito para a quantidade de dados que podem ser enviados em uma requisição POST, embora servidores possam ter suas próprias configurações de limite.</li>
+          <li><strong>Geralmente não é cacheado:</strong> As respostas das requisições POST geralmente não são armazenadas em cache, pois o resultado pode depender dos dados enviados.</li>
+        </ul>
+      </li>
+    </ul>
+  </form>
+</body>
+</html>
