@@ -34,11 +34,11 @@
   <form action="cadastro.php" method="post" autocomplete="on">
     <p>
       <label for="iusu">Usuário:</label>
-      <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="nome do usuário" autocomplete="username">
+      <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="Nome do usuário" autocomplete="username">
     </p>
     <p>
       <label for="isen">Senha:</label>
-      <input type="password" name="sen" id="isen" minlength="8" maxlength="20" size="15" placeholder="minimo 8 caracteres" autocomplete="current-password">
+      <input type="password" name="sen" id="isen" minlength="8" maxlength="20" size="15" placeholder="Minimo 8 caracteres" autocomplete="current-password">
     </p>
     <p>
       <input type="submit" value="Enviar">
@@ -53,11 +53,11 @@
        &lt;form action="cadastro.php" method="post" autocomplete="on"&gt;
         &lt;p&gt;
           &lt;label for="iusu"&gt;Usuário:&lt;/label&gt;
-          &lt;input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="nome do usuário" autocomplete="username"&gt;
+          &lt;input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="Nome do usuário" autocomplete="username"&gt;
         &lt;/p&gt;
         &lt;p&gt;
           &lt;label for="isen"&gt;Senha:&lt;/label&gt;
-          &lt;input type="password" name="sen" id="isen" minlength="8" maxlength="20" size="15" placeholder="minimo 8 caracteres" autocomplete="current-password"&gt;
+          &lt;input type="password" name="sen" id="isen" minlength="8" maxlength="20" size="15" placeholder="Minimo 8 caracteres" autocomplete="current-password"&gt;
         &lt;/p&gt;
         &lt;p&gt;
           &lt;input type="submit" value="Enviar"&gt;
@@ -66,232 +66,9 @@
       &lt;/form&gt;
     </code>
   </pre>
-  <ul>
-    <br>
-    <li>
-      <strong>Atributos da Tag &lt;form&gt;:</strong>
-      <ul>
-        <li>
-          <strong>action="cadastro.php"</strong>
-          <ul>
-            <li>Significado: Especifica o URL para onde os dados do formulário serão enviados quando o formulário for submetido.</li>
-            <li>Para que serve: Define o script ou página no servidor que irá processar os dados inseridos pelo usuário no formulário.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>method="post"</strong>
-          <ul>
-            <li>Significado: Define o método HTTP usado para enviar os dados do formulário.</li>
-            <li>Para que serve: Indica como os dados do formulário serão enviados ao servidor. O método POST envia os dados no corpo da requisição HTTP, sendo geralmente mais adequado para dados sensíveis ou grandes quantidades de informação, pois não os expõe na URL.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>autocomplete="on"</strong>
-          <ul>
-            <li>Significado: Especifica se o navegador deve tentar preencher automaticamente os campos do formulário com base em entradas anteriores do usuário.</li>
-            <li>Para que serve: Melhora a experiência do usuário, sugerindo valores para os campos com base no histórico de preenchimento, agilizando o processo de preenchimento.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <br>
-    <li>
-      <strong>Atributos da Tag &lt;label&gt;:</strong>
-      <ul>
-        <li>
-          <strong>for="iusu"</strong>
-          <ul>
-            <li>Significado: Associa este rótulo (o texto "Usuário:") ao elemento de formulário com o id correspondente ("iusu").</li>
-            <li>Para que serve: Melhora a acessibilidade, permitindo que leitores de tela anunciem o rótulo quando o elemento de formulário associado é selecionado. Além disso, clicar no rótulo foca o elemento de formulário.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>for="isen"</strong>
-          <ul>
-            <li>Significado: Associa este rótulo (o texto "Senha:") ao elemento de formulário com o id correspondente ("isen").</li>
-            <li>Para que serve: Similar ao for="iusu", melhora a acessibilidade e usabilidade ao associar o rótulo ao campo de senha.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <br>
-    <li>
-      <strong>Atributos da Tag &lt;input type="text"&gt;:</strong>
-      <ul>
-        <li>
-          <strong>type="text"</strong>
-          <ul>
-            <li>Significado: Define o tipo do elemento de entrada como um campo de texto de linha única.</li>
-            <li>Para que serve: Permite que o usuário digite texto livremente.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>name="usu"</strong>
-          <ul>
-            <li>Significado: Define o nome do elemento de entrada. Este nome é usado para identificar os dados deste campo quando o formulário é enviado ao servidor.</li>
-            <li>Para que serve: Permite que o servidor acesse o valor digitado pelo usuário neste campo através do nome "usu".</li>
-          </ul>
-        </li>
-        <li>
-          <strong>id="iusu"</strong>
-          <ul>
-            <li>Significado: Define um identificador único para este elemento dentro do documento HTML.</li>
-            <li>Para que serve: Permite que o elemento seja referenciado por outros elementos (como a tag &lt;label&gt; através do atributo for), por JavaScript para manipulação dinâmica e por CSS para aplicar estilos específicos.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>required</strong>
-          <ul>
-            <li>Significado: Especifica que este campo deve ser preenchido antes que o formulário possa ser enviado.</li>
-            <li>Para que serve: Garante que o usuário forneça um valor para este campo, impedindo o envio do formulário se estiver vazio.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>minlength="5"</strong>
-          <ul>
-            <li>Significado: Especifica o número mínimo de caracteres exigidos para o valor deste campo.</li>
-            <li>Para que serve: Impõe uma validação no lado do cliente, garantindo que o usuário digite pelo menos 5 caracteres antes de poder enviar o formulário.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>maxlength="15"</strong>
-          <ul>
-            <li>Significado: Especifica o número máximo de caracteres permitidos para o valor deste campo.</li>
-            <li>Para que serve: Impõe um limite no lado do cliente para o número de caracteres que o usuário pode digitar neste campo.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>size="15"</strong>
-          <ul>
-            <li>Significado: Define a largura visível do campo de entrada (em caracteres).</li>
-            <li>Para que serve: Controla o tamanho visual do campo de texto na tela, embora não limite o número de caracteres que podem ser digitados (isso é feito por maxlength).</li>
-          </ul>
-        </li>
-        <li>
-          <strong>placeholder="nome do usuário"</strong>
-          <ul>
-            <li>Significado: Fornece uma breve dica ou descrição dentro do campo de entrada antes que o usuário digite algo. O texto do placeholder desaparece quando o usuário foca e começa a digitar no campo.</li>
-            <li>Para que serve: Oferece uma instrução ou exemplo do tipo de informação esperada no campo.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>autocomplete="username"</strong>
-          <ul>
-            <li>Significado: Fornece uma dica ao navegador sobre o tipo de informação esperada neste campo para fins de preenchimento automático. O valor "username" indica que se espera um nome de usuário.</li>
-            <li>Para que serve: Permite que o navegador ofereça sugestões de nomes de usuário previamente armazenados, melhorando a conveniência para o usuário.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <br>
-    <li>
-      <strong>Atributos da Tag &lt;input type="password"&gt;:</strong>
-      <ul>
-        <li>
-          <strong>type="password"</strong>
-          <ul>
-            <li>Significado: Define o tipo do elemento de entrada como um campo de senha.</li>
-            <li>Para que serve: O texto digitado neste campo é geralmente mascarado (substituído por asteriscos ou bolinhas) para proteger a informação sensível.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>name="sen"</strong>
-          <ul>
-            <li>Significado: Define o nome do elemento de entrada para a senha.</li>
-            <li>Para que serve: Permite que o servidor acesse a senha digitada pelo usuário através do nome "sen".</li>
-          </ul>
-        </li>
-        <li>
-          <strong>id="isen"</strong>
-          <ul>
-            <li>Significado: Define um identificador único para o campo de senha.</li>
-            <li>Para que serve: Permite que o elemento seja referenciado pela tag &lt;label&gt; (através do for) e por JavaScript/CSS.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>required</strong>
-          <ul>
-            <li>Significado: Especifica que este campo deve ser preenchido antes que o formulário possa ser enviado.</li>
-            <li>Para que serve: Garante que o usuário forneça uma senha, impedindo o envio do formulário se estiver vazia.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>minlength="8"</strong>
-          <ul>
-            <li>Significado: Especifica o número mínimo de caracteres exigidos para a senha.</li>
-            <li>Para que serve: Garante que a senha tenha pelo menos 8 caracteres.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>maxlength="20"</strong>
-          <ul>
-            <li>Significado: Especifica o número máximo de caracteres permitidos para a senha.</li>
-            <li>Para que serve: Limita o tamanho máximo da senha.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>size="15"</strong>
-          <ul>
-            <li>Significado: Define a largura visível do campo de senha.</li>
-            <li>Para que serve: Controla o tamanho visual do campo de senha.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>placeholder="minimo 8 caracteres"</strong>
-          <ul>
-            <li>Significado: Fornece uma dica sobre o formato esperado para a senha.</li>
-            <li>Para que serve: Informa o usuário sobre a exigência de um mínimo de 8 caracteres.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>autocomplete="current-password"</strong>
-          <ul>
-            <li>Significado: Fornece uma dica ao navegador sobre o tipo de informação esperada neste campo para fins de preenchimento automático. O valor "current-password" indica que se espera a senha atual do usuário.</li>
-            <li>Para que serve: Permite que o navegador ofereça sugestões de senhas previamente armazenadas para o contexto atual.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <br>
-    <li>
-      <strong>Atributos da Tag &lt;input type="submit"&gt;:</strong>
-      <ul>
-        <li>
-          <strong>type="submit"</strong>
-          <ul>
-            <li>Significado: Define o tipo do elemento de entrada como um botão de envio.</li>
-            <li>Para que serve: Ao ser clicado, este botão envia os dados do formulário para o URL especificado no atributo action da tag &lt;form&gt;.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>value="Enviar"</strong>
-          <ul>
-            <li>Significado: Define o texto que será exibido no botão de envio.</li>
-            <li>Para que serve: Apresenta um texto claro para o usuário indicando a ação que o botão realizará.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <br>
-    <li>
-      <strong>Atributos da Tag &lt;input type="reset"&gt;:</strong>
-      <ul>
-        <li>
-          <strong>type="reset"</strong>
-          <ul>
-            <li>Significado: Define o tipo do elemento de entrada como um botão de reset.</li>
-            <li>Para que serve: Ao ser clicado, este botão redefine todos os campos do formulário para seus valores iniciais.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>value="Limpar"</strong>
-          <ul>
-            <li>Significado: Define o texto que será exibido no botão de reset.</li>
-            <li>Para que serve: Apresenta um texto claro para o usuário indicando a ação de limpar o formulário.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
+  <br>
+  <h3>
+    Documentação completa dos atributos de formulários - <a href="https://www.w3schools.com/html/html_forms_attributes.asp" target="_blank" rel="noopener noreferrer">HTML Form Attributes</a>
+  </h3>
 </body>
 </html>
