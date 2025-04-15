@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+      margin: 0.5rem 0 0.5rem 1rem;
+    }
+
+    ul li {
+      margin-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="./form008.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Color, range e file">Exercício Anterior</a>
+  </button>
+  <button class="btn-1">
+    <a href="#" class="btn-2" target="_parent" rel="noopener noreferrer" title="">Próximo Exercício</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+
+  <h1>Exemplo de formulário - Select, datalist e textarea</h1>
+  <form action="cadastro.php" method="post" autocomplete="on">
+    <p>
+      <label for="iest">Estado</label>
+      <select name="estado" id="iest">
+        <option value="NL">Selecione</option>
+        <optgroup label="Região Norte">
+          <option value="AC">Acre</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="PA">Pará</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="TO">Tocantins</option>
+        </optgroup>
+
+        <optgroup label="Região Nordeste">
+          <option value="AL">Alagoas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="MA">Maranhão</option>
+          <option value="PB">Paraíba</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="SE">Sergipe</option>
+        </optgroup>
+
+        <optgroup label="Região Centro-Oeste">
+          <option value="GO">Goiás</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+        </optgroup>
+
+        <optgroup label="Região Suldeste">
+          <option value="ES">Espírito Santo</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="SP">São Paulo</option>
+        </optgroup>
+
+        <optgroup label="Região Sul">
+          <option value="PR">Paraná</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="SC">Santa Catarina</option>
+        </optgroup>
+      </select>
+    </p>
+
+    <p>
+      <label for="iprof">Profissão</label>
+      <input type="text" name="prof" id="iprof" list="lstprof">
+      <datalist id="lstprof">
+        <option value="ADM">Administrador</option>
+        <option value="EST">Estudante</option>
+        <option value="CONT">Contabilista</option>
+        <option value="DEV">Desenvolvedor</option>
+        <option value="MED">Medico</option>
+        <option value="PROF">Professor</option>
+      </datalist>
+    </p>
+
+    <p>
+      <label for="iprof2">Profissão 2</label>
+      <input type="text" name="prof2" id="iprof2" list="lstprof2">
+      <datalist id="lstprof2">
+        <option>Administrador</option>
+        <option>Estudante</option>
+        <option>Contabilista</option>
+        <option>Desenvolvedor</option>
+        <option>Medico</option>
+        <option>Professor</option>
+      </datalist>
+    </p>
+
+    <p>
+      <label for="imsg">Mensagem:</label>
+      <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+
+  <br>
+  <h3>Código do formulário acima</h3>
+  <pre>
+    <code>
+      &lt;form action="cadastro.php" method="post" autocomplete="on"&gt;
+        &lt;p&gt;
+          &lt;label for="iest"&gt;Estado&lt;/label&gt;
+          &lt;select name="estado" id="iest"&gt;
+            &lt;option value="NL"&gt;Selecione&lt;/option&gt;
+            &lt;optgroup label="Região Norte"&gt;
+              &lt;option value="AC"&gt;Acre&lt;/option&gt;
+              &lt;option value="AP"&gt;Amapá&lt;/option&gt;
+              &lt;option value="AM"&gt;Amazonas&lt;/option&gt;
+              &lt;option value="PA"&gt;Pará&lt;/option&gt;
+              &lt;option value="RO"&gt;Rondônia&lt;/option&gt;
+              &lt;option value="RR"&gt;Roraima&lt;/option&gt;
+              &lt;option value="TO"&gt;Tocantins&lt;/option&gt;
+            &lt;/optgroup&gt;
+
+            &lt;optgroup label="Região Nordeste"&gt;
+              &lt;option value="AL"&gt;Alagoas&lt;/option&gt;
+              &lt;option value="BA"&gt;Bahia&lt;/option&gt;
+              &lt;option value="CE"&gt;Ceará&lt;/option&gt;
+              &lt;option value="MA"&gt;Maranhão&lt;/option&gt;
+              &lt;option value="PB"&gt;Paraíba&lt;/option&gt;
+              &lt;option value="PE"&gt;Pernambuco&lt;/option&gt;
+              &lt;option value="PI"&gt;Piauí&lt;/option&gt;
+              &lt;option value="RN"&gt;Rio Grande do Norte&lt;/option&gt;
+              &lt;option value="SE"&gt;Sergipe&lt;/option&gt;
+            &lt;/optgroup&gt;
+
+            &lt;optgroup label="Região Centro-Oeste"&gt;
+              &lt;option value="GO"&gt;Goiás&lt;/option&gt;
+              &lt;option value="MT"&gt;Mato Grosso&lt;/option&gt;
+              &lt;option value="MS"&gt;Mato Grosso do Sul&lt;/option&gt;
+            &lt;/optgroup&gt;
+
+            &lt;optgroup label="Região Suldeste"&gt;
+              &lt;option value="ES"&gt;Espírito Santo&lt;/option&gt;
+              &lt;option value="MG"&gt;Minas Gerais&lt;/option&gt;
+              &lt;option value="RJ"&gt;Rio de Janeiro&lt;/option&gt;
+              &lt;option value="SP"&gt;São Paulo&lt;/option&gt;
+            &lt;/optgroup&gt;
+
+            &lt;optgroup label="Região Sul"&gt;
+              &lt;option value="PR"&gt;Paraná&lt;/option&gt;
+              &lt;option value="RS"&gt;Rio Grande do Sul&lt;/option&gt;
+              &lt;option value="SC"&gt;Santa Catarina&lt;/option&gt;
+            &lt;/optgroup&gt;
+          &lt;/select&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+          &lt;label for="iprof"&gt;Profissão&lt;/label&gt;
+          &lt;input type="text" name="prof" id="iprof" list="lstprof"&gt;
+          &lt;datalist id="lstprof"&gt;
+            &lt;option value="ADM"&gt;Administrador&lt;/option&gt;
+            &lt;option value="EST"&gt;Estudante&lt;/option&gt;
+            &lt;option value="CONT"&gt;Contabilista&lt;/option&gt;
+            &lt;option value="DEV"&gt;Desenvolvedor&lt;/option&gt;
+            &lt;option value="MED"&gt;Medico&lt;/option&gt;
+            &lt;option value="PROF"&gt;Professor&lt;/option&gt;
+          &lt;/datalist&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+          &lt;label for="iprof2"&gt;Profissão 2&lt;/label&gt;
+          &lt;input type="text" name="prof2" id="iprof2" list="lstprof2"&gt;
+          &lt;datalist id="lstprof2"&gt;
+            &lt;option&gt;Administrador&lt;/option&gt;
+            &lt;option&gt;Estudante&lt;/option&gt;
+            &lt;option&gt;Contabilista&lt;/option&gt;
+            &lt;option&gt;Desenvolvedor&lt;/option&gt;
+            &lt;option&gt;Medico&lt;/option&gt;
+            &lt;option&gt;Professor&lt;/option&gt;
+          &lt;/datalist&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+          &lt;label for="imsg"&gt;Mensagem:&lt;/label&gt;
+          &lt;textarea name="msg" id="imsg" cols="30" rows="10"&gt;&lt;/textarea&gt;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+          &lt;input type="submit" value="Enviar"&gt;
+          &lt;input type="reset" value="Limpar"&gt;
+        &lt;/p&gt;
+      &lt;/form&gt;
+    </code>
+  </pre>
+
+  <ul>
+    <li>
+    <h3>
+      Documentação completa das tags HTML por função - <a href="https://www.w3schools.com/tags/ref_byfunc.asp" target="_blank" rel="noopener noreferrer">HTML Element Reference - By Category</a>
+    </h3>
+    </li>
+    <li>
+      <h3>
+        Documentação completa dos atributos de formulários - <a href="https://www.w3schools.com/html/html_forms_attributes.asp" target="_blank" rel="noopener noreferrer">HTML Form Attributes</a>
+      </h3>
+    </li>
+  </ul>
+    <br>
+    <br>
+  </h3>
+</body>
+</html>
