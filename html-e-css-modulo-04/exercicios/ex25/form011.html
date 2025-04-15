@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+      margin: 0.5rem 0 0.5rem 1rem;
+    }
+
+    ul li {
+      margin-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="./form010.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Output em formulários HTML">Exercício Anterior</a>
+  </button>
+  <button class="btn-1">
+    <a href="./form012.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Output - 3">Próximo Exercício</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+
+  <h1>Exemplo de output em formulários HTML - Parte 2</h1>
+  <form action="cadastro.php" method="get" autocomplete="on">
+    <p>
+      <label for="inum">Número: </label>
+      <input type="range" name="num" id="inum" min="0" max="100" value="50" required
+      oninput="ival.innerHTML = Number(inum.value)">
+      <output id="ival">5</output>
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+  <br>
+  <h3>Código do formulário acima</h3>
+  <pre>
+    <code>
+      &lt;form action="cadastro.php" method="get" autocomplete="on"&gt;
+        &lt;p&gt;
+          &lt;label for="inum"&gt;Número: &lt;/label&gt;
+          &lt;input type="range" name="num" id="inum" min="0" max="100" value="50" required
+          oninput="ival.innerHTML = Number(inum.value)"&gt;
+          &lt;output id="ival"&gt;5&lt;/output&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+          &lt;input type="submit" value="Enviar"&gt;
+          &lt;input type="reset" value="Limpar"&gt;
+        &lt;/p&gt;
+      &lt;/form&gt;
+    </code>
+  </pre>
+  <ul>
+    <li>
+    <h3>
+      Documentação completa das tags HTML por função - <a href="https://www.w3schools.com/tags/ref_byfunc.asp" target="_blank" rel="noopener noreferrer">HTML Element Reference - By Category</a>
+    </h3>
+    </li>
+    <li>
+      <h3>
+        Documentação completa dos atributos de formulários - <a href="https://www.w3schools.com/html/html_forms_attributes.asp" target="_blank" rel="noopener noreferrer">HTML Form Attributes</a>
+      </h3>
+    </li>
+  </ul>
+    <br>
+    <br>
+  </h3>
+</body>
+</html>
