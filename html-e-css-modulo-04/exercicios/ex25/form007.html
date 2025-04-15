@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+      margin: 0.5rem 0 0.5rem 1rem;
+    }
+
+    legend {
+      margin-left: 1rem;
+    }
+
+    ul li {
+      margin-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="./form006.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Formulários com telefone e e-mail">Exercício Anterior</a>
+  </button>
+  <button class="btn-1">
+    <a href="#" class="btn-2" target="_parent" rel="noopener noreferrer" title="">Próximo Exercício</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+
+  <h1>Exemplo de formulário - Checkbox e Radio button</h1>
+  <form action="cadastro.php" method="get" autocomplete="on">
+    <fieldset>
+      <legend>Sexo</legend>
+      <p>
+        <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label><br>
+        <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label><br>
+        <input type="radio" name="sexo" id="isxout" value="O"> <label for="isxout">Outro</label><br>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Esportes Favoritos</legend>
+      <p>
+        <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label><br>
+        <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label><br>
+        <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br>
+        <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label><br>
+        <input type="checkbox" name="esten" id="iesvol"> <label for="iesvol">Vôlei</label><br>
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </p>
+    </fieldset>
+  </form>
+  <br>
+  <h3>Código do formulário acima</h3>
+  <pre>
+    <code>
+      &lt;form action="cadastro.php" method="get" autocomplete="on"&gt;
+        &lt;fieldset&gt;
+          &lt;legend&gt;Sexo&lt;/legend&gt;
+          &lt;p&gt;
+            &lt;input type="radio" name="sexo" id="isxmas" value="M"&gt; &lt;label for="isxmas"&gt;Masculino&lt;/label&gt;&lt;br&gt;
+            &lt;input type="radio" name="sexo" id="isxfem" value="F"&gt; &lt;label for="isxfem"&gt;Feminino&lt;/label&gt;&lt;br&gt;
+            &lt;input type="radio" name="sexo" id="isxout" value="O"&gt; &lt;label for="isxout"&gt;Outro&lt;/label&gt;&lt;br&gt;
+          &lt;/p&gt;
+        &lt;/fieldset&gt;
+        &lt;fieldset&gt;
+          &lt;legend&gt;Esportes Favoritos&lt;/legend&gt;
+          &lt;p&gt;
+            &lt;input type="checkbox" name="esbas" id="iesbas"&gt; &lt;label for="iesbas"&gt;Basquete&lt;/label&gt;&lt;br&gt;
+            &lt;input type="checkbox" name="esfut" id="iesfut"&gt; &lt;label for="iesfut"&gt;Futebol&lt;/label&gt;&lt;br&gt;
+            &lt;input type="checkbox" name="esnat" id="iesnat"&gt; &lt;label for="iesnat"&gt;Natação&lt;/label&gt;&lt;br&gt;
+            &lt;input type="checkbox" name="esten" id="iesten"&gt; &lt;label for="iesten"&gt;Tênis&lt;/label&gt;&lt;br&gt;
+            &lt;input type="checkbox" name="esten" id="iesvol"&gt; &lt;label for="iesvol"&gt;Vôlei&lt;/label&gt;&lt;br&gt;
+          &lt;/p&gt;
+          &lt;p&gt;
+            &lt;input type="submit" value="Enviar"&gt;
+            &lt;input type="reset" value="Limpar"&gt;
+          &lt;/p&gt;
+        &lt;/fieldset&gt;
+      &lt;/form&gt;
+    </code>
+  </pre>
+  <ul>
+    <li>
+    <h3>
+      Documentação completa das tags HTML por função - <a href="https://www.w3schools.com/tags/ref_byfunc.asp" target="_blank" rel="noopener noreferrer">HTML Element Reference - By Category</a>
+    </h3>
+    </li>
+    <li>
+      <h3>
+        Documentação completa dos atributos de formulários - <a href="https://www.w3schools.com/html/html_forms_attributes.asp" target="_blank" rel="noopener noreferrer">HTML Form Attributes</a>
+      </h3>
+    </li>
+  </ul>
+    <br>
+    <br>
+  </h3>
+</body>
+</html>
