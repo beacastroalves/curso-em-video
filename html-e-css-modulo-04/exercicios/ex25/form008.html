@@ -59,8 +59,24 @@
   <h3>Código do formulário acima</h3>
   <pre>
     <code>
-      &lt;form action="cadastro.php" method="get" autocomplete="on"&gt;
-
+      &lt;form action="cadastro.php" method="post" autocomplete="on"&gt;
+        &lt;p&gt;
+          &lt;label for="icor"&gt;Cor: &lt;/label&gt;
+          &lt;input type="color" name="cor" id="icor" value="#ff0000"&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+          &lt;label for="inivel"&gt;Nível de satisfação: &lt;/label&gt;
+          &lt;input type="range" name="nivel" id="inivel" min="1" max="5"&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+          &lt;label for="ifoto"&gt;Foto do perfil: &lt;/label&gt;
+          &lt;input type="file" name="foto" id="ifoto"&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+          &lt;input type="submit" value="Enviar"&gt;
+          &lt;input type="reset" value="Limpar"&gt;
+        &lt;/p&gt;
+      &lt;/form&gt;
     </code>
   </pre>
   <ul>
