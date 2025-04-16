@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* Estilo para impressoras */
+
+* {
+  margin: 10px;
+  padding: 10px;
+}
+
+html {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+menu {
+  display: none;
+}
+
+button {
+  display: none;
+}
+
+article::after {
+  content: 'Esse artigo foi impresso através do site criado durante o curso em video. Note as mudanças para versão de impressão';
+  font-weight: bold;
+  color: red;
+}
+
+article {
+  width: 100%;
+}
+
+article h2::after {
+  content: ' www.bca.com/noticia-01';
+  color: gray;
+  font-size: 12px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section {
+  display: none;
+}
+
+
