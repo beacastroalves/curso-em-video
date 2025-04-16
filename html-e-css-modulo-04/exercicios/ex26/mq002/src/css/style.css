@@ -16,8 +16,9 @@ html, body {
   background-repeat: no-repeat;
 }
 
-h1 {
+h1, h5 {
   color: white;
   text-shadow: 2px 2px 0px #1526a7;
-  padding: 10px;
+  padding: 8px;
+  text-align: center;
 }
