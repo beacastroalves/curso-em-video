@@ -2,11 +2,18 @@
 
 body, htmls {
   background-color: lightsteelblue;
+  margin: 0;
+  padding: 0;
+}
+
+button.btn-1 {
+  margin: 1rem 0 2rem 8px;
 }
 
 header {
   background-color: steelblue;
   color: white;
+  width: 100%;
 }
 
 header > h1 {
@@ -37,19 +44,23 @@ menu {
 
 menu > ul {
   list-style-type: none;
+  width: 100%;
+  background-color: rgb(60, 112, 155);
+  height: 44px;
 }
 
 menu > ul > li > a {
+  border: 2px solid transparent;
   display: block;
   padding: 10px;
   text-decoration: none;
   text-align: center;
-  background-color: rgb(60, 112, 155);
   color: white;
-  border-top: 2px solid rgb(124, 176, 218);
 }
 
 menu > ul > li > a:hover {
+  border-top: 2px solid rgb(124, 176, 218);
+  border-bottom: 2px solid rgb(124, 176, 218);
   background-color: rgb(48, 92, 128);
 }
 

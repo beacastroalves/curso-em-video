@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 512px) { /* Mudança dos botões de navegação dos exercicios */
+  button.btn-1 {
+    margin: 2rem 0 2rem 8px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   span#burguer {
     display: none;
@@ -7,6 +13,7 @@
 
   menu {
     text-align: center;
+    display: block;
   }
 
   menu > ul > li {
