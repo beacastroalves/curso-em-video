@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media Query</title>
   <link rel="stylesheet" href="../../../../assets/css/buttons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/style.css" media="all">
 </head>
 <body>
@@ -20,7 +21,8 @@
 
   <header>
     <h1>Tecnologia na Web</h1>
-    <menu>
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <menu id="opcoes">
       <ul>
         <li><a href="#">Responsividade</a></li>
         <li><a href="#">Media Queries</a></li>
@@ -49,5 +51,15 @@
     </article>
 
   </main>
+
+  <script>
+    function clickMenu() {
+      if (opcoes.style.display == 'block') {
+        opcoes.style.display = 'none'
+      } else {
+        opcoes.style.display = 'block'
+      }
+    }
+  </script>
 </body>
 </html>
