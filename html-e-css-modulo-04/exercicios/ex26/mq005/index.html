@@ -6,9 +6,10 @@
   <title>Media Query</title>
   <link rel="stylesheet" href="../../../../assets/css/buttons.css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  <link rel="stylesheet" href="./assets/css/style.css" media="all">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
   <button class="btn-1">
     <a href="../mq004/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Testando Media Queries">Exercício Anterior</a>
   </button>
@@ -24,9 +25,11 @@
     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
     <menu id="opcoes">
       <ul>
-        <li><a href="#">Responsividade</a></li>
-        <li><a href="#">Media Queries</a></li>
-        <li><a href="#">Forms</a></li>
+        <li><a href="../../ex26/mq004/index.html">Responsividade na prática</a></li>
+        <li><a href="../../ex26/mq001/index.html">Media Queries</a></li>
+        <li><a href="../../ex25/form001.html">Forms</a></li>
+        <li><a href="../../ex24/iframe01.html">Iframe</a></li>
+        <li><a href="../../../../html-e-css-modulo-03/exercicios/ex23/tabela001.html">Tables</a></li>
       </ul>
     </menu>
   </header>
@@ -53,6 +56,14 @@
   </main>
 
   <script>
+    function mudouTamanho() {
+      if (window.innerWidth >= 768) {
+        opcoes.style.display = 'block'
+      } else {
+        opcoes.style.display = 'none'
+      }
+    }
+
     function clickMenu() {
       if (opcoes.style.display == 'block') {
         opcoes.style.display = 'none'

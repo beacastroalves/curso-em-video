@@ -53,6 +53,10 @@ menu > ul > li > a:hover {
   background-color: rgb(48, 92, 128);
 }
 
+menu > ul > li > a:active {
+  background-color: rgb(41, 78, 109);
+}
+
 main {
   width: 90vw;
   background-color: rgb(240, 240, 240);
