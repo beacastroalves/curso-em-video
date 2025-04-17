@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias  */
+
+/* Typical Device Breakpoints
+-----------------------------
+   Pequenas telas: até 600px
+   Celular: de 600px até 768px
+   Tablet: de 768px até 992px
+   Desktops: 992px até 1200px
+   Grandes telas: acima de 1200px
+-----------------------------
+*/
+
+@media print {
+  * {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  body {
+    background-image: url(../images/back-print.jpg); /* Desnecessário em caso de impressão, mas pode ser usado para pdf */
+  }
+
+  main {
+    border: solid 2px black;
+  }
+
+  main h1 {
+    text-shadow: none;
+    color: black;
+  }
+
+  main h1::after {
+    content: 'Mudando para versão de impressora';
+  }
+
+  button {
+    display: none;
+  }
+
+  img#phone { display: none; }
+  img#tablet { display: none; }
+  img#print { display: block; }
+  img#pc { display: none; }
+  img#tv { display: none; }
+}
+
+@media screen and (min-width: 512px) { /* Mudança dos botões de navegação dos exercicios */
+  button.btn-1 {
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+  body {
+    background-image: url(../images/back-tablet.jpg);
+  }
+
+  h1::after {
+    content: 'Mudando para TABLET';
+  }
+
+  img#phone { display: none; }
+  img#tablet { display: block; }
+  img#print { display: none; }
+  img#pc { display: none; }
+  img#tv { display: none; }
+  
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+  body {
+    background-image: url(../images/back-pc.jpg);
+  }
+
+  h1::after {
+    content: 'Mudando para DESKTOP';
+  }
+
+  img#phone { display: none; }
+  img#tablet { display: none; }
+  img#print { display: none; }
+  img#pc { display: block; }
+  img#tv { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+  body {
+    background-image: url(../images/back-tv.jpg);
+  }
+
+  h1::after {
+    content: 'Mudando para GRANDES TELAS';
+  }
+
+  img#phone { display: none; }
+  img#tablet { display: none; }
+  img#print { display: none; }
+  img#pc { display: none; }
+  img#tv { display: block; }
+}
