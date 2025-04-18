@@ -19,277 +19,339 @@
   <header>
   </header>
 
+  <nav>
+    <ul id="cursos">
+      <li id="curso-h-c" onclick="mostrarCurso1()">HTML e CSS</li>
+      <li id="curso-js" onclick="mostrarCurso2()">Javascript</li>
+    </ul>
+  </nav>
+
   <main>
-    <section id="mod1">
-      <h2>Módulo 1 - Primeiros Passos - Curso Em Vídeo - HTML e CSS</h2>
-      <p>No nosso pontapé inicial com o Módulo 1, demos os primeiros passos no mundo do HTML! Começamos com um exercício básico para sentir o gostinho da coisa e logo mergulhamos na estrutura fundamental com as tags &lt;p&gt; para parágrafos. Exploramos como adicionar imagens com a tag &lt;img&gt; e até personalizamos nossos sites com um favicon! Entendemos a importância da hierarquia de títulos com as tags &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, aprendendo a organizar o conteúdo de forma lógica. Vimos diversas maneiras de formatar textos, deixando-os em negrito, itálico e com outras estilizações. As listas também marcaram presença, nos mostrando como apresentar informações de forma organizada. Aprendemos a criar links com a tag &lt;a&gt;, conectando páginas e recursos externos. Uma parte bem legal foi descobrir como incorporar mídias, como vídeos com a tag &lt;video&gt;, diretamente no HTML5. Finalmente, demos nossos primeiros passos no mundo do CSS, entendendo as diferenças e aplicações dos estilos inline, locais/internos e externos, preparando o terreno para deixar nossos sites com a nossa cara! Veja abaixo os exercícios realizados durante as aulas.</p>
-      <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=kOQSCJjY5KVhpa--&amp;list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <section class="exercicios ">
-        <h3>Exercícios do Módulo 1</h3>
-        <ul>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex01/index.html" target="_parent" rel="noopener noreferrer"
-            title="Meu primeiro exercício">01 - Meu primeiro exercício</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex02/index.html" target="_parent" rel="noopener noreferrer"
-            title="Parágrafos &lt;p&gt;">02 - Parágrafos &lt;p&gt</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex03/index.html" target="_parent" rel="noopener noreferrer"
-            title="Teste com Imagens &lt;img&gt;">03 - Teste com Imagens &lt;img&gt</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex04/index.html" target="_parent" rel="noopener noreferrer"
-            title="Teste de Favicon">04 - Teste de Favicon</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex05/index.html" target="_parent" rel="noopener noreferrer"
-            title="Hierarquia de Títulos h2 h3 h4">05 - Hierarquia de Títulos h2 h3 h4</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex06/index.html" target="_parent" rel="noopener noreferrer"
-            title="Formatação de Textos">06 - Formatação de Textos</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex07/index.html" target="_parent" rel="noopener noreferrer"
-            title="Outras formatações">07 - Outras formatações</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex08/index.html" target="_parent" rel="noopener noreferrer"
-            title="Listas">08 - Listas</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex09/index.html" target="_parent" rel="noopener noreferrer"
-            title="Trabalhando com links">09 - Trabalhando com links</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex10/index.html" target="_parent" rel="noopener noreferrer"
-            title="Mídias em HTML5">10 - Mídias em HTML5</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex11/index.html" target="_parent" rel="noopener noreferrer"
-            title="Vídeos com HTML5">11 - Vídeos com HTML5</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex12/index.html" target="_parent" rel="noopener noreferrer"
-            title="Estilos Inline">12 - Estilos Inline</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex13/index.html" target="_parent" rel="noopener noreferrer"
-            title="Estilos Locais / Internos">13 - Estilos Locais / Internos</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-01/exercicios/ex14/index.html" target="_parent" rel="noopener noreferrer"
-            title="Estilos Externos">14 - Estilos Externos</a>
-          </li>
-        </ul>
+    <article id="html-e-css">
+      <section id="hc-mod1">
+        <h2>Módulo 1 - Primeiros Passos - Curso Em Vídeo - HTML e CSS</h2>
+        <p>No nosso pontapé inicial com o Módulo 1, demos os primeiros passos no mundo do HTML! Começamos com um exercício básico para sentir o gostinho da coisa e logo mergulhamos na estrutura fundamental com as tags &lt;p&gt; para parágrafos. Exploramos como adicionar imagens com a tag &lt;img&gt; e até personalizamos nossos sites com um favicon! Entendemos a importância da hierarquia de títulos com as tags &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, aprendendo a organizar o conteúdo de forma lógica. Vimos diversas maneiras de formatar textos, deixando-os em negrito, itálico e com outras estilizações. As listas também marcaram presença, nos mostrando como apresentar informações de forma organizada. Aprendemos a criar links com a tag &lt;a&gt;, conectando páginas e recursos externos. Uma parte bem legal foi descobrir como incorporar mídias, como vídeos com a tag &lt;video&gt;, diretamente no HTML5. Finalmente, demos nossos primeiros passos no mundo do CSS, entendendo as diferenças e aplicações dos estilos inline, locais/internos e externos, preparando o terreno para deixar nossos sites com a nossa cara! Veja abaixo os exercícios realizados durante as aulas.</p>
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=kOQSCJjY5KVhpa--&amp;list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <section class="exercicios ">
+          <h3>Exercícios do Módulo 1</h3>
+          <ul>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex01/index.html" target="_parent" rel="noopener noreferrer"
+              title="Meu primeiro exercício">01 - Meu primeiro exercício</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex02/index.html" target="_parent" rel="noopener noreferrer"
+              title="Parágrafos &lt;p&gt;">02 - Parágrafos &lt;p&gt</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex03/index.html" target="_parent" rel="noopener noreferrer"
+              title="Teste com Imagens &lt;img&gt;">03 - Teste com Imagens &lt;img&gt</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex04/index.html" target="_parent" rel="noopener noreferrer"
+              title="Teste de Favicon">04 - Teste de Favicon</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex05/index.html" target="_parent" rel="noopener noreferrer"
+              title="Hierarquia de Títulos h2 h3 h4">05 - Hierarquia de Títulos h2 h3 h4</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex06/index.html" target="_parent" rel="noopener noreferrer"
+              title="Formatação de Textos">06 - Formatação de Textos</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex07/index.html" target="_parent" rel="noopener noreferrer"
+              title="Outras formatações">07 - Outras formatações</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex08/index.html" target="_parent" rel="noopener noreferrer"
+              title="Listas">08 - Listas</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex09/index.html" target="_parent" rel="noopener noreferrer"
+              title="Trabalhando com links">09 - Trabalhando com links</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex10/index.html" target="_parent" rel="noopener noreferrer"
+              title="Mídias em HTML5">10 - Mídias em HTML5</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex11/index.html" target="_parent" rel="noopener noreferrer"
+              title="Vídeos com HTML5">11 - Vídeos com HTML5</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex12/index.html" target="_parent" rel="noopener noreferrer"
+              title="Estilos Inline">12 - Estilos Inline</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex13/index.html" target="_parent" rel="noopener noreferrer"
+              title="Estilos Locais / Internos">13 - Estilos Locais / Internos</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-01/exercicios/ex14/index.html" target="_parent" rel="noopener noreferrer"
+              title="Estilos Externos">14 - Estilos Externos</a>
+            </li>
+          </ul>
+        </section>
       </section>
-    </section>
-    <section id="mod2">
-      <h2>Módulo 2 - Curso Em Vídeo - HTML e CSS</h2>
-      <p>No módulo 2 foi construído um projeto do zero de um site sobre o mascote do Android</p>
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/videoseries?si=7cIld_CGFrpzslJx&amp;list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <!-- <section class="exercicios ">
-        <h3>Exercícios do Módulo 2</h3>
-        <ul>
-          <li><a href="#" target="_parent">Exercício 1 - Modulo 2</a></li>
-          <li><a href="#" target="_parent">Exercício 2 - Modulo 2</a></li>
-          <li><a href="#" target="_parent">Exercício 3 - Modulo 2</a></li>
-          <li><a href="#" target="_parent">Exercício 4 - Modulo 2</a></li>
-          <li><a href="#" target="_parent">Exercício 5 - Modulo 2</a></li>
-        </ul>
-      </section> -->
-      <section class="exercicios desafios">
-        <h3>Desafios do Módulo 2</h3>
-        <ul>
-          <li><a href="./html-e-css-modulo-02/desafio10/android.html" class="android" target="_parent" rel="noopener noreferrer">Desafio - Mascote do Android</a></li>
-        </ul>
+      <section id="hc-mod2">
+        <h2>Módulo 2 - Curso Em Vídeo - HTML e CSS</h2>
+        <p>No módulo 2 foi construído um projeto do zero de um site sobre o mascote do Android</p>
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/videoseries?si=7cIld_CGFrpzslJx&amp;list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!-- <section class="exercicios ">
+          <h3>Exercícios do Módulo 2</h3>
+          <ul>
+            <li><a href="#" target="_parent">Exercício 1 - Modulo 2</a></li>
+            <li><a href="#" target="_parent">Exercício 2 - Modulo 2</a></li>
+            <li><a href="#" target="_parent">Exercício 3 - Modulo 2</a></li>
+            <li><a href="#" target="_parent">Exercício 4 - Modulo 2</a></li>
+            <li><a href="#" target="_parent">Exercício 5 - Modulo 2</a></li>
+          </ul>
+        </section> -->
+        <section class="exercicios desafios">
+          <h3>Desafios do Módulo 2</h3>
+          <ul>
+            <li><a href="./html-e-css-modulo-02/desafio10/android.html" class="android" target="_parent" rel="noopener noreferrer">Desafio - Mascote do Android</a></li>
+          </ul>
+        </section>
       </section>
-    </section>
-    <section id="mod3">
-      <h2>Módulo 3 - Curso Em Vídeo - HTML e CSS</h2>
-      <p>Neste Módulo 3, mergulhei de cabeça no universo das tabelas HTML com o prof guanabara. Fizemos a criação da minha primeira tabela, buscando aprender a estruturar dados de forma organizada conforme ensinamentos do prof. Em seguida, exploramos como lidar com tabelas maiores, garantindo que a informação seja apresentada de maneira clara e acessível. Um dos pontos altos foi, sem dúvida, a manipulação de células, com os desafios de mesclagem que nos fizeram pensar um pouquinho! Entendemos a importância dos atributos scope="row" e scope="col" para a acessibilidade, facilitando a leitura por leitores de tela. Vimos também uma forma diferente e interessante de usar a tag <colgroup> para estilizar colunas específicas. E para fechar com chave de ouro, discutimos e experimentamos técnicas para exibir tabelas extensas em telas menores, garantindo uma boa experiência para todos os usuários.</p>
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/videoseries?si=7cIld_CGFrpzslJx&amp;list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <!-- <section class="exercicios ">
-        <h3>Exercícios do Módulo 3</h3>
-        <ul>
-          <li><a href="#" target="_parent">Exercício 1 - Modulo 3</a></li>
-          <li><a href="#" target="_parent">Exercício 2 - Modulo 3</a></li>
-          <li><a href="#" target="_parent">Exercício 3 - Modulo 3</a></li>
-          <li><a href="#" target="_parent">Exercício 4 - Modulo 3</a></li>
-          <li><a href="#" target="_parent">Exercício 5 - Modulo 3</a></li>
-          <li><a href="#" target="_parent">Exercício 6 - Modulo 3</a></li>
-        </ul>
-      </section> -->
-      <section class="exercicios desafios">
-        <h3>Desafios do Módulo 3</h3>
-        <ul>
-          <li><a href="./html-e-css-modulo-03/desafio12/index.html" class="cordel" target="_parent" rel="noopener noreferrer">Desafio - Cordel Moderno</a></li>
-        </ul>
+      <section id="hc-mod3">
+        <h2>Módulo 3 - Curso Em Vídeo - HTML e CSS</h2>
+        <p>Neste Módulo 3, mergulhei de cabeça no universo das tabelas HTML com o prof guanabara. Fizemos a criação da minha primeira tabela, buscando aprender a estruturar dados de forma organizada conforme ensinamentos do prof. Em seguida, exploramos como lidar com tabelas maiores, garantindo que a informação seja apresentada de maneira clara e acessível. Um dos pontos altos foi, sem dúvida, a manipulação de células, com os desafios de mesclagem que nos fizeram pensar um pouquinho! Entendemos a importância dos atributos scope="row" e scope="col" para a acessibilidade, facilitando a leitura por leitores de tela. Vimos também uma forma diferente e interessante de usar a tag <colgroup> para estilizar colunas específicas. E para fechar com chave de ouro, discutimos e experimentamos técnicas para exibir tabelas extensas em telas menores, garantindo uma boa experiência para todos os usuários.</p>
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/videoseries?si=7cIld_CGFrpzslJx&amp;list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!-- <section class="exercicios ">
+          <h3>Exercícios do Módulo 3</h3>
+          <ul>
+            <li><a href="#" target="_parent">Exercício 1 - Modulo 3</a></li>
+            <li><a href="#" target="_parent">Exercício 2 - Modulo 3</a></li>
+            <li><a href="#" target="_parent">Exercício 3 - Modulo 3</a></li>
+            <li><a href="#" target="_parent">Exercício 4 - Modulo 3</a></li>
+            <li><a href="#" target="_parent">Exercício 5 - Modulo 3</a></li>
+            <li><a href="#" target="_parent">Exercício 6 - Modulo 3</a></li>
+          </ul>
+        </section> -->
+        <section class="exercicios desafios">
+          <h3>Desafios do Módulo 3</h3>
+          <ul>
+            <li><a href="./html-e-css-modulo-03/desafio12/index.html" class="cordel" target="_parent" rel="noopener noreferrer">Desafio - Cordel Moderno</a></li>
+          </ul>
+        </section>
+        <section class="exercicios ">
+          <h3>Exercícios do Módulo 3</h3>
+          <ul>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela001.html" target="_parent" rel="noopener noreferrer"
+              title="Tabelas - Minha primeira tabela">01 - Minha primeira tabela</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela002.html" target="_parent" rel="noopener noreferrer"
+              title="Tabelas - Uso de tabelas grandes">02 - Uso de tabelas grandes</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela003.html" target="_parent" rel="noopener noreferrer"
+              title="Tabelas - Mesclando Células">03 - Mesclando Células</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela004.html" target="_parent" rel="noopener noreferrer"
+              title="Tabelas - Mesclando Células Desafio 1">04 - Mesclando Células Desafio 1</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela005.html" target="_parent" rel="noopener noreferrer"
+              title="Tabelas - Mesclando Células Desafio 2">05 - Mesclando Células Desafio 2</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela006.html" target="_parent" rel="noopener noreferrer"
+              title="Tabelas - Exercício de tabelas">06 - Falando sobre scope row e col</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela007.html" target="_parent" rel="noopener noreferrer"
+              title="Tabelas - Pequeno desafio de tabelas">07 - Desafio de tabelas - Construindo e usando scope</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela008.html" target="_parent" rel="noopener noreferrer"
+              title="Tabelas - Exercício de tabelas com colgroup">08 - Uma forma diferente de usar o colgroup</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela009.html" target="_parent" rel="noopener noreferrer"
+              title="Tabelas - Tabelas grandes em telas pequenas">09 - Tabelas grandes em telas pequenas</a>
+            </li>
+          </ul>
+        </section>
       </section>
-      <section class="exercicios ">
-        <h3>Exercícios do Módulo 3</h3>
-        <ul>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela001.html" target="_parent" rel="noopener noreferrer"
-            title="Tabelas - Minha primeira tabela">01 - Minha primeira tabela</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela002.html" target="_parent" rel="noopener noreferrer"
-            title="Tabelas - Uso de tabelas grandes">02 - Uso de tabelas grandes</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela003.html" target="_parent" rel="noopener noreferrer"
-            title="Tabelas - Mesclando Células">03 - Mesclando Células</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela004.html" target="_parent" rel="noopener noreferrer"
-            title="Tabelas - Mesclando Células Desafio 1">04 - Mesclando Células Desafio 1</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela005.html" target="_parent" rel="noopener noreferrer"
-            title="Tabelas - Mesclando Células Desafio 2">05 - Mesclando Células Desafio 2</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela006.html" target="_parent" rel="noopener noreferrer"
-            title="Tabelas - Exercício de tabelas">06 - Falando sobre scope row e col</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela007.html" target="_parent" rel="noopener noreferrer"
-            title="Tabelas - Pequeno desafio de tabelas">07 - Desafio de tabelas - Construindo e usando scope</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela008.html" target="_parent" rel="noopener noreferrer"
-            title="Tabelas - Exercício de tabelas com colgroup">08 - Uma forma diferente de usar o colgroup</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-03/exercicios/ex23/tabela009.html" target="_parent" rel="noopener noreferrer"
-            title="Tabelas - Tabelas grandes em telas pequenas">09 - Tabelas grandes em telas pequenas</a>
-          </li>
-        </ul>
+      <section id="hc-mod4">
+        <h2>Módulo 4 - Curso Em Vídeo - HTML e CSS</h2>
+        <p>No módulo 4 </p>
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=DjxC_80HjTL9X17i&amp;list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <section class="exercicios desafios">
+          <h3>Desafios do Módulo 4</h3>
+          <ul>
+            <li><a href="./html-e-css-modulo-04/desafio/redes-sociais/index.html" class="cordel" target="_parent" rel="noopener noreferrer" title="Projeto Redes Sociais">Desafio - Redes Sociais</a></li>
+          </ul>
+        </section>
+        <section class="exercicios ">
+          <h3>Exercícios do Módulo 4</h3>
+          <ul>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex24/iframe01.html" target="_parent" rel="noopener noreferrer"
+              title="01 - Configurando iframes">01 - Configurando iframes</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex24/iframe02.html" target="_parent" rel="noopener noreferrer"
+              title="02 - Conteúdo local no iframe">02 - Conteúdo local no iframe</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex24/iframe03.html" target="_parent" rel="noopener noreferrer"
+              title="Introdução sobre segurança no iframe">03 - Navegação e uso de iframe</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex24/iframe04.html" target="_parent" rel="noopener noreferrer"
+              title="Introdução sobre segurança no iframe">04 - Introdução sobre segurança no iframe</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex24/iframe05.html" target="_parent" rel="noopener noreferrer"
+              title="Introdução sobre segurança no iframe">05 - Outras seguranças no iframe</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex24/iframe06.html" target="_parent" rel="noopener noreferrer"
+              title="Melhores usos do iframe">06 - Melhores usos do iframe</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form001.html" target="_parent" rel="noopener noreferrer"
+              title="Como criar formulários com HTML5">07 - Como criar formulários com HTML5</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form002.html" target="_parent" rel="noopener noreferrer"
+              title="Usar Label vai melhorar seus formulários">08 - Usar Label vai melhorar seus formulários</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form003.html" target="_parent" rel="noopener noreferrer"
+              title="Métodos GET e POST para formulários">09 - Métodos GET e POST para form</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form004.html" target="_parent" rel="noopener noreferrer"
+              title="Criando caixas de texto e de senha">10 - Criando caixas de texto e de senha</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form005.html" target="_parent" rel="noopener noreferrer"
+              title="Elementos number, month, date e time">11 - Number, month, date e time</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form006.html" target="_parent" rel="noopener noreferrer"
+              title="Formulários com telefone e e-mail">12 - Formulários com telefone e e-mail</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form007.html" target="_parent" rel="noopener noreferrer"
+              title="Checkbox e Radio button">13 - Checkbox e Radio button</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form008.html" target="_parent" rel="noopener noreferrer"
+              title="Color, range e file">14 - Color, range e file</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form009.html" target="_parent" rel="noopener noreferrer"
+              title="Select, datalist e textarea">15 - Select, datalist e textarea</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form010.html" target="_parent" rel="noopener noreferrer"
+              title="Output em formulários HTML">16 - Output em formulários HTML</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form011.html" target="_parent" rel="noopener noreferrer"
+              title="Output - 2">17 - Exemplo de Output - 2</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form012.html" target="_parent" rel="noopener noreferrer"
+              title="Output - 3">18 - Exemplo de Output - 3</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex26/mq001/index.html" target="_parent" rel="noopener noreferrer"
+              title="Criando um site com versão para impressora">19 - Criando um site com versão para impressora</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex26/mq002/index.html" target="_parent" rel="noopener noreferrer"
+              title="Múltiplas Media Features com CSS">20 - Múltiplas Media Features com CSS</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex26/mq003/index.html" target="_parent" rel="noopener noreferrer"
+              title="Reunindo tudo em um único CSS">21 - Reunindo tudo em um único CSS</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex26/mq004/index.html" target="_parent" rel="noopener noreferrer"
+              title="Iniciando um site mobile first">22 - Iniciando um site mobile first</a>
+            </li>
+            <li>
+              <a class="btn" href="./html-e-css-modulo-04/exercicios/ex26/mq005/index.html" target="_parent" rel="noopener noreferrer"
+              title="Menu responsivo - Hamburguinho">23 - Menu responsivo - Hamburguinho</a>
+            </li>
+          </ul>
+        </section>
       </section>
-    </section>
-    <section id="mod4">
-      <h2>Módulo 4 - Curso Em Vídeo - HTML e CSS</h2>
-      <p>No módulo 4 </p>
-      <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=DjxC_80HjTL9X17i&amp;list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <section class="exercicios desafios">
-        <h3>Desafios do Módulo 4</h3>
-        <ul>
-          <li><a href="./html-e-css-modulo-04/desafio/redes-sociais/index.html" class="cordel" target="_parent" rel="noopener noreferrer" title="Projeto Redes Sociais">Desafio - Redes Sociais</a></li>
-        </ul>
+    </article>
+    <article id="js">
+      <section id="js-mod-a">
+        <h2>Módulo A - Javascript</h2>
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/uzEhd3Lugik?si=RCb9vgaWA1HeHvA7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <section class="exercicios ">
+          <h3>Aulas do Módulo A</h3>
+          <ul>
+            <li>
+              <a class="btn" href="https://youtu.be/Ptbk2af68e8?si=dWEO1GnU_PgOUwVq" target="_blank" rel="noopener noreferrer"
+              title="O que o JavaScript é capaz de fazer?">O que o JavaScript é capaz de fazer?</a>
+            </li>
+            <li>
+              <a class="btn" href="https://youtu.be/rUTKomc2gG8?si=b2BZpdlL1Q6NHCC4" target="_blank" rel="noopener noreferrer"
+              title="JavaScript: como chegamos até aqui?">JavaScript: como chegamos até aqui?</a>
+            </li>
+            <li>
+              <a class="btn" href="https://youtu.be/FdePtO5JSd0?si=wgTsQOOmxI9gHdFa" target="_blank" rel="noopener noreferrer"
+              title="Dando os primeiros passos">Dando os primeiros passos</a>
+            </li>
+            <li>
+              <a class="btn" href="https://youtu.be/OmmJBfcMJA8?si=rt2ZsFzgEQ4eOdRE" target="_blank" rel="noopener noreferrer"
+              title="Criando o seu primeiro script">Criando o seu primeiro script</a>
+            </li>
+          </ul>
+        </section>
+        <section class="exercicios ">
+          <h3>Exercicios do Módulo A</h3>
+          <ul>
+            <li>
+              <a class="btn" href="./javascript-aulas/mod-a/aula04/ex001.html" target="_parent" rel="noopener noreferrer"
+              title="Meu primeiro script">01 - Meu primeiro script</a>
+            </li>
+          </ul>
+        </section>
       </section>
-      <section class="exercicios ">
-        <h3>Exercícios do Módulo 4</h3>
-        <ul>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex24/iframe01.html" target="_parent" rel="noopener noreferrer"
-            title="01 - Configurando iframes">01 - Configurando iframes</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex24/iframe02.html" target="_parent" rel="noopener noreferrer"
-            title="02 - Conteúdo local no iframe">02 - Conteúdo local no iframe</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex24/iframe03.html" target="_parent" rel="noopener noreferrer"
-            title="Introdução sobre segurança no iframe">03 - Navegação e uso de iframe</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex24/iframe04.html" target="_parent" rel="noopener noreferrer"
-            title="Introdução sobre segurança no iframe">04 - Introdução sobre segurança no iframe</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex24/iframe05.html" target="_parent" rel="noopener noreferrer"
-            title="Introdução sobre segurança no iframe">05 - Outras seguranças no iframe</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex24/iframe06.html" target="_parent" rel="noopener noreferrer"
-            title="Melhores usos do iframe">06 - Melhores usos do iframe</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form001.html" target="_parent" rel="noopener noreferrer"
-            title="Como criar formulários com HTML5">07 - Como criar formulários com HTML5</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form002.html" target="_parent" rel="noopener noreferrer"
-            title="Usar Label vai melhorar seus formulários">08 - Usar Label vai melhorar seus formulários</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form003.html" target="_parent" rel="noopener noreferrer"
-            title="Métodos GET e POST para formulários">09 - Métodos GET e POST para form</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form004.html" target="_parent" rel="noopener noreferrer"
-            title="Criando caixas de texto e de senha">10 - Criando caixas de texto e de senha</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form005.html" target="_parent" rel="noopener noreferrer"
-            title="Elementos number, month, date e time">11 - Number, month, date e time</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form006.html" target="_parent" rel="noopener noreferrer"
-            title="Formulários com telefone e e-mail">12 - Formulários com telefone e e-mail</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form007.html" target="_parent" rel="noopener noreferrer"
-            title="Checkbox e Radio button">13 - Checkbox e Radio button</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form008.html" target="_parent" rel="noopener noreferrer"
-            title="Color, range e file">14 - Color, range e file</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form009.html" target="_parent" rel="noopener noreferrer"
-            title="Select, datalist e textarea">15 - Select, datalist e textarea</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form010.html" target="_parent" rel="noopener noreferrer"
-            title="Output em formulários HTML">16 - Output em formulários HTML</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form011.html" target="_parent" rel="noopener noreferrer"
-            title="Output - 2">17 - Exemplo de Output - 2</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex25/form012.html" target="_parent" rel="noopener noreferrer"
-            title="Output - 3">18 - Exemplo de Output - 3</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex26/mq001/index.html" target="_parent" rel="noopener noreferrer"
-            title="Criando um site com versão para impressora">19 - Criando um site com versão para impressora</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex26/mq002/index.html" target="_parent" rel="noopener noreferrer"
-            title="Múltiplas Media Features com CSS">20 - Múltiplas Media Features com CSS</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex26/mq003/index.html" target="_parent" rel="noopener noreferrer"
-            title="Reunindo tudo em um único CSS">21 - Reunindo tudo em um único CSS</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex26/mq004/index.html" target="_parent" rel="noopener noreferrer"
-            title="Iniciando um site mobile first">22 - Iniciando um site mobile first</a>
-          </li>
-          <li>
-            <a class="btn" href="./html-e-css-modulo-04/exercicios/ex26/mq005/index.html" target="_parent" rel="noopener noreferrer"
-            title="Menu responsivo - Hamburguinho">23 - Menu responsivo - Hamburguinho</a>
-          </li>
-        </ul>
-      </section>
-    </section>
+    </article>
   </main>
 
   <footer>
     <p>Desenvolvido por Beatriz Castro acompanhando o Curso Em Vídeo de HTML e CSS</p>
   </footer>
+  <script>
+    const htmlCssRef = document.querySelector('#html-e-css');
+    const jsRef = document.querySelector('#js');
+
+    function mostrarCurso1() {
+      htmlCssRef.style.display = 'block';
+      jsRef.style.display = 'none';
+    }
+
+    function mostrarCurso2() {
+      htmlCssRef.style.display = 'none';
+      jsRef.style.display = 'block';
+    }
+
+  </script>
 </body>
 </html>
