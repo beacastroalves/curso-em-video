@@ -71,14 +71,13 @@ nav ul li#curso-js {
 }
 
 nav ul li#curso-h-c:hover,
-nav ul li#curso-js:active,
-nav ul li#curso-js:focus {
+nav ul li.active#curso-h-c {
   --cor1: #ef4723;
   --cor2: #48b8ea;
 }
 
 nav ul li#curso-js:hover,
-nav ul li#curso-js:active {
+nav ul li.active#curso-js {
   --cor3: #e5c42b;
   --cor4: #111111;
 }
@@ -92,6 +91,25 @@ main {
   max-width: 1000px;
   padding: 1rem;
   margin: auto;
+  text-align: justify;
+}
+
+main article {
+  padding: 0 1em;
+}
+
+main article#info {
+  margin: auto;
+  max-width: 700px;
+
+  h1 {
+    padding: 1.5em 0;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 2em;
+  }
 }
 
 main section {
@@ -99,7 +117,8 @@ main section {
 }
 
 main section h2 {
-  margin: 0.5rem 0;
+  margin: 0.5rem;
+  text-align: center;
   color: var(--app-color-index-4);
 }
 
@@ -135,6 +154,27 @@ main section a:hover {
   color: var(--app-color-index-5);
   text-decoration: underline;
 }
+
+main section#hc-mod1 a:hover {
+  color: #0100ba;
+}
+
+main section#hc-mod2 a:hover {
+  color: #6f0de0;
+}
+
+main section#hc-mod3 a:hover {
+  color: #00aabe;
+}
+
+main section#hc-mod4 a:hover {
+  color: #c75502;
+}
+
+main section#hc-mod5 a:hover {
+  color: #cd0041;
+}
+
 
 main section .video {
   background-color: var(--app-color-index-4);
