@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<!--
+    Para CSS, uma CLASSE é como se fosse uma "categoria", onde todos os objetos que pertencerem àquela classe,
+    possuirão as mesmas propriedades. Para CSS, toda classe é representada por um ponto (.)
+
+    Vários objetos podem pertencer à mesma classe.
+-->
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes CSS</title>
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  <style>
+    body {
+      font: 12pt Arial;
+    }
+
+    p { /* por padrão, todos os parágrafos desse site serão justificados */
+      text-align: justify;
+      text-indent: 20pt; /* todos terão aquele recuo que todo parágrafo tem no início */
+      margin: 12px 0;
+    }
+
+    p.meio { /* a não ser os que possuem a classe "meio", que ficarão centralizados */
+      text-align: center;
+    }
+
+    p.dir { /* aqueles que tiverem a classe "dir", ficarão à direita */
+      text-align: right;
+    }
+
+    p.esq { /* aqueles que tiverem a classe "dir", ficarão à direita */
+      text-align: left;
+    }
+
+    p.especial { /* e os que forem da classe "especial", terão uma cor especial de fundo */
+      background-color: rgba(242, 255, 0, 0.468);
+    }
+
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="../ex16/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Alinhamento de textos usando CSS">&lt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../ex19/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="">&gt;</a>
+    <!-- <a href="../../../html-e-css-modulo-03/exercicios/ex23/tabela001.html" class="btn-2" target="_parent" rel="noopener noreferrer">&gt;</a> -->
+  </button>
+  <button class="btn-1">
+    <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+  <br>
+  <h1>Classes em CSS</h1>
+  <p>Aproveitando que o professor deixou aberto para pegar alguma notícia. Trouxe um trecho de uma notícia da cidade onde estou morando &#x1F605;</p>
+  <br>
+  <a href="https://www.diariodetrasosmontes.com/noticia/braganca-congratula-se-com-a-inclusao-no-plano-nacional-ferroviario" target="_blank"><h2>Bragança congratula-se com a inclusão no Plano Nacional Ferroviário</h2></a>
+  <br>
+  <h3>Sem aplicar nenhuma classe</h3>
+  <p>
+      O presidente da câmara municipal de Bragança congratulou-se com a inclusão no Plano Ferroviário Nacional do seu município para estudos para um possível regressos dos comboios a Trás-os-Montes.
+  </p>
+
+  <h3>Aplicando classe "dir"</h3>
+
+  <p class="dir">
+    A informação consta da Resolução do Conselho de Ministros, hoje publicada, que aprova o Plano Nacional Ferroviário e determina à Infraestruturas de Portugal, S. A., a avaliação de investimentos ferroviários prioritários.
+  </p>
+
+  <p class="dir">
+    Foi incluído o estudo de uma eventual Linha Ferroviária de Trás-os-Montes, com ligação Bragança-Porto, e da Ligação Transfronteiriça Bragança-Zamora (Espanha).
+  </p>
+
+  <h3>
+    Aplicando classe "especial"
+  </h3>
+
+  <p class="especial">
+    “É com grande satisfação que vemos reconhecidas as reivindicações do município e das várias entidades e forças vivas da região. Bragança está finalmente inscrita, oficialmente, nos planos da ferrovia nacional para o futuro, com indicações para o início efetivo de estudos ordenados pelo governo às entidades responsáveis”, congratulou-se Paulo Xavier, citado num comunicado enviado à Lusa esta noite.
+  </p>
+
+  <h3>
+      Aplicando classes "meio especial"
+  </h3>
+
+  <p class="meio especial"> <!-- Esse parágrafo terá duas classes: meio E especial -->
+    “(…) Esta avaliação técnica apoiará a decisão final poderá, espero, sustentar e viabilizar a solução que defendemos e isso é um passo importante no reconhecimento das legítimas aspirações do interior no desenho das políticas públicas do País”, afirmou o autarca brigantino.
+    O autarca sublinhou ainda considerar a ferrovia como uma solução prioritária para “superar a condição de isolamento de Trás-os-Montes”.
+  </p>
+
+  <h3>
+    Aplicando classes "esq"
+  </h3>
+
+  <p class="esq"> <!-- Não tem problema dois parágrafos serem da mesma classe -->
+    O documento, consultado pela Lusa, assume que a reabertura das antigas linhas da região dos distritos de Bragança e Vila Real – Tua e Corgo
+  </p>
+</body>
+</html>
