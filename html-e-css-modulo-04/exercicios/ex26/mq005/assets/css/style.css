@@ -17,14 +17,14 @@ header {
 }
 
 header > h1 {
-  padding: 10px;
+  padding: 40px;
   text-align: center;
 }
 
 span#burguer {
-  display: block;
-  color: white;
   background-color: rgb(60, 112, 155);
+  color: white;
+  display: block;
   text-align: center;
   padding: 10px;
   cursor: pointer;
@@ -34,25 +34,20 @@ span#burguer:hover {
   background-color: rgb(48, 92, 128);
 }
 
-span#burguer:active {
-  background-color: rgb(41, 78, 109);
-}
-
 menu {
   display: none;
 }
 
 menu > ul {
-  list-style-type: none;
-  width: 100%;
   background-color: rgb(60, 112, 155);
-  height: 44px;
+  list-style-type: none;
 }
 
 menu > ul > li > a {
+  background-color: rgb(60, 112, 155);
   border: 2px solid transparent;
   display: block;
-  padding: 10px;
+  padding: 12px;
   text-decoration: none;
   text-align: center;
   color: white;
