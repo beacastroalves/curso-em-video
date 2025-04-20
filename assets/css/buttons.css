@@ -50,3 +50,11 @@ button.btn-1[disabled] a.btn-2 {
 button.btn-1[disabled] a.btn-2:hover {
   box-shadow: unset;
 }
+
+
+
+@media screen and (min-width: 512px) { /* Mudança dos botões de navegação dos exercicios */
+  button.btn-1 {
+    margin: 2rem 0;
+  }
+}

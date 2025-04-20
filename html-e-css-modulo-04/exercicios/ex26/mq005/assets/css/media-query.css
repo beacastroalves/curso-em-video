@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 512px) { /* Mudança dos botões de navegação dos exercicios */
+  #btns {
+    margin-left: 8px;
+  }
   button.btn-1 {
-    margin: 2rem 0 2rem 8px;
+    margin: 2rem 0;
   }
 }
 
