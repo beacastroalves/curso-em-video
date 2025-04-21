@@ -4,7 +4,6 @@
 Paleta de cores
   #020F59
   #0367A6
-  #0487D9
   #0F8AA6
   #DCEEF2
 */
@@ -20,6 +19,7 @@ body, html {
   background-color: #0367a6;
   height: 100vh;
   width: 100vw;
+  background-image: linear-gradient(to top, #020F59, #0F8AA6);
 }
 
 main {
@@ -42,6 +42,9 @@ section#login {
   height: 550px; */
   border-radius: 20px;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+
+  transition: width 0.3s, height 0.3s;
+  transition-timing-function: ease;
 }
 
 section#login > article#imagem {
