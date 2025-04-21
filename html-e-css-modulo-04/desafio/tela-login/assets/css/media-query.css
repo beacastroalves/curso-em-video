@@ -28,14 +28,21 @@
   section#login > article#formulario {
     float: right;
     width: 65%;
+    padding: 16px 32px;
   }
 
   section#login > article#formulario > h1 {
     font-size: 1.6em;
+    margin: 24px 0;
   }
 
   section#login > article#formulario > p {
     font-size: 1.2em;
+    margin: 30px 10px;
+  }
+
+  form > input[type=submit] {
+    margin-top: 24px;
   }
 }
 
