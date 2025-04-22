@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu primeiro programa...</title>
+  <title>Usando window.prompt</title>
   <link rel="stylesheet" href="../../../assets/css/buttons.css">
   <style>
     body {
@@ -21,7 +21,7 @@
   <a href="../../mod-a/aula04/ex001.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Meu primeiro script">&lt;</a>
 </button>
 <button class="btn-1">
-  <a href="#" class="btn-2" target="_parent" rel="noopener noreferrer" title="">&gt;</a>
+  <a href="./ex003.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Tratamento de dados">&gt;</a>
 </button>
 <button class="btn-1">
   <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
@@ -32,8 +32,8 @@
   <p>Me livrei da maldição</p>
 
   <script>
-    var nome = window.prompt('Qual é seu nome?');
-
+    var nome = window.prompt('Qual é seu nome?'); // Vai perguntar o nome
+    window.alert('Seja bem-vindo(a) ' + nome + '!')
   </script>
 </body>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tratamento de dados</title>
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  <style>
+    body {
+      background-color: rgb(255, 255, 181);
+      color: brown;
+      font: normal 20pt Arial; /* Comentario em CSS */
+    }
+
+    h1 {
+      color: chocolate;
+    }
+  </style>
+</head>
+<button class="btn-1">
+  <a href="./ex002.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Usando window prompt">&lt;</a>
+</button>
+<button class="btn-1">
+  <a href="./ex004.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Conhecendo outras funcionalidades">&gt;</a>
+</button>
+<button class="btn-1">
+  <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+</button>
+<br>
+<body>
+  <br>
+  <h3>Como transformar String para Number e String para Number</h3>
+  <ul>
+    <li>// (number + number) usa o + para adição</li>
+    <li>// (string + string) usa o + para concatenação</li>
+    <li>
+      <pre>
+        <code>
+  <strong>Number.parseInt</strong>(n) // Para numeros inteiros
+  <strong>Number.parseFloat</strong>(n) // Para numeros reais (com virgula)
+  Number(n)
+
+  n.<strong>toString()</strong> // Para converter um número em string
+  <strong>String</strong>(n) // Para converter um número em string
+
+  var n1 = Number(window.prompt('Digite um número: '));
+  var n2 = Number(window.prompt('Digite outro número: '));
+  var s = n1 + n2;
+  window.alert('A soma dos valores é ' + s);
+
+  var j = 'Javascript';
+  'Eu estou aprendendo j' // Não faz interpolação
+  'Eu estou aprendendo ' + j // usa concatenação
+  `Eu estou aprendendo ${j}` // usa template string
+
+  var j = 'Javascript';
+  j.<strong>length</strong> // quantos caracteres a string tem
+  j.to<strong>Upper</strong>Case() // Transforma tudo em 'MAIÚSCULAS'
+  j.to<strong>Lower</strong>Case() // Transforma tudo em 'minúsculas'
+
+  &lt;script&gt;
+    var n1 = Number(window.prompt('Digite um número: '));
+    var n2 = Number(window.prompt('Digite outro número: '));
+    var s = n1 + n2;
+    // mostrando o resultado de duas formas
+    window.alert('A soma dos valores é ' + s);
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`);
+  &lt;/script&gt;
+        </code>
+      </pre>
+    </li>
+  </ul>
+  <script>
+    var n1 = Number(window.prompt('Digite um número: '));
+    var n2 = Number(window.prompt('Digite outro número: '));
+    var s = n1 + n2;
+    window.alert('A soma dos valores é ' + s);
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`);
+  </script>
+</body>
+</html>
