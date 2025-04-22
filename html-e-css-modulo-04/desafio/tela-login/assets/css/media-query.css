@@ -44,6 +44,14 @@
   form > input[type=submit] {
     margin-top: 24px;
   }
+
+  form > a.botao2 {
+    height: 40px;
+    font-size: 1em;
+    padding-top: 8px;
+    margin-top: 10px;
+  }
+  
 }
 
 @media screen and (min-width: 992px) {
