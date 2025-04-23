@@ -8,7 +8,26 @@
   <style>
     body {
       font: normal 20pt Arial;
+      background-color: rgb(255, 208, 190);
+      color: darkmagenta;
     }
+
+
+    h1 {
+      color: chocolate;
+    }
+
+    a {
+      background-color:  rgb(255, 208, 190);
+      text-decoration: none;
+      color: rgb(109, 0, 109);
+    }
+
+    a:hover {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    
   </style>
 </head>
 <body>
@@ -22,32 +41,8 @@
     <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
   </button>
   <br>
-  <h3>Funcionalidades de Strings</h3>
-
-  <p>// Replace troca um por outro, exemplo o ponto pela virgula que é mais usado no Brasil.</p>
-  <p>// toFixed(2) é para depois do ponto em um numero real ele apresentar duas casas decimais</p>
-  <pre>
-    <code>
-  var n1 = 1545.5;
-  n1;
-  n1.toFixed(2);
-  > 1545.50
-  n1.toFixed(2).replace('.', ',');
-  > 1545,50
-  n1.toLocaleString('pt-BR'), {'style: 'currency', currency: 'BRL'});
-  > 'R$ 1,545.50'
-  document.write(n1.toLocaleString('pt-BR'), {'style: 'currency', currency: 'USD'});
-  > 'US$ 1,545.50'
-  document.write(n1.toLocaleString('pt-BR'), {'style: 'currency', currency: 'EUR'});
-  > '€ 1,545.50'
-  &lt;script&gt;
-    var nome = window.prompt('Qual é o seu nome?');
-    document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras &lt;br&gt;`);
-    document.write(`Seu nome em maiúsculas é <strong>${nome.toUpperCase()}</strong>! &lt;br&gt;`);
-    document.write(`E em minúsculas é <strong>${nome.toLowerCase()}</strong>! &lt;br&gt;`);
-  &lt;/script&gt;
-    </code>
-  </pre>
+  <a href="./ex004p2.html">Anotações da aula 06 - Parte 2</a>
+  <br>
   <br>
   <script>
     var nome = window.prompt('Qual é o seu nome?');

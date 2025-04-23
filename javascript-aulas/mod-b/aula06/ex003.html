@@ -17,65 +17,40 @@
     }
   </style>
 </head>
-<button class="btn-1">
-  <a href="./ex002.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Usando window prompt">&lt;</a>
-</button>
-<button class="btn-1">
-  <a href="./ex004.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Conhecendo outras funcionalidades">&gt;</a>
-</button>
-<button class="btn-1">
-  <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
-</button>
-<br>
 <body>
+  <button class="btn-1">
+    <a href="./ex002.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Usando window prompt">&lt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="./ex004.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Conhecendo outras funcionalidades">&gt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
   <br>
-  <h3>Como transformar String para Number e String para Number</h3>
-  <ul>
-    <li>// (number + number) usa o + para adição</li>
-    <li>// (string + string) usa o + para concatenação</li>
-    <li>
-      <pre>
-        <code>
-  <strong>Number.parseInt</strong>(n) // Para numeros inteiros
-  <strong>Number.parseFloat</strong>(n) // Para numeros reais (com virgula)
-  Number(n)
 
-  n.<strong>toString()</strong> // Para converter um número em string
-  <strong>String</strong>(n) // Para converter um número em string
-
-  var n1 = Number(window.prompt('Digite um número: '));
-  var n2 = Number(window.prompt('Digite outro número: '));
-  var s = n1 + n2;
-  window.alert('A soma dos valores é ' + s);
-
-  var j = 'Javascript';
-  'Eu estou aprendendo j' // Não faz interpolação
-  'Eu estou aprendendo ' + j // usa concatenação
-  `Eu estou aprendendo ${j}` // usa template string
-
-  var j = 'Javascript';
-  j.<strong>length</strong> // quantos caracteres a string tem
-  j.to<strong>Upper</strong>Case() // Transforma tudo em 'MAIÚSCULAS'
-  j.to<strong>Lower</strong>Case() // Transforma tudo em 'minúsculas'
-
+  <h4><a href="./ex003p2.html">Anotações da aula 06 - Parte 1</a></h4>
+  <br>
+  <p>Script usado:</p>
+  <pre>
+    <code>
   &lt;script&gt;
     var n1 = Number(window.prompt('Digite um número: '));
     var n2 = Number(window.prompt('Digite outro número: '));
     var s = n1 + n2;
     // mostrando o resultado de duas formas
     window.alert('A soma dos valores é ' + s);
-    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`);
+    document.write(`A soma entre ${n1} e ${n2} é igual a &lt;strong&gt;${s}&lt;/strong&gt;`);
   &lt;/script&gt;
-        </code>
-      </pre>
-    </li>
-  </ul>
+    </code>
+  </pre>
+
   <script>
     var n1 = Number(window.prompt('Digite um número: '));
     var n2 = Number(window.prompt('Digite outro número: '));
     var s = n1 + n2;
     window.alert('A soma dos valores é ' + s);
-    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`);
+    document.write(`A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`);
   </script>
 </body>
 </html>
