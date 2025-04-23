@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formatando strings</title>
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  <style>
+    body {
+      background-color: rgb(180, 255, 255);
+      color: darkcyan;
+    }
+    ul {
+      margin-left: 2em;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="./ex005.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar</a>
+  </button>
+  <br>
+  <h2>Anotações da aula 07 - Parte 1</h2>
+  <br>
+  <h4>Operadores</h4>
+  <br>
+  <ul>
+    <li>Exemplos de <strong>Operadores Aritméticos</strong></li>
+    <ul>
+      <li>5 + 2  🠒‬ 7  (Soma)</li>
+      <li>5 - 2  🠒‬ 3  (Subtração)</li>
+      <li>5 * 2  🠒‬ 10 (Multiplicação)</li>
+      <li>5 / 2  🠒‬ 2.5 (Divisão real)</li>
+      <li>5 % 2  🠒‬ 1 (Resto da divisão inteira)</li>
+      <li>5 ** 2 🠒‬ 25 (Potencia, no exemplo esse é 'cinco ao quadrado')</li>
+      <br>
+      <li>Cuidado com a ordem de <strong>precedência</strong> - É como na matemática</li>
+      <ul>
+        <li>1ª 🠒‬ ( ) 🠒‬ O que estiver entre parenteses será executado primeiro</li>
+        <li>2ª 🠒‬ ** 🠒‬ Potência</li>
+        <li>3ª 🠒‬ * ou / ou % 🠒‬ Multiplicação, divisão ou módulo(resto da divisao inteira), tem força mais força que os proximos</li>
+        <li>4ª 🠒‬ + ou - 🠒‬ Soma ou subtração não tem tanta força sem estar dentro de parenteses</li>
+      </ul>
+    </ul>
+    <br>
+    <li>Exemplos de <strong>Operadores de Atribuição</strong>
+      <ul>
+        <li>var a = 5 + 3 🠒‬ 8</li>
+        <li>var b = a % 5 🠒‬ 8 % 5 🠒‬ 3</li>
+        <li>var c = 5 * b ** 2 🠒‬ 5 * (3 ** 2) 🠒‬ 5 * 9 🠒‬ 45</li>
+        <li>var d = 10 - a / 2 🠒‬ 10 - (8 / 2) 🠒‬ 10 - 4 🠒‬ 6</li>
+        <li>var e = 6 * 2 / d 🠒‬ (6 * 2) / 6 🠒‬ 12 / 6 🠒‬ 2</li>
+        <li>var f = b % e + 4 / e 🠒‬ (3 % 2) + (4 / 2) 🠒‬ 1 + 2 🠒‬ 3</li>
+      </ul>
+      <br>
+    <li>Exemplos de <strong>Auto-atribuições</strong>
+      <ul>
+        <li>var n = 3 (atribuição simples)</li>
+        <li>n = n + 4 (ou) n += 4 🠒‬ 3 + 4 🠒‬n = 7</li>
+        <li>n = n - 5 (ou) n -= 5 🠒‬ 7 - 5 🠒‬ n = 2</li>
+        <li>n = n * 4 (ou) n *= 4 🠒‬ 2 * 4 🠒‬ n = 8</li>
+        <li>n = n / 2 (ou) n /= 2 🠒‬ 8 / 2 🠒‬ n = 4</li>
+        <li>n = n ** 2 (ou) n **= 2 🠒‬ 4 ** 2 🠒‬ n = 16</li>
+        <li>n = n % 5 (ou) n %= 5 🠒‬ 16 % 5 🠒‬ n = 1</li>
+      </ul>
+      <br>
+      <li>Exemplo de <strong>Operadores de Incremento</strong></li>
+      <ul>
+        <li>var x = 5</li>
+        <li>x = x + 1 🠒‬ Simplificar para 🠒‬ x += 1 🠒‬ Incrementando x++</li>
+        <li>x = x - 1 🠒‬ Simplificar para 🠒‬ x -= 1 🠒‬ Incrementando x--</li>
+        <ul>
+          <br>
+          <li>Na programação avançada isso faz diferença</li>
+          <li>Pre Incremento => ++x ou --x </li>
+          <li>Pos Incremento => x++ ou x-- </li>
+        </ul>
+      </ul>
+  </ul>
+  <br>
+</body>
+</html>
