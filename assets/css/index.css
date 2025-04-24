@@ -41,25 +41,24 @@ body {
 }
 
 body.bg01 {
-  background-image: url(../images/html-e-css.png);
+  background-image: url(../images/html-e-css.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* filter: brightness(5%); */
 }
 
 body.bg02 {
-  background-image: url(../images/js.png);
+  background-image: url(../images/js.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 header {
-  min-height: 220px;
-  height: 220px;
+  min-height: 200px;
+  height: 200px;
   background-color: var(--app-color-index-2);
-  background-image: url('../images/code-pq.png');
+  background-image: url('../images/code-pq-2.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -236,7 +235,10 @@ footer a:hover {
 
 @media only screen and (min-width: 510px) {
   header {
-    background-image: url('../images/code.png');
+    background-image: url('../images/code2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -248,15 +250,17 @@ footer a:hover {
 
 
 @media only screen and (min-width: 900px) {
-  header {
-      height: 250px;
-  }
-
   main {
     padding: 1rem 2rem;
   }
+}
 
-  main section ul {
-    columns: 3;
+@media only screen and (min-width: 1200px) {
+  header {
+    height: 250px;
+    background-image: url('../images/code-xxl.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
