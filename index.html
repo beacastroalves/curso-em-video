@@ -422,6 +422,7 @@
     const infoRef = document.querySelector('#info');
     const liCursoHCRef = document.querySelector('#curso-h-c');
     const liCursoJs = document.querySelector('#curso-js');
+    const bodyRef = document.querySelector('body');
 
     jsRef.style.display = 'none';
     htmlCssRef.style.display = 'none';
@@ -431,14 +432,16 @@
       infoRef.style.display = 'none';
       liCursoHCRef.className = 'active';
       liCursoJs.className = '';
+      bodyRef.className = 'bg01';
     });
-
+    
     liCursoJs.addEventListener('click', () => {
       htmlCssRef.style.display = 'none';
       infoRef.style.display = 'none';
       jsRef.style.display = 'block';
       liCursoJs.className = 'active';
       liCursoHCRef.className = '';
+      bodyRef.className = 'bg02';
     });
 
   /*
@@ -456,6 +459,7 @@
       liCursoHCRef.className = '';
     }
   */
+
   </script>
 </body>
 </html>

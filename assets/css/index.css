@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url(variaveisglobais.css);
+
 @property --cor1 {
   syntax: '<color>';
   initial-value: #474747;
@@ -38,9 +40,24 @@ body {
   height: 100vh;
 }
 
+body.bg01 {
+  background-image: url(../images/html-e-css.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* filter: brightness(5%); */
+}
+
+body.bg02 {
+  background-image: url(../images/js.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 header {
-  min-height: 200px;
-  height: 200px;
+  min-height: 220px;
+  height: 220px;
   background-color: var(--app-color-index-2);
   background-image: url('../images/code-pq.png');
   background-position: center center;
@@ -91,7 +108,7 @@ main {
   background-color: var(--app-color-light);
   color: var(--app-color-index-4);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-  max-width: 1000px;
+  max-width: 900px;
   padding: 1rem;
   margin: auto;
   text-align: justify;
@@ -233,6 +250,10 @@ footer a:hover {
 @media only screen and (min-width: 900px) {
   header {
       height: 250px;
+  }
+
+  main {
+    padding: 1rem 2rem;
   }
 
   main section ul {
