@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formatando strings</title>
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  <style>
+    body {
+      background-color: rgb(201, 255, 180);
+      color: rgb(0, 139, 23);
+    }
+
+    a {
+      text-decoration: none;
+      background-color: rgb(0, 97, 97);
+      color: rgb(195, 255, 205);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul, ol {
+      margin-left: 2em;
+    }
+
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="../aula07/ex005.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Operadores - Parte 1">&lt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="#" class="btn-2" target="_parent" rel="noopener noreferrer" title="Operadores - Parte 2">&gt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+  <br>
+  <h2>Anotações da aula 08 - Parte 1</h2>
+  <br>
+  <h4>Operadores</h4>
+  <ul>
+    <li>Operadores Relacionais</li>
+    <ul>
+      <li>5 &gt; 2 🠒‬ true</li>
+      <li>7 &lt; 4 🠒‬ false</li>
+      <li>8 &gt;= 8 🠒‬ true</li>
+      <li>9 &lt;= 7 🠒‬ false</li>
+      <li>5 == 5 🠒‬ true</li>
+      <li>4 != 4 🠒‬ false</li>
+      <br>
+      <ul>
+        <li>Outros exemplos </li>
+        <li>preço >= 200.50 // O preço é maior ou igual a 200.50?</li>
+        <li>idade < 18 // a idade é menor do que 18?</li>
+        <li>curso == 'javascript' // o curso é JavaScript?</li>
+        <li>n1 != n2 // o primeiro número é diferente do segundo?</li>
+      </ul>
+      <br>
+      <ul>
+        <li>Operador de Identidade === ou Operador de igualdade restrita</li>
+        <li>5 == 5 🠒‬ true</li>
+        <li>5 == '5' 🠒‬ true</li>
+        <li>5 === '5' 🠒‬ false</li>
+        <li>5 === 5 🠒‬ true</li>
+        <li>== : testando igualdade</li>
+        <li>=== : testando igualdade e tipo / igualdade restrita</li>
+        <li>!= : testando se é desigual</li>
+        <li>!== : testando se é desigual restrito</li>
+
+      </ul>
+    </ul>
+    <br>
+    <li>Operadores Lógicos</li>
+    <ul>
+      <li>! : Negação</li>
+      <ul>
+        <li>Algo Verdadeiro com sinal ! na frente (ex: !verdade) vai se tornar falso</li>
+        <li>!true 🠒‬ false</li>
+        <li>Algo Falso com sinal ! na frente (ex: !falso) vai se tornar verdadeiro</li>
+        <li>!false 🠒‬ true</li>
+      </ul>
+      <br>
+      <li>&& : Conjução (And, E)</li>
+      <ul>
+        <li>Esse operador binário deve ter pelo menos duas sentenças lógicas</li>
+        <li>Exemplo: Eu quero uma caneta azul e uma caneta vermelha. Só será verdadeiro se tiver as duas</li>
+        <li>caneta azul && caneta vermelha</li>
+        <li>true && true 🠒‬ true - Só satisfaz se as duas forem verdadeiras</li>
+        <li>true && false 🠒‬ false - Não ter uma já desfaz o &&</li>
+        <li>false && true 🠒‬ false</li>
+        <li>false && false 🠒‬ false</li>
+      </ul>
+      <br>
+      <li>|| : Disjução (Or, Ou)</li>
+      <ul>
+        <li>Esse operador binário deve ter pelo menos duas sentenças lógicas</li>
+        <li>Exemplo: Eu quero uma caneta azul OU uma caneta vermelha. Será verdadeiro tendo apenas uma.</li>
+        <li>caneta azul || caneta vermelha</li>
+        <li>true || true 🠒‬ true - Satisfaz se as duas forem verdadeiras</li>
+        <li>true || false 🠒‬ true - Já satisfaz se uma das duas forem verdadeiras</li>
+        <li>false || true 🠒‬ true - Já satisfaz se uma das duas forem verdadeiras</li>
+        <li>false || false 🠒‬ false - Não ter nenhuma verdadeira desfaz o pedido do || </li>
+      </ul>
+      <br>
+      <li>Se por acaso tiver um de cada, pelo menos um &&, um || e um ! - Então a ordem será sempre essa: </li>
+      <ol>
+        <li>! Not/Não</li>
+        <li>&& And/E</li>
+        <li>|| Or/Ou</li>
+      </ol>
+      <br>
+      <li>Outros exemplos</li>
+      <ul>
+        <li>idade >= 15 && idade <= 17 // A idade está entre 15 e 17?</li>
+        <li>estado == 'RJ' || estado == 'SP' //"A pessoa" mora no estado do Rio de Janeiro ou em Sao Paulo? </li>
+      </ul>
+    </ul>
+    <br>
+    <li>Operadores Ternários</li>
+  </ul>
+  <br>
+  
+  <br>
+</body>
+</html>
