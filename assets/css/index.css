@@ -107,7 +107,7 @@ main {
   background-color: var(--app-color-light);
   color: var(--app-color-index-4);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-  max-width: 900px;
+  max-width: 600px;
   padding: 1rem;
   margin: auto;
   text-align: justify;
@@ -145,7 +145,6 @@ main section h2 {
 main section p {
   margin: 0.5rem auto;
   text-align: justify;
-  max-width: 700px;
 }
 
 main section h3 {
@@ -240,9 +239,13 @@ footer a:hover {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  main {
+    max-width: 80vw;
+  }
 }
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 768px) {
   main section ul {
     columns: 2;
   }
@@ -262,5 +265,8 @@ footer a:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  main {
+    max-width: 900px;
   }
 }
