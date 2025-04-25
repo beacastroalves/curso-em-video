@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexible Box</title>
+  <title>Direções e Eixos Flexbox </title>
 
   <link rel="stylesheet" href="../../../../assets/css/buttons.css">
   <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     main.container {
-      background-color: lightcoral;
+      background-color: rgb(240, 204, 128);
       max-width: 600px;
       display: flex;
-
 
       /*  ← ↑→ ↓ ↔  ↓ ← ↑ 🠒
           PADRÃO: row
                   flex-direction: row (Linha horizontal, da esquerda para a direita, no nosso idioma)
                →  Eixo principal (main-axis) no caso row (esquerda pra direita - horizontal)
               ↓   Eixo transversal (cross-axis) no caso row (cima para baixo - vertical)
-
 
                   flex-direction: row-reverse (Linha horizontal com ordem contrária, da direita para esquerda)
               ←   Eixo principal (main-axis) no caso row-reverse (direita pra esquerda - horizontal)
@@ -43,7 +45,7 @@
     }
 
     section {
-      margin: 32px 0;
+      margin-bottom: 32px;
     }
 
 /*
@@ -87,14 +89,13 @@
     }
 
     div.item {
-      background-color: aquamarine;
+      background-color: rgb(127, 204, 255);
       border: 1px solid black;
       text-align: center;
-      flex: auto;
     }
 
     div.item.a {
-      background-color: rgb(127, 161, 255);
+      background-color: rgb(176, 127, 255);
     }
 
     h3 {
@@ -106,17 +107,24 @@
 </head>
 <body>
   <button class="btn-1">
-    <a href="../../../../html-e-css-modulo-04/exercicios/ex26/mq005/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Menu responsivo - Hamburguinho">&lt;</a>
+    <a href="../flex001/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Display Flexible Box">&lt;</a>
   </button>
   <button class="btn-1">
-    <a href="../flex002/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Direções e Eixos Flexbox">&gt;</a>
+    <a href="#" class="btn-2" target="_parent" rel="noopener noreferrer" title="">&gt;</a>
   </button>
   <button class="btn-1">
     <a href="../../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
   </button>
-  <h3>Display Flexible Box CSS - (display: flex)</h3>
+  <h3>Direções e Eixos Flexbox - flex-direction: </h3>
   <main class="container">
     <h4>flex-direction: row</h4>
+    <pre>
+      <code>
+    flex-direction: row (Linha horizontal, da esquerda para a direita)
+     →  <strong>Eixo principal</strong> (main-axis) (horizontal) (esquerda pra direita)
+    ↓   Eixo transversal (cross-axis) (vertical) (cima para baixo)
+      </code>
+    </pre>
     <section class="flexrow">
       <div class="item a">A</div>
       <div class="item">B</div>
@@ -125,7 +133,15 @@
       <div class="item">E</div>
     </section>
 
+
     <h4>flex-direction: row-reverse</h4>
+    <pre>
+      <code>
+    flex-direction: row-reverse (Linha horizontal com ordem contrária D para E)
+     ←   <strong>Eixo principal</strong> (main-axis) (horizontal) (direita pra esquerda)
+      ↓  Eixo transversal (cross-axis) (vertical) (cima para baixo)
+      </code>
+    </pre>
     <section class="flexrowreverse">
       <div class="item a">A</div>
       <div class="item">B</div>
@@ -134,7 +150,15 @@
       <div class="item">E</div>
     </section>
 
+
     <h4>flex-direction: column</h4>
+    <pre>
+      <code>
+    flex-direction: column (Coluna vertical, de cima para baixo)
+     →  Eixo transversal (cross-axis) (horizontal) (esquerda pra direita)
+    ↓   <strong>Eixo principal</strong> (main-axis) (vertical) (cima para baixo)
+      </code>
+    </pre>
     <section class="flexcolumn">
       <div class="item a">A</div>
       <div class="item">B</div>
@@ -143,7 +167,15 @@
       <div class="item">E</div>
     </section>
 
+
     <h4>flex-direction: column-reverse</h4>
+    <pre>
+      <code>
+    flex-direction: column (Coluna vertical, de cima para baixo)
+    ↑   <strong>Eixo principal</strong> (main-axis) (vertical) (baixo para cima)
+     →  Eixo transversal (cross-axis) (horizontal) (esquerda pra direita)
+      </code>
+    </pre>
     <section class="flexcolumnreverse">
       <div class="item a">A</div>
       <div class="item">B</div>
