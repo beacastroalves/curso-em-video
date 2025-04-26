@@ -1,8 +1,8 @@
-const container = document.querySelector('.container');
+const body = document.querySelector('body');
 const color = document.querySelector('input');
 
-container.style.backgroundColor = color.value;
+body.style.backgroundColor = color.value;
 
 function onChangeBg() {
-  container.style.backgroundColor = `${color.value}`
+  body.style.backgroundColor = `${color.value}`;
 }
