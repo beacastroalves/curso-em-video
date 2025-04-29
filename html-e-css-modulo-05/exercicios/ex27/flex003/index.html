@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empacotamento e fluxo no Flexbox </title>
+
+  <link rel="stylesheet" href="../../../../assets/css/buttons.css">
+  <style>
+    main.container {
+      background-color: lightcoral;
+
+      display: flex;
+
+      flex-direction: row;
+      flex-wrap: wrap-reverse;
+      padding: 16px;
+      margin: auto;
+    }
+
+    main > h4 {
+      text-align: center;
+    }
+
+    section {
+      margin: 32px 0;
+    }
+
+
+    div.item {
+      background-color: aquamarine;
+      border: 1px solid black;
+      text-align: center;
+    }
+
+    div.item.a {
+      background-color: rgb(127, 161, 255);
+    }
+
+    h3 {
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="../../../../html-e-css-modulo-04/exercicios/ex26/mq005/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Menu responsivo - Hamburguinho">&lt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../flex002/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Direções e Eixos Flexbox">&gt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+  <h3>Display Flexible Box CSS - (display: flex)</h3>
+  <main class="container">
+    <h4>flex-direction: row</h4>
+    <section class="flexrow">
+      <div class="item a">Exemplo de bloco A</div>
+      <div class="item">Exemplo de bloco B</div>
+      <div class="item">Exemplo de bloco C</div>
+      <div class="item">Exemplo de bloco D</div>
+      <div class="item">Exemplo de bloco E</div>
+    </section>
+
+    <h4>flex-direction: row-reverse</h4>
+    <section class="flexrowreverse">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+    </section>
+
+    <h4>flex-direction: column</h4>
+    <section class="flexcolumn">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+    </section>
+
+    <h4>flex-direction: column-reverse</h4>
+    <section class="flexcolumnreverse">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+    </section>
+  </main>
+</body>
+</html>
