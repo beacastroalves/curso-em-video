@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-wrap no column e column-reverse</title>
+
+  <link rel="stylesheet" href="../../../../assets/css/buttons.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main.container {
+      background-color: rgb(240, 162, 128);
+      padding: 16px;
+      margin: auto;
+    }
+
+    main > h4 {
+      text-align: center;
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+
+    section {
+      height: 96px;
+      width: 100%;
+      display: flex;
+      margin-bottom: 64px;
+    }
+
+    section.flexcolumnnowrap {
+      flex-flow: column nowrap;
+    }
+
+    section.flexcolumnwrap {
+      flex-flow: column wrap;
+    }
+
+    section.flexcolumnwrapreverse {
+      flex-flow: column wrap-reverse;
+    }
+
+    section.flexcolumnreversenowrap {
+      flex-flow: column-reverse nowrap;
+    }
+
+    section.flexcolumnreversewrap {
+      flex-flow: column-reverse wrap;
+    }
+
+    section.flexcolumnreversewrapreverse {
+      flex-flow: column-reverse wrap-reverse;
+    }
+
+    div.item {
+      background-color: rgb(202, 127, 255);
+      height: 32px;
+      border: 1px solid black;
+      text-align: center;
+      flex: auto;
+    }
+
+    div.item.a {
+      background-color: rgb(127, 187, 255);
+    }
+
+    h3 {
+      margin: 1em 0;
+      text-align: center;
+      width: 100%;
+      background-color: rgb(218, 127, 88);
+      padding: 10px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="../flex003/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Empacotamento e fluxo no Flexbox">&lt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+  <main class="container">
+    <h3>Usando Wrap com flex-direction: column</h3>
+    <!-- FLEX-DIRECTION column- -->
+    <h4><small>flex-direction: column e</small> flex-wrap: nowrap - <small>Padrão/Initial</small></h4>
+    <pre>
+      <code>
+flex-wrap: nowrap; // considerando flex-direction: column;
+  "Não quebre os blocos e não tire da sequencia que coloquei"
+  Ele tende a espremer os itens de acordo com o conteudo.
+  <small>OBS: O tamanho de um bloco vai depender do conteudo que existe nele</small>
+      </code>
+    </pre>
+    <section class="flexcolumnnowrap">
+      <div class="item a">Exemplo de bloco A</div>
+      <div class="item">Exemplo de bloco B</div>
+      <div class="item">Exemplo de bloco C</div>
+      <div class="item">Exemplo de bloco D</div>
+      <div class="item">Exemplo de bloco E</div>
+    </section>
+
+    <h4><small>flex-direction: column e</small> flex-wrap: wrap</h4>
+    <pre>
+      <code>
+flex-wrap: wrap; // considerando flex-direction: column;
+  Quando acaba o espaço, quebre os blocos,
+    pegue o ultimo elemento
+      e leve em direção ao cross-axis.
+  ↓  Eixo transversal (cross-axis)
+      no caso da direction column,
+        o elemento na quebra vai para BAIXO.
+      </code>
+    </pre>
+    <section class="flexcolumnwrap">
+      <div class="item a">Bloco de exemplo A</div>
+      <div class="item">Bloco de exemplo B</div>
+      <div class="item">Bloco de exemplo C</div>
+      <div class="item">Bloco de exemplo D</div>
+      <div class="item">Bloco de exemplo E</div>
+    </section>
+
+    <h4><small>flex-direction: column e</small> flex-wrap: wrap-reverse</h4>
+    <pre>
+      <code>
+flex-wrap: wrap-reverse; // considerando flex-direction: column;
+  Quando acaba o espaço, quebre os blocos,
+    pegue o ultimo elemento
+      e leve em direção CONTRÁRIA ao cross-axis.
+  ↓  Eixo transversal (cross-axis)
+      no caso da direction column,
+        o elemento na quebra vai para CIMA.
+      </code>
+    </pre>
+    <section class="flexcolumnwrapreverse">
+      <div class="item a">Bloco de exemplo A</div>
+      <div class="item">Bloco de exemplo B</div>
+      <div class="item">Bloco de exemplo C</div>
+      <div class="item">Bloco de exemplo D</div>
+      <div class="item">Bloco de exemplo E</div>
+    </section>
+
+
+    <!-- FLEX-DIRECTION column-REVERSE -->
+    <h3>Usando Wrap com flex-direction: column-reverse</h3>
+    <h4><small>flex-direction: column-reverse e</small> flex-wrap: nowrap - <small>Padrão/Initial</small></h4>
+    <pre>
+      <code>
+flex-wrap: nowrap; // considerando flex-direction: column-reverse;
+  "Não quebre os blocos e não tire da sequencia que coloquei"
+  Ele tende a espremer os itens de acordo com o conteudo.
+  <small>OBS: O tamanho de um bloco vai depender do conteudo que existe nele</small>
+      </code>
+    </pre>
+    <section class="flexcolumnreversenowrap">
+      <div class="item a">Exemplo de bloco A</div>
+      <div class="item">Exemplo de bloco B</div>
+      <div class="item">Exemplo de bloco C</div>
+      <div class="item">Exemplo de bloco D</div>
+      <div class="item">Exemplo de bloco E</div>
+    </section>
+
+    <h4><small>flex-direction: column-reverse e</small> flex-wrap: wrap</h4>
+    <pre>
+      <code>
+flex-wrap: wrap; // considerando flex-direction: column-reverse;
+  Quando acaba o espaço, quebre os blocos,
+    pegue o ultimo elemento
+      e leve em direção ao cross-axis.
+  ↓  Eixo transversal (cross-axis)
+      no caso da direction column-reverse,
+        o elemento na quebra vai para BAIXO.
+      </code>
+    </pre>
+    <section class="flexcolumnreversewrap">
+      <div class="item a">Bloco de exemplo A</div>
+      <div class="item">Bloco de exemplo B</div>
+      <div class="item">Bloco de exemplo C</div>
+      <div class="item">Bloco de exemplo D</div>
+      <div class="item">Bloco de exemplo E</div>
+    </section>
+
+    <h4><small>flex-direction: column-reverse e</small> flex-wrap: wrap-reverse</h4>
+    <pre>
+      <code>
+flex-wrap: wrap-reverse; // considerando flex-direction: column-reverse;
+  Quando acaba o espaço, quebre os blocos,
+    pegue o ultimo elemento
+      e leve em direção CONTRÁRIA ao cross-axis.
+  ↓  Eixo transversal (cross-axis)
+      no caso da direction column-reverse,
+        o elemento na quebra vai para CIMA.
+      </code>
+    </pre>
+    <section class="flexcolumnreversewrapreverse">
+      <div class="item a">Bloco de exemplo A</div>
+      <div class="item">Bloco de exemplo B</div>
+      <div class="item">Bloco de exemplo C</div>
+      <div class="item">Bloco de exemplo D</div>
+      <div class="item">Bloco de exemplo E</div>
+    </section>
+  </main>
+</body>
+</html>

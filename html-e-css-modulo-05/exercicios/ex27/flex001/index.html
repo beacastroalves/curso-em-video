@@ -12,27 +12,6 @@
       max-width: 600px;
       display: flex;
 
-
-      /*  ← ↑→ ↓ ↔  ↓ ← ↑ 🠒
-          PADRÃO: row
-                  flex-direction: row (Linha horizontal, da esquerda para a direita, no nosso idioma)
-               →  Eixo principal (main-axis) no caso row (esquerda pra direita - horizontal)
-              ↓   Eixo transversal (cross-axis) no caso row (cima para baixo - vertical)
-
-
-                  flex-direction: row-reverse (Linha horizontal com ordem contrária, da direita para esquerda)
-              ←   Eixo principal (main-axis) no caso row-reverse (direita pra esquerda - horizontal)
-               ↓  Eixo transversal (cross-axis) no caso row-reverse, esse eixo continua igual ao row (cima para baixo - vertical)
-
-                  flex-direction: column (Coluna vertical, de cima para baixo, no nosso idioma)
-               →  Eixo transversal (cross-axis) no caso column (esquerda pra direita - horizontal)
-              ↓   Eixo principal (main-axis) no caso column (cima para baixo - vertical)
-
-                  flex-direction: column-reverse (Coluna vertical, ao contrario de baixo para cima)
-              ↑   Eixo principal (main-axis) no caso column-reverse (cima para baixo - vertical)
-               →  Eixo transversal (cross-axis) no caso column (esquerda pra direita - horizontal)
-
-          */
       flex-direction: column;
       padding: 16px;
       margin: auto;
@@ -46,41 +25,21 @@
       margin: 32px 0;
     }
 
-/*
-    flex-direction: row (Linha horizontal, da esquerda para a direita, no nosso idioma)
-     →  Eixo principal (main-axis) no caso row (esquerda pra direita - horizontal)
-    ↓   Eixo transversal (cross-axis) no caso row (cima para baixo - vertical)
-*/
     section.flexrow {
       display: flex;
       flex-direction: row;
     }
 
-/*
-    flex-direction: row-reverse (Linha horizontal com ordem contrária, da direita para esquerda)
-    ←   Eixo principal (main-axis) no caso row-reverse (direita pra esquerda - horizontal)
-     ↓  Eixo transversal (cross-axis) no caso row-reverse, esse eixo continua igual ao row (cima para baixo - vertical)
-*/
     section.flexrowreverse {
       display: flex;
       flex-direction: row-reverse;
     }
 
-/*
-    flex-direction: column (Coluna vertical, de cima para baixo, no nosso idioma)
-     →  Eixo transversal (cross-axis) no caso column (esquerda pra direita - horizontal)
-    ↓   Eixo principal (main-axis) no caso column (cima para baixo - vertical)
-*/
     section.flexcolumn {
       display: flex;
       flex-direction: column;
     }
 
-/*
-    flex-direction: column-reverse (Coluna vertical, ao contrario de baixo para cima)
-    ↑   Eixo principal (main-axis) no caso column-reverse (cima para baixo - vertical)
-     →  Eixo transversal (cross-axis) no caso column (esquerda pra direita - horizontal)
-*/
     section.flexcolumnreverse {
       display: flex;
       flex-direction: column-reverse;
