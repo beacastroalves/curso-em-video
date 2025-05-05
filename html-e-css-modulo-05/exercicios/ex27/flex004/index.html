@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alinhamento nos eixos Flexbox</title>
+
+  <link rel="stylesheet" href="../../../../assets/css/buttons.css">
+  <style>
+    body {
+      background-color: rgb(232, 127, 194);
+      font-family: Arial, Helvetica, sans-serif;
+      height: 100vh;
+    }
+
+    main.container {
+      max-width: 1000px;
+      height: calc(100vh - 89px);
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      margin: auto;
+    }
+
+    h3 {
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="../flex003/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Empacotamento e fluxo no Flexbox">&lt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="#" class="btn-2" target="_parent" rel="noopener noreferrer" title="">&gt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+  <main class="container">
+    <h3>Alinhamento nos eixos Flexbox: justify-content e align-items</h3>
+    <button class="btn-1">
+      <a href="./row.html" class="btn-2" target="_parent" rel="noopener noreferrer">justify-content no row e row reverse</a>
+    </button>
+    <button class="btn-1">
+      <a href="./column.html" class="btn-2" target="_parent" rel="noopener noreferrer">justify-content no column e column-reverse</a>
+    </button>
+    <button class="btn-1">
+      <a href="./row-align.html" class="btn-2" target="_parent" rel="noopener noreferrer">align-items no row e row reverse</a>
+    </button>
+    <button class="btn-1">
+      <a href="./column-align.html" class="btn-2" target="_parent" rel="noopener noreferrer">align-items no column e column-reverse</a>
+    </button>
+  </main>
+</body>
+</html>
