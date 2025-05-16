@@ -11,13 +11,6 @@ O objetivo principal é demonstrar a aplicação prática dos conceitos, desde a
 ### 💻 Página Principal
 ![image](https://github.com/user-attachments/assets/7ba2147f-caae-4697-a4d4-20247243d875)
 
-### 💻 Clicando no HTML e CSS
-![image](https://github.com/user-attachments/assets/846e3015-0ff1-44b9-89f1-c61f11c76068)
-
-### 💻 Clicando no Javascript
-![image](https://github.com/user-attachments/assets/76d7258e-9c62-458d-bef4-b0d75ee4074d)
-
-
 ## ✨ Funcionalidades e Destaques
 
 * **Navegação Intuitiva:** Um menu superior (`<nav>`) permite alternar facilmente entre o conteúdo dos cursos de HTML/CSS e JavaScript.
@@ -67,6 +60,9 @@ O projeto é organizado de forma modular, com pastas dedicadas para cada curso e
 ## 📝 Conteúdo dos Cursos
 
 ### Curso de HTML e CSS
+
+### 💻 Clicando no HTML e CSS
+![image](https://github.com/user-attachments/assets/846e3015-0ff1-44b9-89f1-c61f11c76068)
 
 #### Módulo 1 - Primeiros Passos
 Introdução ao HTML, tags básicas (`<p>`, `<img>`, `<a>`, `<video>`), hierarquia de títulos, formatação de textos, listas e os primeiros passos com CSS (inline, local, externo).
@@ -160,6 +156,9 @@ Introdução ao Flexbox, cobrindo direções e eixos, empacotamento, fluxo, alin
     * Desafio (Aguardando implementação)
 
 ### Curso de JavaScript
+
+### 💻 Clicando no Javascript
+![image](https://github.com/user-attachments/assets/76d7258e-9c62-458d-bef4-b0d75ee4074d)
 
 #### Módulo A - Conhecendo o Javascript
 Visão geral sobre o JavaScript, sua história e os primeiros passos na criação de scripts.
