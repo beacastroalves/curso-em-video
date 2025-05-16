@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros Passos com DOM</title>
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  <style>
+    body {
+      background-color: rgb(98, 98, 98);
+      color: ;
+      font: normal 18px Arial;
+    }
+
+    main {
+      margin: 1em;
+    }
+
+    h1, p, div {
+      margin-bottom: 1em;
+    }
+
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="../aula07/ex005.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Operadores - Parte 1">&lt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../mod-c/aula09/ex005.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Introdução ao DOM">&gt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+  <main>
+    <br>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Apendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <br><br><br>
+  </main>
+
+  <script>
+/*  // Selecionando elementos com getElementsBy
+     let corpo = window.document.body;
+     let p1 = document.getElementsByTagName('p')[1];
+     let d = window.document.getElementById('msg');
+
+      corpo.style.background = 'black';
+
+     window.document.write('Está escrito assim: ' + p1.innerText);
+     p1.style.color = 'blue';
+     document.write(p1.innerText);
+     document.write(p1.innerHTML);
+
+     d.style.background = 'green';
+     d.innerText = "Estou aguardando";
+*/
+
+    // Selecionando elementos usando querySelector e querySelectorAll
+    let body = window.document.querySelector('body');
+    let parag1 = window.document.querySelectorAll('p');
+
+    body.style.background = 'darkcyan';
+    parag1[1].style.color = 'darkred';
+    document.write(parag1[0].innerText);
+
+  </script>
+</body>
+</html>
