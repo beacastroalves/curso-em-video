@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="../../../assets/css/buttons.css">
   <style>
     body {
-      background-color: rgb(201, 255, 180);
-      color: rgb(0, 139, 23);
+      background-color: rgb(208, 208, 186);
+      color: rgb(0, 0, 0);
     }
 
     a {
@@ -24,9 +24,17 @@
     }
 
     ul, ol {
-      margin-left: 2em;
+      margin: 0.25em 2.5em 1em;
     }
 
+    li span {
+      color: rgb(190, 0, 0);
+      font-weight: bold;
+    }
+
+    li span.logic {
+      color: rgb(108, 19, 191);
+    }
   </style>
 </head>
 <body>
@@ -40,91 +48,117 @@
     <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
   </button>
   <br>
-  <h2>Anotações da aula 08 - Parte 1</h2>
-  <br>
+  <h1>Anotações da aula 08 - Parte 1</h1>
   <h4>Operadores</h4>
+  <br>
+  <h2>Operadores Relacionais</h2>
   <ul>
-    <li>Operadores Relacionais</li>
-    <ul>
-      <li>5 &gt; 2 🠒‬ true</li>
-      <li>7 &lt; 4 🠒‬ false</li>
-      <li>8 &gt;= 8 🠒‬ true</li>
-      <li>9 &lt;= 7 🠒‬ false</li>
-      <li>5 == 5 🠒‬ true</li>
-      <li>4 != 4 🠒‬ false</li>
-      <br>
+    <li>
+      <h4>Exemplos</h4>
       <ul>
-        <li>Outros exemplos </li>
-        <li>preço >= 200.50 // O preço é maior ou igual a 200.50?</li>
-        <li>idade < 18 // a idade é menor do que 18?</li>
-        <li>curso == 'javascript' // o curso é JavaScript?</li>
-        <li>n1 != n2 // o primeiro número é diferente do segundo?</li>
+        <li>5 <span>&gt;</span> 2 🠒‬ true</li>
+        <li>7 <span>&lt;</span> 4 🠒‬ false</li>
+        <li>8 <span>&gt;=</span> 8 🠒‬ true</li>
+        <li>9 <span>&lt;=</span> 7 🠒‬ false</li>
+        <li>5 <span>==</span> 5 🠒‬ true</li>
+        <li>4 <span>!=</span> 4 🠒‬ false</li>
+        <li>preço <span>&gt;=</span> 200.50 // O preço é maior ou igual a 200.50?</li>
+        <li>idade <span>&lt;</span> 18 // a idade é menor do que 18?</li>
+        <li>curso <span>==</span> 'javascript' // o curso é JavaScript?</li>
+        <li>n1 <span>!=</span> n2 // o primeiro número é diferente do segundo?</li>
       </ul>
-      <br>
+    </li>
+    <li>
+      <h4>Operador de Identidade == ou Operador de igualdade restrita ===</h4>
       <ul>
-        <li>Operador de Identidade === ou Operador de igualdade restrita</li>
-        <li>5 == 5 🠒‬ true</li>
-        <li>5 == '5' 🠒‬ true</li>
-        <li>5 === '5' 🠒‬ false</li>
-        <li>5 === 5 🠒‬ true</li>
-        <li>== : testando igualdade</li>
-        <li>=== : testando igualdade e tipo / igualdade restrita</li>
-        <li>!= : testando se é desigual</li>
-        <li>!== : testando se é desigual restrito</li>
+        <li><span>==</span> : testando igualdade</li>
+        <li><span>===</span> : testando igualdade e tipo / igualdade restrita</li>
+        <li><span>!=</span> : testando se é desigual</li>
+        <li><span>!==</span> : testando se é desigual restrito</li>
+        <li>5 <span>==</span> 5 🠒‬ true</li>
+        <li>5 <span>==</span> '5' 🠒‬ true</li>
+        <li>5 <span>===</span> '5' 🠒‬ false</li>
+        <li>5 <span>===</span> 5 🠒‬ true</li>
+      </ul>
+    </li>
+  </ul>
 
-      </ul>
-    </ul>
-    <br>
-    <li>Operadores Lógicos</li>
-    <ul>
-      <li>! : Negação</li>
+  <br>
+
+  <h2>Operadores Lógicos</h2>
+  <ul>
+    <li>
+      <h3>! : Negação</h3>
       <ul>
-        <li>Algo Verdadeiro com sinal ! na frente (ex: !verdade) vai se tornar falso</li>
-        <li>!true 🠒‬ false</li>
-        <li>Algo Falso com sinal ! na frente (ex: !falso) vai se tornar verdadeiro</li>
-        <li>!false 🠒‬ true</li>
+        <li>Algo Verdadeiro com sinal <span class="logic">!</span> na frente (ex: <span class="logic">!</span>verdade) vai se tornar falso</li>
+        <li><span class="logic">!</span>true 🠒‬ false</li>
+        <li>Algo Falso com sinal <span class="logic">!</span> na frente (ex: <span class="logic">!</span>falso) vai se tornar verdadeiro</li>
+        <li><span class="logic">!</span>false 🠒‬ true</li>
       </ul>
-      <br>
-      <li>&& : Conjução (And, E)</li>
+    </li>
+    <li>
+      <h3>&& : Conjução (And, E)</h3>
       <ul>
         <li>Esse operador binário deve ter pelo menos duas sentenças lógicas</li>
         <li>Exemplo: Eu quero uma caneta azul e uma caneta vermelha. Só será verdadeiro se tiver as duas</li>
-        <li>caneta azul && caneta vermelha</li>
-        <li>true && true 🠒‬ true - Só satisfaz se as duas forem verdadeiras</li>
-        <li>true && false 🠒‬ false - Não ter uma já desfaz o &&</li>
-        <li>false && true 🠒‬ false</li>
-        <li>false && false 🠒‬ false</li>
+        <li>caneta azul <span class="logic">&&</span> caneta vermelha</li>
+        <li>true <span class="logic">&&</span> true 🠒‬ true - Só satisfaz se as duas forem verdadeiras</li>
+        <li>true <span class="logic">&&</span> false 🠒‬ false - Não ter uma já desfaz o <span class="logic">&&</span></li>
+        <li>false <span class="logic">&&</span> true 🠒‬ false</li>
+        <li>false <span class="logic">&&</span> false 🠒‬ false</li>
       </ul>
-      <br>
-      <li>|| : Disjução (Or, Ou)</li>
+    </li>
+    <li>
+      <h3>|| : Disjução (Or, Ou)</h3>
       <ul>
         <li>Esse operador binário deve ter pelo menos duas sentenças lógicas</li>
         <li>Exemplo: Eu quero uma caneta azul OU uma caneta vermelha. Será verdadeiro tendo apenas uma.</li>
-        <li>caneta azul || caneta vermelha</li>
-        <li>true || true 🠒‬ true - Satisfaz se as duas forem verdadeiras</li>
-        <li>true || false 🠒‬ true - Já satisfaz se uma das duas forem verdadeiras</li>
-        <li>false || true 🠒‬ true - Já satisfaz se uma das duas forem verdadeiras</li>
-        <li>false || false 🠒‬ false - Não ter nenhuma verdadeira desfaz o pedido do || </li>
+        <li>caneta azul <span class="logic">||</span> caneta vermelha</li>
+        <li>true <span class="logic">||</span> true 🠒‬ true - Satisfaz se as duas forem verdadeiras</li>
+        <li>true <span class="logic">||</span> false 🠒‬ true - Já satisfaz se uma das duas forem verdadeiras</li>
+        <li>false <span class="logic">||</span> true 🠒‬ true - Já satisfaz se uma das duas forem verdadeiras</li>
+        <li>false <span class="logic">||</span> false 🠒‬ false - Não ter nenhuma verdadeira desfaz o pedido do <span class="logic">||</span> </li>
       </ul>
-      <br>
-      <li>Se por acaso tiver um de cada, pelo menos um &&, um || e um ! - Então a ordem será sempre essa: </li>
+    </li>
+    <li>
+      <h3>Se por acaso tiver um de cada, pelo menos um &&, um || e um ! - Então a ordem será sempre essa:</h3>
       <ol>
-        <li>! Not/Não</li>
-        <li>&& And/E</li>
-        <li>|| Or/Ou</li>
+        <li><span class="logic">!</span> Not/Não</li>
+        <li><span class="logic">&&</span> And/E</li>
+        <li><span class="logic">||</span> Or/Ou</li>
       </ol>
-      <br>
-      <li>Outros exemplos</li>
+    </li>
+    <li>
+      <h3>Outros exemplos (Como deve LER)</h3>
       <ul>
-        <li>idade >= 15 && idade <= 17 // A idade está entre 15 e 17?</li>
-        <li>estado == 'RJ' || estado == 'SP' //"A pessoa" mora no estado do Rio de Janeiro ou em Sao Paulo? </li>
+        <li>idade <span>&gt;=</span> 15 <span>&&</span> idade &lt;= 17 // A idade está entre 15 e 17?</li>
+        <li>estado == 'RJ' <span>||</span> estado <span>==</span> 'SP' //"A pessoa" mora no estado do Rio de Janeiro ou em Sao Paulo?</li>
+        <li>salario &gt; 1500 <span>&&</span> sexo <span>!=</span> 'F' // O salário é acima de 1500 e não é homem?</li>
       </ul>
-    </ul>
-    <br>
-    <li>Operadores Ternários</li>
+    </li>
+  </ul>
+
+  <h2>Ordem de Precedência</h2>
+  <ol>
+    <li>() ** / ...</li>
+    <li>&gt; &lt; &gt;= ...</li>
+    <li>! ...</li>
+    <li>&& ...</li>
+    <li>|| ...</li>
+  </ol>
+
+  <br>
+
+  <h2>Operadores Ternários</h2>
+  <ul>
+    <li>
+      <h4> TESTE <span>?</span> TRUE <span>:</span> FALSE </h4>
+    </li>
+    <li>
+      media &gt;= 7.0  ? "Aprovado" : "Reprovado";
+    </li>
   </ul>
   <br>
-  
   <br>
 </body>
 </html>
