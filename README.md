@@ -59,9 +59,7 @@ O projeto é organizado de forma modular, com pastas dedicadas para cada curso e
 
 ## 📝 Conteúdo dos Cursos
 
-### Curso de HTML e CSS
-
-#### 💻 
+### Curso de HTML e CSS 💻 
 ![image](https://github.com/user-attachments/assets/846e3015-0ff1-44b9-89f1-c61f11c76068)
 
 #### Módulo 1 - Primeiros Passos
@@ -155,9 +153,7 @@ Introdução ao Flexbox, cobrindo direções e eixos, empacotamento, fluxo, alin
 * **Desafios:**
     * Desafio (Aguardando implementação)
 
-### Curso de JavaScript
-
-### 💻 
+### Curso de JavaScript 💻 
 ![image](https://github.com/user-attachments/assets/76d7258e-9c62-458d-bef4-b0d75ee4074d)
 
 #### Módulo A - Conhecendo o Javascript
