@@ -190,7 +190,7 @@ Foco em variáveis, tipos primitivos, tratamento de dados e operadores em JavaSc
 Você pode visualizar este projeto diretamente no GitHub Pages
 
 * **Link do Projeto:** [https://beacastroalves.github.io/curso-em-video/](https://beacastroalves.github.io/curso-em-video/)
-* **Link do Repositório do Projeto:** [https://github.com/beacastroalves/curso-em-video/index.html](https://github.com/beacastroalves/curso-em-video/index.html)
+* **Link do Index principal do Projeto:** [https://github.com/beacastroalves/curso-em-video/blob/main/index.html](https://github.com/beacastroalves/curso-em-video/blob/main/index.html)
 
 ## 📞 Contato
 
