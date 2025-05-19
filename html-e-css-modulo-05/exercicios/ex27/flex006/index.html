@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>align-content</title>
+
+  <link rel="stylesheet" href="../../../../assets/css/buttons.css">
+  <style>
+    h1, h2, h3, h4 {
+      text-align: center;
+      margin: 0.5em;
+    }
+
+    main.container {
+      background-color: lightcoral;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      margin: auto;
+    }
+
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: bisque;
+      height: 500px;
+      width: 400px;
+      margin: 16px auto;
+    }
+
+    section.flexrow {
+      flex-direction: row;
+    }
+
+    section.flexrowreverse {
+      flex-direction: row-reverse;
+    }
+
+    section.flexcolumn {
+      flex-direction: column;
+    }
+
+    section.flexcolumnreverse {
+      flex-direction: column-reverse;
+    }
+
+    section.stretch {
+      align-content: stretch;
+    }
+
+    section.center {
+      align-content: center;
+    }
+
+    section.flex-start {
+      align-content: flex-start;
+    }
+
+    section.flex-end {
+      align-content: flex-end;
+    }
+
+    section.space-between {
+      align-content: space-between;
+    }
+
+    section.space-around {
+      align-content: space-around;
+    }
+
+    section.space-evenly {
+      align-content: space-evenly;
+    }
+
+    div.item {
+      background-color: aquamarine;
+      border: 1px solid black;
+      text-align: center;
+      padding: 40px;
+    }
+
+    div.item.a {
+      background-color: rgb(127, 161, 255);
+    }
+
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="../flex005/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Centralização absoluta com Flexbox">&lt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="#" class="btn-2" target="_parent" rel="noopener noreferrer" title="">&gt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+  <main class="container">
+    <h1>align-content e seus comportamentos</h1>
+    <h3>Demonstrando no direction: row</h3>
+    <h4>align-content: stretch</h4>
+    <section class="flexrow stretch">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: center</h4>
+    <section class="flexrow center">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: flex-start</h4>
+    <section class="flexrow flex-start">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: flex-end</h4>
+    <section class="flexrow flex-end">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: space-between</h4>
+    <section class="flexrow space-between">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: space-around</h4>
+    <section class="flexrow space-around">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: space-evenly</h4>
+    <section class="flexrow space-evenly">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h2>Demonstrando no direction: row-reverse</h2>
+    <h4>align-content: stretch</h4>
+    <section class="flexrowreverse stretch">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: center</h4>
+    <section class="flexrowreverse center">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: flex-start</h4>
+    <section class="flexrowreverse flex-start">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: flex-end</h4>
+    <section class="flexrowreverse flex-end">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: space-between</h4>
+    <section class="flexrowreverse space-between">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: space-around</h4>
+    <section class="flexrowreverse space-around">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: space-evenly</h4>
+    <section class="flexrowreverse space-evenly">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h3>Demonstrando no direction: column</h3>
+    <h4>align-content: stretch</h4>
+    <section class="flexcolumn stretch">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: center</h4>
+    <section class="flexcolumn center">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: flex-start</h4>
+    <section class="flexcolumn flex-start">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: flex-end</h4>
+    <section class="flexcolumn flex-end">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: space-between</h4>
+    <section class="flexcolumn space-between">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: space-around</h4>
+    <section class="flexcolumn space-around">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: space-evenly</h4>
+    <section class="flexcolumn space-evenly">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h2>Demonstrando no direction: column-reverse</h2>
+    <h4>align-content: stretch</h4>
+    <section class="flexcolumnreverse stretch">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: center</h4>
+    <section class="flexcolumnreverse center">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: flex-start</h4>
+    <section class="flexcolumnreverse flex-start">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: flex-end</h4>
+    <section class="flexcolumnreverse flex-end">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: space-between</h4>
+    <section class="flexcolumnreverse space-between">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: space-around</h4>
+    <section class="flexcolumnreverse space-around">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+
+    <h4>align-content: space-evenly</h4>
+    <section class="flexcolumnreverse space-evenly">
+      <div class="item a">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+  </main>
+</body>
+</html>
