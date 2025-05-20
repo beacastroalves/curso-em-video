@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anatomia dos itens Flexbox</title>
+
+  <link rel="stylesheet" href="../../../../assets/css/buttons.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(238, 191, 90);
+    }
+
+    main.container {
+      background-color: rgb(255, 223, 155);
+      max-width: 600px;
+      display: flex;
+
+      flex-direction: column;
+      text-align: center;
+      padding: 16px;
+      margin: auto;
+    }
+
+    section {
+      background-color: rgb(255, 251, 243);
+      display: flex;
+      max-width: 500px;
+      height: 200px;
+      margin: 32px 2px;
+    }
+
+    section.flexrow {
+      flex-direction: row;
+    }
+
+    section.flexrowreverse {
+      flex-direction: row-reverse;
+    }
+
+    section.flexcolumn {
+      flex-direction: column;
+    }
+
+    section.flexcolumnreverse {
+      flex-direction: column-reverse;
+    }
+
+    div.item {
+      background-color: rgb(127, 204, 255);
+      border: 1px solid black;
+      text-align: center;
+    }
+
+    div.item.a {
+      background-color: rgb(176, 127, 255);
+      order: 3;
+    }
+
+    div.item.c {
+      background-color: rgb(33, 180, 89);
+      order: -2;
+    }
+
+    div.item.d {
+      background-color: rgb(33, 72, 180);
+      order: 1;
+    }
+
+    h3, h4 {
+      margin: 0.5em 0;
+      text-align: center;
+    }
+
+    div.center {
+      align-self: center;
+    }
+
+    div.start {
+      align-self: flex-start;
+    }
+
+    div.end {
+      align-self: flex-end;
+    }
+
+
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="../flex006/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Alinhamento de elementos empacotados no Flexbox">&lt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="#" class="btn-2" target="_parent" rel="noopener noreferrer" title="">&gt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+  <main class="container">
+    <h3>order e align-self no flex item</h3>
+    <br>
+    <hr>
+    <br>
+    <h4>Comportamento no flex-direction:row</h4>
+    <h4>align-self: center | flex-start | flex-end | auto e stretch (padrão)</h4>
+    <h4>html: A B C D E F | css: C B E F D A </h4>
+    <section class="flexrow">
+      <div id="a" class="center item a">3 A center</div>
+      <div id="b" class="item">0 B</div>
+      <div id="c" class="start item c">-2 C start</div>
+      <div id="d" class="end item d">1 D end</div>
+      <div id="e" class="item">0 E</div>
+      <div id="f" class="center item">0 F center</div>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <h4>Comportamento no flex-direction:row-reverse</h4>
+    <h4>html: A B C D E F | css: A D F E B C </h4>
+    <section class="flexrowreverse">
+      <div id="a" class="center  item a">3 A center</div>
+      <div id="b" class="item">0 B</div>
+      <div id="c" class="center  item c">-2 C center </div>
+      <div id="d" class="end item d">1 D end</div>
+      <div id="e" class="item">0 E</div>
+      <div id="f" class="start item">0 F start</div>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <h4>Comportamento no flex-direction:column</h4>
+    <h4>html: A B C D E F | css: C B E F D A </h4>
+    <section class="flexcolumn">
+      <div id="a" class="end item a">3 A end</div>
+      <div id="b" class="item">0 B</div>
+      <div id="c" class="start item c">-2 C start</div>
+      <div id="d" class="item d">1 D</div>
+      <div id="e" class="center item">0 E center</div>
+      <div id="f" class="item">0 F</div>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <h4>Comportamento no flex-direction:column-reverse</h4>
+    <h4>html: A B C D E F | css: A D F E B C </h4>
+    <section class="flexcolumnreverse">
+      <div id="a" class="center item a">3 A center</div>
+      <div id="b" class="item">0 B</div>
+      <div id="c" class="start item c">-2 C start</div>
+      <div id="d" class="item d">1 D</div>
+      <div id="e" class="end item">0 E end</div>
+      <div id="f" class="item">0 F</div>
+    </section>
+  </main>
+</body>
+</html>
