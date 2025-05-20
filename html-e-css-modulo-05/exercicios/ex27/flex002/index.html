@@ -9,32 +9,15 @@
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(227, 190, 108);
     }
 
     main.container {
-      background-color: rgb(240, 204, 128);
-      max-width: 600px;
+      background-color: rgb(255, 227, 167);
+      width: 600px;
+
       display: flex;
 
-      /*  ← ↑→ ↓ ↔  ↓ ← ↑ 🠒
-          PADRÃO: row
-                  flex-direction: row (Linha horizontal, da esquerda para a direita, no nosso idioma)
-               →  Eixo principal (main-axis) no caso row (esquerda pra direita - horizontal)
-              ↓   Eixo transversal (cross-axis) no caso row (cima para baixo - vertical)
-
-                  flex-direction: row-reverse (Linha horizontal com ordem contrária, da direita para esquerda)
-              ←   Eixo principal (main-axis) no caso row-reverse (direita pra esquerda - horizontal)
-               ↓  Eixo transversal (cross-axis) no caso row-reverse, esse eixo continua igual ao row (cima para baixo - vertical)
-
-                  flex-direction: column (Coluna vertical, de cima para baixo, no nosso idioma)
-               →  Eixo transversal (cross-axis) no caso column (esquerda pra direita - horizontal)
-              ↓   Eixo principal (main-axis) no caso column (cima para baixo - vertical)
-
-                  flex-direction: column-reverse (Coluna vertical, ao contrario de baixo para cima)
-              ↑   Eixo principal (main-axis) no caso column-reverse (cima para baixo - vertical)
-               →  Eixo transversal (cross-axis) no caso column (esquerda pra direita - horizontal)
-
-          */
       flex-direction: column;
       padding: 16px;
       margin: auto;
@@ -48,41 +31,21 @@
       margin-bottom: 32px;
     }
 
-/*
-    flex-direction: row (Linha horizontal, da esquerda para a direita, no nosso idioma)
-     →  Eixo principal (main-axis) no caso row (esquerda pra direita - horizontal)
-    ↓   Eixo transversal (cross-axis) no caso row (cima para baixo - vertical)
-*/
     section.flexrow {
       display: flex;
       flex-direction: row;
     }
 
-/*
-    flex-direction: row-reverse (Linha horizontal com ordem contrária, da direita para esquerda)
-    ←   Eixo principal (main-axis) no caso row-reverse (direita pra esquerda - horizontal)
-     ↓  Eixo transversal (cross-axis) no caso row-reverse, esse eixo continua igual ao row (cima para baixo - vertical)
-*/
     section.flexrowreverse {
       display: flex;
       flex-direction: row-reverse;
     }
 
-/*
-    flex-direction: column (Coluna vertical, de cima para baixo, no nosso idioma)
-     →  Eixo transversal (cross-axis) no caso column (esquerda pra direita - horizontal)
-    ↓   Eixo principal (main-axis) no caso column (cima para baixo - vertical)
-*/
     section.flexcolumn {
       display: flex;
       flex-direction: column;
     }
 
-/*
-    flex-direction: column-reverse (Coluna vertical, ao contrario de baixo para cima)
-    ↑   Eixo principal (main-axis) no caso column-reverse (cima para baixo - vertical)
-     →  Eixo transversal (cross-axis) no caso column (esquerda pra direita - horizontal)
-*/
     section.flexcolumnreverse {
       display: flex;
       flex-direction: column-reverse;
@@ -115,8 +78,8 @@
   <button class="btn-1">
     <a href="../../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
   </button>
-  <h3>Direções e Eixos Flexbox - flex-direction: </h3>
   <main class="container">
+    <h3>Direções e Eixos Flexbox - flex-direction: </h3>
     <h4>flex-direction: row</h4>
     <pre>
       <code>

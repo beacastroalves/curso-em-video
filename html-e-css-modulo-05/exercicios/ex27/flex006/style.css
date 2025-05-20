@@ -1,0 +1,96 @@
+body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(250, 170, 170);
+    }
+
+    h1, h2, h3, h4 {
+      text-align: center;
+      margin: 0.5em;
+    }
+
+    h2 span {
+      padding: 10px;
+      background-color: white;
+      border-radius: 4px;
+    }
+
+    h4 {
+      background-color: rgb(250, 170, 170);
+      max-width: 400px;
+      margin: 16px auto 0px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    main.container {
+      background-color: lightcoral;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+      margin: auto;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: bisque;
+      height: 500px;
+      width: 400px;
+      margin: 16px auto;
+    }
+
+    section.flexrow {
+      flex-direction: row;
+    }
+
+    section.flexrowreverse {
+      flex-direction: row-reverse;
+    }
+
+    section.flexcolumn {
+      flex-direction: column;
+    }
+
+    section.flexcolumnreverse {
+      flex-direction: column-reverse;
+    }
+
+    section.stretch {
+      align-content: stretch;
+    }
+
+    section.center {
+      align-content: center;
+    }
+
+    section.flex-start {
+      align-content: flex-start;
+    }
+
+    section.flex-end {
+      align-content: flex-end;
+    }
+
+    section.space-between {
+      align-content: space-between;
+    }
+
+    section.space-around {
+      align-content: space-around;
+    }
+
+    section.space-evenly {
+      align-content: space-evenly;
+    }
+
+    div.item {
+      background-color: aquamarine;
+      border: 1px solid black;
+      text-align: center;
+      padding: 40px;
+    }
+
+    div.item.a {
+      background-color: rgb(127, 161, 255);
+    }
