@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propriedade flex-basis em Flexbox</title>
+
+  <link rel="stylesheet" href="../../../../assets/css/buttons.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: lightcoral;
+    }
+    main.container {
+      background-color: rgb(255, 196, 196);
+      min-width: 90%;
+      max-width: 900px;
+      display: flex;
+
+      flex-direction: column;
+      padding: 16px;
+      margin: auto;
+    }
+
+    main > h4 {
+      text-align: center;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 32px 0;
+      background-color: white;
+    }
+
+    section.flexrow {
+      flex-direction: row;
+    }
+
+    section.flexrowreverse {
+      flex-direction: row-reverse;
+    }
+
+    section.flexcolumn {
+      flex-direction: column;
+    }
+
+    section.flexcolumnreverse {
+      flex-direction: column-reverse;
+    }
+
+    section.wrap {
+      flex-wrap: wrap;
+    }
+
+    div.item {
+      background-color: aquamarine;
+      border: 1px solid black;
+      text-align: center;
+      flex-basis: auto;
+    }
+
+    div.item.basis-auto {
+      flex-basis: auto;
+    }
+
+    div.item.basis-150 {
+      flex-basis: 150px;
+    }
+
+    div.item.a {
+      background-color: rgb(127, 161, 255);
+    }
+
+    h3 {
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="../../../../html-e-css-modulo-04/exercicios/ex26/mq005/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Menu responsivo - Hamburguinho">&lt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../flex002/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Direções e Eixos Flexbox">&gt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+  <main class="container">
+    <h3>Propriedade flex-basis</h3>
+    <br>
+    <hr>
+    <br>
+    <h3>flex-direction: row </h3>
+    <h4>flex-basis: auto | flex-wrap: nowrap</h4>
+    <section class="flexrow">
+      <div class="item basis-auto a">Alterando o conteudo</div>
+      <div class="item basis-auto">B</div>
+      <div class="item basis-auto">Conteudo vai se adaptar e gerar espaço</div>
+      <div class="item basis-auto">D</div>
+      <div class="item basis-auto">Entao esse sera o maior de todos os conteudos empurrando os outros itens</div>
+      <div class="item basis-auto">F</div>
+      <div class="item basis-auto">G</div>
+    </section>
+
+    <h4>flex-basis: auto | flex-wrap: wrap</h4>
+    <section class="flexrow wrap">
+      <div class="item basis-auto a">Alterando o conteudo</div>
+      <div class="item basis-auto">B</div>
+      <div class="item basis-auto">Conteudo vai se adaptar e gerar espaço</div>
+      <div class="item basis-auto">D</div>
+      <div class="item basis-auto">Entao esse sera o maior de todos os conteudos empurrando os outros itens</div>
+      <div class="item basis-auto">F</div>
+      <div class="item basis-auto">G</div>
+    </section>
+
+    <h4>flex-basis: 150px | flex-wrap: nowrap</h4>
+    <section class="flexrow">
+      <div class="item basis-150 a">Alterando o conteudo</div>
+      <div class="item basis-150">B</div>
+      <div class="item basis-150">Conteudo var ter o maximo de 150px</div>
+      <div class="item basis-150">D</div>
+      <div class="item basis-150">Entao esse sera o maior de todos em altura por conta do conteudo nele</div>
+      <div class="item basis-150">F</div>
+      <div class="item basis-150">G</div>
+    </section>
+
+    <h4>flex-basis: 150 | flex-wrap: wrap</h4>
+    <section class="flexrow wrap">
+      <div class="item basis-150 a">Alterando o conteudo</div>
+      <div class="item basis-150">B</div>
+      <div class="item basis-150">Conteudo vai se adaptar e gerar espaço</div>
+      <div class="item basis-150">D</div>
+      <div class="item basis-150">Entao esse sera o maior de todos os conteudos empurrando os outros itens</div>
+      <div class="item basis-150">F</div>
+      <div class="item basis-150">G</div>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+    <h3>flex-direction: row-reverse </h3>
+
+    <h4>flex-basis: auto | flex-wrap: nowrap</h4>
+    <section class="flexrowresverse">
+      <div class="item basis-auto a">Alterando o conteudo</div>
+      <div class="item basis-auto">B</div>
+      <div class="item basis-auto">Conteudo vai se adaptar e gerar espaço</div>
+      <div class="item basis-auto">D</div>
+      <div class="item basis-auto">Entao esse sera o maior de todos os conteudos empurrando os outros itens</div>
+      <div class="item basis-auto">F</div>
+      <div class="item basis-auto">G</div>
+    </section>
+
+    <h4>flex-basis: auto | flex-wrap: wrap</h4>
+    <section class="flexrowresverse wrap">
+      <div class="item basis-auto a">Alterando o conteudo</div>
+      <div class="item basis-auto">B</div>
+      <div class="item basis-auto">Conteudo vai se adaptar e gerar espaço</div>
+      <div class="item basis-auto">D</div>
+      <div class="item basis-auto">Entao esse sera o maior de todos os conteudos empurrando os outros itens</div>
+      <div class="item basis-auto">F</div>
+      <div class="item basis-auto">G</div>
+    </section>
+
+    <h4>flex-basis: 150px | flex-wrap: nowrap</h4>
+    <section class="flexrowresverse">
+      <div class="item basis-150 a">Alterando o conteudo</div>
+      <div class="item basis-150">B</div>
+      <div class="item basis-150">Conteudo var ter o maximo de 150px</div>
+      <div class="item basis-150">D</div>
+      <div class="item basis-150">Entao esse sera o maior de todos em altura por conta do conteudo nele</div>
+      <div class="item basis-150">F</div>
+      <div class="item basis-150">G</div>
+    </section>
+
+    <h4>flex-basis: 150 | flex-wrap: wrap</h4>
+    <section class="flexrowresverse wrap">
+      <div class="item basis-150 a">Alterando o conteudo</div>
+      <div class="item basis-150">B</div>
+      <div class="item basis-150">Conteudo vai se adaptar e gerar espaço</div>
+      <div class="item basis-150">D</div>
+      <div class="item basis-150">Entao esse sera o maior de todos os conteudos empurrando os outros itens</div>
+      <div class="item basis-150">F</div>
+      <div class="item basis-150">G</div>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+    <h3>flex-direction: column </h3>
+
+    <h4>flex-basis: auto | flex-wrap: nowrap</h4>
+    <section class="flexcolumn">
+      <div class="item basis-auto a">Alterando o conteudo</div>
+      <div class="item basis-auto">B</div>
+      <div class="item basis-auto">Conteudo vai se adaptar e gerar espaço</div>
+      <div class="item basis-auto">D</div>
+      <div class="item basis-auto">Entao esse sera o maior de todos os conteudos empurrando os outros itens</div>
+      <div class="item basis-auto">F</div>
+      <div class="item basis-auto">G</div>
+    </section>
+
+    <h4>flex-basis: auto | flex-wrap: wrap</h4>
+    <section class="flexcolumn wrap">
+      <div class="item basis-auto a">Alterando o conteudo</div>
+      <div class="item basis-auto">B</div>
+      <div class="item basis-auto">Conteudo vai se adaptar e gerar espaço</div>
+      <div class="item basis-auto">D</div>
+      <div class="item basis-auto">Entao esse sera o maior de todos os conteudos empurrando os outros itens</div>
+      <div class="item basis-auto">F</div>
+      <div class="item basis-auto">G</div>
+    </section>
+
+    <h4>flex-basis: 150px | flex-wrap: nowrap</h4>
+    <section class="flexcolumn">
+      <div class="item basis-150 a">Alterando o conteudo</div>
+      <div class="item basis-150">B</div>
+      <div class="item basis-150">Conteudo var ter o maximo de 150px</div>
+      <div class="item basis-150">D</div>
+      <div class="item basis-150">Entao esse sera o maior de todos em altura por conta do conteudo nele</div>
+      <div class="item basis-150">F</div>
+      <div class="item basis-150">G</div>
+    </section>
+
+    <h4>flex-basis: 150 | flex-wrap: wrap</h4>
+    <section class="flexcolumn wrap">
+      <div class="item basis-150 a">Alterando o conteudo</div>
+      <div class="item basis-150">B</div>
+      <div class="item basis-150">Conteudo vai se adaptar e gerar espaço</div>
+      <div class="item basis-150">D</div>
+      <div class="item basis-150">Entao esse sera o maior de todos os conteudos empurrando os outros itens</div>
+      <div class="item basis-150">F</div>
+      <div class="item basis-150">G</div>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+    <h3>flex-direction: column-reverse </h3>
+
+    <h4>flex-basis: auto | flex-wrap: nowrap</h4>
+    <section class="flexcolumnreverse">
+      <div class="item basis-auto a">Alterando o conteudo</div>
+      <div class="item basis-auto">B</div>
+      <div class="item basis-auto">Conteudo vai se adaptar e gerar espaço</div>
+      <div class="item basis-auto">D</div>
+      <div class="item basis-auto">Entao esse sera o maior de todos os conteudos empurrando os outros itens</div>
+      <div class="item basis-auto">F</div>
+      <div class="item basis-auto">G</div>
+    </section>
+
+    <h4>flex-basis: auto | flex-wrap: wrap</h4>
+    <section class="flexcolumnreverse wrap">
+      <div class="item basis-auto a">Alterando o conteudo</div>
+      <div class="item basis-auto">B</div>
+      <div class="item basis-auto">Conteudo vai se adaptar e gerar espaço</div>
+      <div class="item basis-auto">D</div>
+      <div class="item basis-auto">Entao esse sera o maior de todos os conteudos empurrando os outros itens</div>
+      <div class="item basis-auto">F</div>
+      <div class="item basis-auto">G</div>
+    </section>
+
+    <h4>flex-basis: 150px | flex-wrap: nowrap</h4>
+    <section class="flexcolumnreverse">
+      <div class="item basis-150 a">Alterando o conteudo</div>
+      <div class="item basis-150">B</div>
+      <div class="item basis-150">Conteudo var ter o maximo de 150px</div>
+      <div class="item basis-150">D</div>
+      <div class="item basis-150">Entao esse sera o maior de todos em altura por conta do conteudo nele</div>
+      <div class="item basis-150">F</div>
+      <div class="item basis-150">G</div>
+    </section>
+
+    <h4>flex-basis: 150 | flex-wrap: wrap</h4>
+    <section class="flexcolumnreverse wrap">
+      <div class="item basis-150 a">Alterando o conteudo</div>
+      <div class="item basis-150">B</div>
+      <div class="item basis-150">Conteudo vai se adaptar e gerar espaço</div>
+      <div class="item basis-150">D</div>
+      <div class="item basis-150">Entao esse sera o maior de todos os conteudos empurrando os outros itens</div>
+      <div class="item basis-150">F</div>
+      <div class="item basis-150">G</div>
+    </section>
+  </main>
+</body>
+</html>
