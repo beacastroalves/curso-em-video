@@ -9,11 +9,11 @@
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background-color: rgb(238, 191, 90);
+      background-color: rgb(133, 48, 48);
     }
 
     main.container {
-      background-color: rgb(255, 223, 155);
+      background-color: rgb(255, 155, 155);
       max-width: 600px;
       display: flex;
 
@@ -26,9 +26,9 @@
     section {
       background-color: rgb(255, 251, 243);
       display: flex;
-      min-width: 90%;
       max-width: 500px;
-      margin: 32px auto;
+      height: 200px;
+      margin: 32px 2px;
     }
 
     section.flexrow {
@@ -51,22 +51,18 @@
       background-color: rgb(127, 204, 255);
       border: 1px solid black;
       text-align: center;
-      padding: 6px;
     }
 
     div.item.a {
       background-color: rgb(176, 127, 255);
-      order: 3;
     }
 
     div.item.c {
       background-color: rgb(33, 180, 89);
-      order: -2;
     }
 
     div.item.d {
       background-color: rgb(33, 72, 180);
-      order: 1;
     }
 
     h3, h4 {
@@ -74,71 +70,81 @@
       text-align: center;
     }
 
+    div.center {
+      align-self: center;
+    }
+
+    div.start {
+      align-self: flex-start;
+    }
+
+    div.end {
+      align-self: flex-end;
+    }
+
+
   </style>
 </head>
 <body>
   <button class="btn-1">
-    <a href="../flex006/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Alinhamento de elementos empacotados no Flexbox">&lt;</a>
+    <a href="../flex007/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Propriedade order no flex item">&lt;</a>
   </button>
   <button class="btn-1">
-    <a href="../flex008/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Propriedade align-self no flex item">&gt;</a>
+    <a href="#" class="btn-2" target="_parent" rel="noopener noreferrer" title="">&gt;</a>
   </button>
   <button class="btn-1">
     <a href="../../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
   </button>
   <main class="container">
-    <h3>Propriedade order no flex item</h3>
+    <h3>Propriedade align-self no flex item</h3>
+    <h4>align-self: center | flex-start | flex-end | auto e stretch (padrão)</h4>
     <br>
     <hr>
     <br>
     <h4>Comportamento no flex-direction:row</h4>
-    <h4>html: A B C D E F | css: C B E F D A </h4>
     <section class="flexrow">
-      <div id="a" class="center item a">3 A center</div>
-      <div id="b" class="item">0 B</div>
-      <div id="c" class="start item c">-2 C start</div>
-      <div id="d" class="end item d">1 D end</div>
-      <div id="e" class="item">0 E</div>
-      <div id="f" class="center item">0 F center</div>
+      <div id="a" class="center item a">A center</div>
+      <div id="b" class="item">B stretch</div>
+      <div id="c" class="start item c">C start</div>
+      <div id="d" class="end item d">D end</div>
+      <div id="e" class="item">E padrao</div>
+      <div id="f" class="center item">F center</div>
     </section>
     <br>
     <hr>
     <br>
     <h4>Comportamento no flex-direction:row-reverse</h4>
-    <h4>html: A B C D E F | css: A D F E B C </h4>
     <section class="flexrowreverse">
-      <div id="a" class="center  item a">3 A center</div>
-      <div id="b" class="item">0 B</div>
-      <div id="c" class="center  item c">-2 C center </div>
-      <div id="d" class="end item d">1 D end</div>
-      <div id="e" class="item">0 E</div>
-      <div id="f" class="start item">0 F start</div>
+      <div id="a" class="center  item a">A center</div>
+      <div id="b" class="item">B stretch</div>
+      <div id="c" class="center item c">C center </div>
+      <div id="d" class="end item d">D end</div>
+      <div id="e" class="item">E stretch</div>
+      <div id="f" class="start item">F start</div>
     </section>
     <br>
     <hr>
     <br>
     <h4>Comportamento no flex-direction:column</h4>
-    <h4>html: A B C D E F | css: C B E F D A </h4>
     <section class="flexcolumn">
-      <div id="a" class="end item a">3 A end</div>
-      <div id="b" class="item">0 B</div>
-      <div id="c" class="start item c">-2 C start</div>
-      <div id="d" class="item d">1 D</div>
-      <div id="e" class="center item">0 E center</div>
-      <div id="f" class="item">0 F</div>
+      <div id="a" class="end item a">A end</div>
+      <div id="b" class="item">B stretch</div>
+      <div id="c" class="start item c">C start</div>
+      <div id="d" class="item d">D stretch</div>
+      <div id="e" class="center item">E center</div>
+      <div id="f" class="item">F padrao</div>
     </section>
     <br>
     <hr>
     <br>
     <h4>Comportamento no flex-direction:column-reverse</h4>
-    <h4>html: A B C D E F | css: A D F E B C </h4>
     <section class="flexcolumnreverse">
-      <div id="a" class="center item a">3 A center</div>
-      <div id="b" class="item">0 B</div>
-      <div id="c" class="start item c">-2 C start</div>
-      <div id="d" class="item d">1 D</div>
-      <div id="e" class="end item">0 E end</div>
-      <div id="f" class="item">0 F</div>
+      <div id="a" class="center item a">A center</div>
+      <div id="b" class="item">B stretch</div>
+      <div id="c" class="start item c">C start</div>
+      <div id="d" class="item d">D stretch</div>
+      <div id="e" class="end item">E end</div>
+      <div id="f" class="item center">F center</div>
     </section>
   </main>
 </body>
