@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos DOM</title>
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  <style>
+    body {
+      background-color: rgb(84, 92, 81);
+      color: white;
+      font: normal 18px Arial;
+    }
+
+    main {
+      margin: 1em;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      height: 250px;
+      margin-bottom: 1em;
+    }
+
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="../../mod-c/aula09/ex007.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Introdução ao DOM">&lt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="./ex009.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Eventos DOM pt2">&gt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+  <main>
+    <br>
+    <div id="area">
+      Interaja...
+    </div>
+  </main>
+
+  <script>
+    var a = window.document.getElementById('area');
+    a.addEventListener('click', clicar);
+    a.addEventListener('mouseenter', entrar);
+    a.addEventListener('mouseout', sair);
+
+    function clicar() {
+      a.innerText = 'Cliquou!';
+      a.style.background = 'red';
+    }
+
+    function entrar() {
+      a.innerText = 'Entrou!';
+      a.style.background = 'blue';
+    }
+
+    function sair() {
+      a.innerText = 'Saiu!';
+      a.style.background = 'green';
+    }
+  </script>
+</body>
+</html>
