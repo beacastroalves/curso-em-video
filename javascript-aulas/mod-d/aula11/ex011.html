@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condições Parte 1</title>
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  <style>
+    body {
+      background-color: rgb(89, 75, 84);
+      color: white;
+      font: normal 18px Arial;
+    }
+
+    main {
+      margin-left: 0.5em;
+      }
+
+    main, h1, input, p {
+      margin-bottom: 1em;
+    }
+
+    input {
+      font-size: 20px;
+    }
+
+    input[type=button] {
+      padding: 4px 12px;
+    }
+
+  </style>
+</head>
+<body>
+  <button class="btn-1">
+    <a href="./ex010.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Condições Parte 1">&lt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../aula12/ex12.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="">&gt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+  <main>
+    <br>
+    <h1>Validando nacionalidade brasileira</h1>
+    <div class="nasceu">Você <strong>nasceu</strong> em qual país? <input type="text" name="paisNasc" id="paisNasc"></div>
+    <div class="vive">Você <strong>vive</strong> em qual país? <input type="text" name="paisVive" id="paisVive"></div>
+    <input type="button" value="Verificar" onclick="ehEstrangeiro()">
+    <div id="res"></div>
+  </main>
+
+  <script src="./ex011.js"></script>
+</body>
+</html>
