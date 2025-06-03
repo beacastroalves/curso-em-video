@@ -24,8 +24,7 @@ main, h1, input {
   margin-bottom: 1em;
 }
 
-.nasceu,
-.vive {
+div {
   margin-bottom: 1.5em;
   font-size: 1.125em;
 }
@@ -85,6 +84,7 @@ input[type="button"]:active {
   margin-bottom: 0;
 }
 
-strong {
+span {
   color: #f1c40f;
+  font-weight: bold;
 }
