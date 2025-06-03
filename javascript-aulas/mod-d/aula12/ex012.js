@@ -5,12 +5,12 @@ function podeVotar() {
   var res = window.document.querySelector('#res');
 
   if (resIdade < 16) {
-    res.innerHTML = `<p>Você tem ${resIdade} anos, é de menor de idade e <span>não pode votar</span>!</p>`;
+    res.innerHTML = `<p>Você tem <span>${resIdade} anos</span>, é de menor de idade e <span>não pode votar</span>!</p>`;
   } else if (resIdade < 18) {
-    res.innerHTML = `<p>Você tem ${resIdade} anos, é de menor de idade e <span>votar é opcional!</span></p>`;
+    res.innerHTML = `<p>Você tem <span>${resIdade} anos</span>, é de menor de idade e <span>votar é opcional!</span></p>`;
   } else if (resIdade <= 70) {
-    res.innerHTML = `<p>Você tem ${resIdade} anos, é de maior de idade e <span>votar é obrigatório!</span></p>`;
+    res.innerHTML = `<p>Você tem <span>${resIdade} anos</span>, é de maior de idade e <span>votar é obrigatório!</span></p>`;
   } else {
-    res.innerHTML = `<p>Você tem ${resIdade} anos, é de maior de idade e <span>votar é opcional!</span></p>`;
+    res.innerHTML = `<p>Você tem <span>${resIdade} anos</span>, é de maior de idade e <span>votar é opcional!</span></p>`;
   }
 }
