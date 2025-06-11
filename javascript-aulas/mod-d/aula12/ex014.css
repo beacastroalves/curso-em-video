@@ -1,23 +1,23 @@
 body {
-  background-color: rgb(43, 79, 63);
-  text-align: center;
+  background-color: #debb6e;
 }
 
 header {
-
+  text-align: center;
 }
 
 main {
-  background-color: rgb(52, 94, 72);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 div {
   background-color: transparent;
-  margin: 16px;
+  margin-bottom: 24px;
 }
 
 footer {
   font-style: italic;
+  text-align: center;
 }
 
 
