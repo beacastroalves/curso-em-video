@@ -1,23 +1,35 @@
 body {
-  background-color: rgb(43, 79, 63);
-  text-align: center;
+  background-color: #7c4fcf;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-
+  text-align: center;
 }
 
 main {
-  background-color: rgb(52, 94, 72);
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 1.125em;
+  font-weight: 600;
 }
 
 div {
   background-color: transparent;
-  margin: 16px;
+  margin: 0;
+  margin-bottom: 24px;
+
+  &#res {
+    margin: 0;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 250px;
+  }
 }
 
 footer {
   font-style: italic;
+  text-align: center;
 }
-
-
