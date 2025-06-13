@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(94, 105, 40);
+  color: white;
+}
+
+main {
+  background-color: rgb(189, 203, 121);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#res {
+  background-color: rgb(135, 147, 73);
+  text-align: center;
+  list-style: none;
+  padding: 8px;
+
+  li {
+    padding: 4px;
+  }
+}
