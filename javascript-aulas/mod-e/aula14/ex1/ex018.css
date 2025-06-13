@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(122, 132, 49);
+  color: white;
+}
+
+header, footer {
+  text-align: center;
+}
+
+main {
+  background-color: rgb(86, 94, 30);
+  max-width: 800px;
+  padding: 16px;
+  margin: 16px auto;
+}
+
+div {
+  margin: 16px 0;
+}
+
+input, p {
+  font-size: 1.25em;
+}
+
+input {
+  margin: 8px 0;
+}
+
+
+input[type=button] {
+  background-color: rgb(166, 182, 59);
+  border: none;
+  padding: 8px 16px;
+
+  &:hover {
+    background-color: rgb(134, 149, 38)
+  }
+}
+
+
+#res {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 32px;
+  justify-content: space-around;
+  background-color: white;
+  color: rgb(86, 94, 30);
+}
+
+ul {
+  padding: 16px;
+  list-style: none;
+}
+
+footer {
+  font-style: italic;
+}
+
+
