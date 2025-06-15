@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(122, 132, 49);
+  background-color: rgb(79, 43, 71);
   color: white;
 }
 
@@ -8,7 +8,7 @@ header, footer {
 }
 
 main {
-  background-color: rgb(86, 94, 30);
+  background-color: rgb(58, 29, 52);
   text-align: center;
   max-width: 800px;
   padding: 16px;
@@ -28,13 +28,12 @@ input {
 }
 
 input[type=button] {
-  background-color: rgb(166, 182, 59);
+  background-color: rgb(118, 65, 107);
   border: none;
   padding: 4px 16px;
 
   &:hover {
-    background-color: rgb(134, 149, 38)
-
+    background-color: rgb(105, 52, 94);
   }
 }
 
@@ -45,7 +44,7 @@ input[type=button] {
   gap: 32px;
   justify-content: space-around;
   background-color: white;
-  color: rgb(86, 94, 30);
+  color:  rgb(105, 52, 94);
 }
 
 ul {
