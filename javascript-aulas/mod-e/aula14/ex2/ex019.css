@@ -28,12 +28,14 @@ input {
 }
 
 input[type=button] {
-  background-color: rgb(118, 65, 107);
+  background-color: rgb(193, 109, 176);
   border: none;
   padding: 4px 16px;
 
   &:hover {
-    background-color: rgb(105, 52, 94);
+    cursor: pointer;
+    background-color: rgb(175, 78, 156);
+    transform: translate(2px, 2px);
   }
 }
 
