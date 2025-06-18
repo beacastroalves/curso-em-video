@@ -8,19 +8,15 @@ main {
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
+  padding: 16px;
 }
 
 #question {
   font-size: 1.25em;
   margin: 24px;
+}
 
-  #flista {
-    margin: 24px auto;
-    min-height: 200px;
-    background-color: aliceblue;
-  }
-
-  input {
+input {
     padding: 8px;
 
     &[type="button"] {
@@ -41,16 +37,17 @@ main {
       }
     }
   }
-}
 
-#res {
-  background-color: rgb(159, 115, 19);
-  text-align: left;
+#flista, #res {
+  background-color: rgb(234, 220, 189);
   list-style: none;
   padding: 8px;
+  min-height: 100px;
+  margin: 24px auto;
 
-  li {
-    padding: 4px;
-    margin: 0 auto;
+  p {
+    margin: 4px auto;
+    width: fit-content;
+    color: #000;
   }
 }
