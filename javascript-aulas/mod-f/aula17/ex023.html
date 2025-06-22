@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funções</title>
+  <link rel="stylesheet" href="../../../assets/css/buttons.css">
+  <link rel="stylesheet" href="./ex021.css">
+
+</head>
+<body>
+  <button class="btn-1">
+    <a href="../aula15/ex020.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Arrays">&lt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="./ex/ex022.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Exercicio - funções">&gt;</a>
+  </button>
+  <button class="btn-1">
+    <a href="../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
+  </button>
+  <main>
+    <br>
+    <h1>Mexendo com Funções</h1>
+    <div>
+      <ul id="res">
+        <li>
+          <h3>objeto01.js</h3>
+          <pre>
+function parimpar(n) {
+  if(n % 2 == 0) {
+    return 'Par!'
+  } else {
+    return 'Impar!'
+  }
+}
+
+console.log(parimpar(223))
+          </pre>
+          <hr>
+        </li>
+        <li>
+          <h3>funcao02.js</h3>
+          <pre>
+function soma(n1=0, n2=0) {
+  return n1 + n2;
+}
+
+console.log(soma(7))
+          </pre>
+          <hr>
+        </li>
+        <li>
+          <h3>funcao03.js</h3>
+          <pre>
+let v = function(x) {
+  return x*2;
+}
+
+console.log(v(500));
+          </pre>
+          <hr>
+        </li>
+        <li>
+          <h3>funcao04.js</h3>
+          <pre>
+function fatorial(n) {
+  let fat = 1;
+  for(let c = n; c > 1; c--) {
+    fat *= c;
+  }
+  return fat
+}
+
+console.log(fatorial(6))
+
+// 6! = 6 x 5 x 4 x 3 x 2 x 1 = 720
+          </pre>
+          <hr>
+        </li>
+        <li>
+          <h3>funcao05.js</h3>
+          <pre>
+function parimpar(n) {
+  if(n % 2 == 0) {
+    return 'Par!'
+  } else {
+    return 'Impar!'
+  }
+}
+
+console.log(parimpar(223))
+          </pre>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="./ex021.js"></script>
+</body>
+</html>
