@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(255, 226, 164);
+}
+main {
+  background-color: rgb(252, 226, 128);
+  max-width: 700px;
+  margin: auto;
+  padding: 32px;
+
+  h1, h2, h3  {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .container {
+    display: grid;
+    gap: 8px;
+    padding: 2px;
+    background-color: rgb(234, 234, 234);
+
+    .item {
+      background-color: tomato;
+      border: 1px dashed saddlebrown;
+
+      &.it-a {
+        background-color: rgb(245, 192, 17);
+      }
+
+      &.it-b {
+        background-color: rgb(64, 137, 255);
+      }
+
+      &.it-c {
+        background-color: rgb(255, 49, 203);
+      }
+    }
+
+    &.grid-a {
+      grid-template-columns: auto auto;
+      background-color: rgb(0, 0, 140);
+    }
+
+    &.grid-b {
+      background-color: rgb(0, 131, 140);
+      grid-template-columns: auto auto auto;
+    }
+
+    &.grid-c {
+      background-color: rgb(0, 140, 82);
+      grid-template-rows: 100px 100px 100px;
+
+    }
+
+    &.grid-d {
+      background-color: rgb(140, 0, 140);
+      grid-template-rows: 150px;
+      gap: 32px;
+    }
+
+    &.grid-e {
+      background-color: rgb(140, 112, 0);
+      grid-template-columns: auto auto;
+      grid-template-rows: 100px 100px 100px;
+    }
+
+    &.grid-f {
+      background-color: rgb(140, 0, 42);
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 100px 100px 100px;
+      gap: 16px;
+    }
+  }
+}
