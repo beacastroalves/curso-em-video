@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Grid Layout na prática - Usando o Gap</title>
+  <title>Propriedades de container para Grids</title>
   <link rel="stylesheet" href="../../../../assets/css/buttons.css">
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
   <button class="btn-1">
-    <a href="../grid00/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Anatomia do Grid Layout">&lt;</a>
+    <a href="../grid01/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="CSS Grid Layout na prática">&lt;</a>
   </button>
   <button class="btn-1">
-    <a href="../grid02/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Propriedades de container para Grids">&gt;</a>
+    <a href="#" class="btn-2" target="_parent" rel="noopener noreferrer" title="">&gt;</a>
   </button>
   <button class="btn-1">
     <a href="../../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
   </button>
   <main>
-    <h1>Grid Layout</h1>
-    <h2>Usando gap</h2>
+    <h1>Propriedades de container para Grids</h1>
+    <h2>align-items e justify-items | align-content e justify-content</h2>
     <br>
-    <h3>Section com display: grid; | gap: 8px</h3>
+    <h3>Section com display: grid; | align-items: stretch; | justify-items: stretch;</h3>
     <section class="container">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -37,7 +37,7 @@
     <hr>
     <br>
     <br>
-    <h3>Section com display: grid; e grid-template-columns: auto auto | gap: 8px</h3>
+    <h3>Section com display: grid; | align-items: center; | justify-items: center;</h3>
     <section class="container grid-a">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -52,7 +52,7 @@
     <hr>
     <br>
     <br>
-    <h3>Section com display: grid; e grid-template-columns: auto auto auto | gap: 8px</h3>
+    <h3>Section com display: grid; | align-items: start; | justify-items: start;</h3>
     <section class="container grid-b">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -67,7 +67,7 @@
     <hr>
     <br>
     <br>
-    <h3>Section com display: grid; e grid-template-rows: 100px 100px 100px | gap: 8px</h3>
+    <h3>Section com display: grid; | align-items: end; | justify-items: end;</h3>
     <section class="container grid-c">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -82,7 +82,7 @@
     <hr>
     <br>
     <br>
-    <h3>Section com display: grid; e grid-template-rows: 150px | gap: 32px</h3>
+    <h3>Section com display: grid; | align-content: center; | justify-content: space-between;</h3>
     <section class="container grid-d">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -97,7 +97,7 @@
     <hr>
     <br>
     <br>
-    <h3>Section com display: grid; | grid-template-columns: auto auto | grid-template-rows: 100px 100px 100px | gap: 8px</h3>
+    <h3>Section com display: grid; | align-content: space-between; | justify-content: space-between;</h3>
     <section class="container grid-e">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -112,8 +112,23 @@
     <hr>
     <br>
     <br>
-    <h3>Section com display: grid; | grid-template-columns: auto auto auto | grid-template-rows: 100px 100px 100px | gap: 16px</h3>
+    <h3>Section com display: grid; | align-content: space-evenly; | justify-content: space-evenly;</h3>
     <section class="container grid-f">
+      <div class="item it-a">A</div>
+      <div class="item it-b ">B</div>
+      <div class="item it-c">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+      <div class="item">G</div>
+    </section>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <h3>Section com display: grid; | align-content: space-around; | justify-content: space-around;</h3>
+    <section class="container grid-g">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
       <div class="item it-c">C</div>
