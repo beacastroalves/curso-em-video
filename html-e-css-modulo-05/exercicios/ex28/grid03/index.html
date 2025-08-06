@@ -10,19 +10,23 @@
 </head>
 <body>
   <button class="btn-1">
-    <a href="../grid01/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="CSS Grid Layout na prática">&lt;</a>
+    <a href="../grid02/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="Propriedades de container para Grids">&lt;</a>
   </button>
   <button class="btn-1">
-    <a href="../grid03/index.html" class="btn-2" target="_parent" rel="noopener noreferrer" title="">&gt;</a>
+    <a href="#" class="btn-2" target="_parent" rel="noopener noreferrer" title="">&gt;</a>
   </button>
   <button class="btn-1">
     <a href="../../../../index.html" class="btn-2" target="_parent" rel="noopener noreferrer">Voltar para página principal</a>
   </button>
   <main>
     <h1>Propriedades de container para Grids</h1>
-    <h2>align-items e justify-items | align-content e justify-content</h2>
+    <ul>
+      <li>grid-template-row</li>
+      <li>grid-template-column</li>
+      <li>grid-template (row / column)</li>
+      </ul>
     <br>
-    <h3>Section com display: grid; | align-items: stretch; | justify-items: stretch;</h3>
+    <h3>grid-template-rows: 100px 100px 100px; | grid-template-columns: 100px 20% 1fr;</h3>
     <section class="container">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -31,13 +35,16 @@
       <div class="item">E</div>
       <div class="item">F</div>
       <div class="item">G</div>
+      <div class="item">H</div>
+      <div class="item">I</div>
+      <div class="item">J</div>
     </section>
     <br>
     <br>
     <hr>
     <br>
     <br>
-    <h3>Section com display: grid; | align-items: center; | justify-items: center;</h3>
+    <h3>grid-template: repeat(5, 150px) / 1fr 3fr;</h3>
     <section class="container grid-a">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -46,13 +53,16 @@
       <div class="item">E</div>
       <div class="item">F</div>
       <div class="item">G</div>
+      <div class="item">H</div>
+      <div class="item">I</div>
+      <div class="item">J</div>
     </section>
     <br>
     <br>
     <hr>
     <br>
     <br>
-    <h3>Section com display: grid; | align-items: start; | justify-items: start;</h3>
+    <h3>grid-template: repeat(3, 150px) / repeat(4, 1fr);</h3>
     <section class="container grid-b">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -61,13 +71,16 @@
       <div class="item">E</div>
       <div class="item">F</div>
       <div class="item">G</div>
+      <div class="item">H</div>
+      <div class="item">I</div>
+      <div class="item">J</div>
     </section>
     <br>
     <br>
     <hr>
     <br>
     <br>
-    <h3>Section com display: grid; | align-items: end; | justify-items: end;</h3>
+    <h3>grid-template: repeat(3, 150px) repeat(3, 100px);</h3>
     <section class="container grid-c">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -76,13 +89,16 @@
       <div class="item">E</div>
       <div class="item">F</div>
       <div class="item">G</div>
+      <div class="item">H</div>
+      <div class="item">I</div>
+      <div class="item">J</div>
     </section>
     <br>
     <br>
     <hr>
     <br>
     <br>
-    <h3>Section com display: grid; | align-content: center; | justify-content: space-between;</h3>
+    <h3>grid-template: 1fr 2fr 3fr 4fr / 1fr 25% 80px;</h3>
     <section class="container grid-d">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -91,13 +107,16 @@
       <div class="item">E</div>
       <div class="item">F</div>
       <div class="item">G</div>
+      <div class="item">H</div>
+      <div class="item">I</div>
+      <div class="item">J</div>
     </section>
     <br>
     <br>
     <hr>
     <br>
     <br>
-    <h3>Section com display: grid; | align-content: space-between; | justify-content: space-between;</h3>
+    <h3>grid-template-columns: 100px 20% 1fr; | grid-template-rows: 100px 100px 100px;</h3>
     <section class="container grid-e">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -106,13 +125,16 @@
       <div class="item">E</div>
       <div class="item">F</div>
       <div class="item">G</div>
+      <div class="item">H</div>
+      <div class="item">I</div>
+      <div class="item">J</div>
     </section>
     <br>
     <br>
     <hr>
     <br>
     <br>
-    <h3>Section com display: grid; | align-content: space-evenly; | justify-content: space-evenly;</h3>
+    <h3>grid-template: repeat(3, 50px) / 150px 20% 1fr;</h3>
     <section class="container grid-f">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -121,13 +143,16 @@
       <div class="item">E</div>
       <div class="item">F</div>
       <div class="item">G</div>
+      <div class="item">H</div>
+      <div class="item">I</div>
+      <div class="item">J</div>
     </section>
     <br>
     <br>
     <hr>
     <br>
     <br>
-    <h3>Section com display: grid; | align-content: space-around; | justify-content: space-around;</h3>
+    <h3>grid-template: repeat(4, 100px) / 100px 25% repeat(2, 1fr);</h3>
     <section class="container grid-g">
       <div class="item it-a">A</div>
       <div class="item it-b ">B</div>
@@ -136,6 +161,9 @@
       <div class="item">E</div>
       <div class="item">F</div>
       <div class="item">G</div>
+      <div class="item">H</div>
+      <div class="item">I</div>
+      <div class="item">J</div>
     </section>
   </main>
 </body>
